@@ -1008,8 +1008,8 @@ input[type="submit"].buynow {
     display: block;
     margin: 1rem auto;
     border-radius: 5vw;
-    width: 80vw;
-    height: 45vw;
+    width: 90vw;
+    height: 50vw;
 }
 
 #itemdetail #images {
@@ -1066,7 +1066,7 @@ input[type="submit"].buynow {
     height: 30vw;
     max-width: 30rem;
     max-height: 30rem;
-    margin: 2.5rem 0 1rem;
+    margin: 2.5rem 0;
     border: solid 1px #000;
     border-radius: 1rem;
     background-color: #fff;
@@ -1917,7 +1917,7 @@ footer {
         border-radius: 5vw;
     }
     #itemdetail #KonCheck .item {
-        margin: 7.5vw 0 0;
+        margin: 7.5vw 0 4.5vw;
     }
     #itemdetail #KonCheck .no_photo {
         font-size: 3vw;

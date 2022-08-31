@@ -60,7 +60,7 @@ dd {
 #hotitem .random div:nth-last-child(1),
 .mousedragscrollable div:nth-last-child(1),
 #itemdetail #images span:nth-last-child(1) {
-    margin-right: 0;
+    margin: 0;
 }
 
 .mousedragscrollable>* {
@@ -73,6 +73,7 @@ dd {
 .contents::after,
 .contents_inner::after,
 .content_section::after,
+.infourl::before,
 header::after,
 section::after,
 footer::after {
@@ -82,6 +83,7 @@ footer::after {
     display: block;
     visibility: hidden;
 }
+
 
 /*============================================================
 font-family - font style
@@ -121,7 +123,7 @@ body {
 
 .login_menu,
 .greeting b,
-#panel_inside .line_nav,
+#panel_inside,
 #panel_inside input[type="submit"],
 #itemlist .item_list .items p,
 #itemlist .item_list .items h4,
@@ -146,14 +148,14 @@ section .contents_title,
 .greeting i,
 #itemdetail i {
     font-family: 'Times New Roman', serif;
-    font-size: 150%;
+    font-size: 125%;
     font-weight: 500;
     font-style: italic;
 }
 
 .greeting b {
     display: block;
-    font-size: 150%;
+    font-size: 125%;
     font-weight: 500;
 }
 
@@ -198,6 +200,7 @@ body {
 .login_menu a,
 #header input[type="submit"].logout,
 #itemlist .items .limited_icon,
+#itemdetail .itemdetail_info a,
 #itemdetail .item_comment a,
 #itemdetail .limited_icon,
 #recommend li a:hover,
@@ -219,6 +222,7 @@ body {
 #itemlist .items .item_inner a:hover .item_noimage,
 .pager a:hover,
 .button_style.next:hover,
+#itemdetail .itemdetail_info a:hover,
 #itemdetail .item_comment a:hover,
 .infourl a:hover,
 .formbutton .next:hover,
@@ -553,8 +557,8 @@ Section - category_tabs
 }
 #main_category {
     padding: 1rem;
-    font-size: 1.25rem;
     margin-bottom: 0.5rem;
+    font-size: 1.25rem;
 }
 #main_category a,
 #main_category span {
@@ -583,7 +587,7 @@ Section - category_tabs
     background-color: #FFC778;
     border: 1px solid #FFC778;
     padding: 0.5rem 0.75rem;
-    margin: 1rem 0.25rem;
+    margin: 1rem 0 1rem 0.25rem;
     border-radius: 2.5rem;
 }
 
@@ -740,8 +744,7 @@ Page - itemlist
 }
 
 #itemlist .items .name {
-    padding-bottom: 1.5rem;
-    margin: 0;
+    margin: 1rem 0;
     font-size: 1.5rem;
 }
 
@@ -758,7 +761,7 @@ Page - itemlist
 #itemlist .items .item_inner:first-child,
 #itemlist .items .item_inner:nth-child(n+6) {
     width: 92.5vw;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1rem;
 }
 
 #itemlist .items .item_image,
@@ -782,10 +785,12 @@ Page - itemlist
     height: 55vw;
     border-radius: 2em;
     border: #000 solid 1px;
+    margin: 0 auto 1rem;
 }
 #itemlist .items .item_inner:first-child .item_noimage,
 #itemlist .items .item_inner:nth-child(n+6) .item_noimage {
     height: 55vw;
+    margin: 0 auto 1rem;
 }
 
 #itemlist .items .item_inner a:hover img,
@@ -967,12 +972,14 @@ Page - itemdetail
     width: 100%;
 }
 
-#itemdetail .comment_header,
+#itemdetail .comment_header {
+    width: 95%;
+    margin: auto;
+}
 #itemdetail .itemdetail_info,
 #user_page {
     width: 95%;
     margin: auto;
-    padding: 0.5rem;
     position: relative;
 }
 
@@ -986,8 +993,8 @@ Page - itemdetail
 
 #itemdetail .item_name {
     font-weight: 500;
-    font-size: 2rem;
-    margin: 2rem 0;
+    font-size: 1.5rem;
+    padding: 2.5rem 0;
     word-break: break-all;
 }
 
@@ -1016,7 +1023,6 @@ Page - itemdetail
 
 #itemdetail .itemdetail_info a {
     font-size: 110%;
-    line-height: 250%;
     padding: 0.45rem 0.5rem;
     border-radius: 0.5rem;
 }
@@ -1041,12 +1047,13 @@ Page - itemdetail
 }
 
 #itemdetail .comment1 {
-    font-size: 1.25rem;
+    font-size: 1.11rem;
+    padding: 1rem 0;
 }
 
 #itemdetail .item_price {
-    font-size: 1.5rem;
-    margin: 4.5rem 0 1rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 0;
     clear: both;
 }
 
@@ -1070,7 +1077,7 @@ Page - itemdetail
 input[type="submit"].buynow {
     display: block;
     width: 100%;
-    margin: 2.5rem 0;
+    margin: 1rem 0;
     border: #fff solid 2px;
     font-size: 2.5rem;
     padding: 1rem 0;
@@ -1100,7 +1107,7 @@ input[type="submit"].buynow {
 
 #itemdetail .comment2 {
     font-size: 1rem;
-    padding: 0 0 4.5vw;
+    padding: 1rem 0;
     position: relative;
 }
 
@@ -1117,8 +1124,8 @@ input[type="submit"].buynow {
     display: block;
     margin: 1rem auto;
     border-radius: 5vw;
-    width: 80vw;
-    height: 45vw;
+    width: 90vw;
+    height: 47.5vw;
 }
 
 #itemdetail #images {
@@ -1809,7 +1816,7 @@ Plugin
 #plugin2:before,
 #plugin3:before {
     position: absolute;
-    top: 14rem;
+    top: 12.5rem;
     right: 1rem;
     z-index: 10;
     font-family: Arial;
@@ -1829,7 +1836,7 @@ Plugin
 #plugin3:after {
     content: '→';
     position: absolute;
-    top: 15.5rem;
+    top: 12.5rem;
     right: 0;
     z-index: 10;
     font-size: 4rem;
@@ -1840,7 +1847,7 @@ Plugin
     overflow: hidden;
     width: 30rem;
     max-width: 75vw;
-    height: 17.5rem;
+    height: 15rem;
     margin-right: 1rem;
     overflow: hidden;
 }
