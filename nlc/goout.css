@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Kristina";
+    src: url("https://creative-community.space/coding/fontbook/family/Kristina.Fine.otf"), url("https://creative-community.space/coding/fontbook/family/Kristina.Bold.otf");
+}
+
+@font-face {
+    font-family: "DiaPro";
+    src: url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.eot"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.otf"), url("https://creative-community.space/coding/fontbook/family/DiaPro/DiaPro-Regular.woff");
+}
+
+#GoOut.contents_inner {
+    padding: 0 0 2.5rem;
+    background: lemonchiffon;
+}
+
+#GoOut .item_name {
+    font-family: "Kristina", "DiaPro";
+    text-align: center;
+    line-height: 150%;
+    font-size: 1.5rem;
+    padding: 2.5vw 0;
+    transform: scale(1, 1.5);
+    color: lightskyblue;
+    animation: 0.75s linear infinite alternate play;
+}
+
+#GoOut .itemdetail_image {
+    display: none;
+}
+
+#GoOut .by {
+    text-align: center;
+}
+
+#GoOut .comment1 {
+    padding: 2.5rem 4.5vw;
+    font-family: "Gill Sans";
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+#GoOut .comment2 {
+    font-family: 'Libre Baskerville', "YuMincho", "Yu Mincho", "游明朝体", serif;
+}
+
+#GoOut .moreinfo {
+    padding: 2.5rem 2.5vw;
+    background: #fff;
+    color: #000;
+    font-family: "DiaPro";
+}
+
+#GoOut .moreinfo a {
+    font-family: "Gill Sans";
+    text-transform: uppercase;
+}
+
+#GoOut .moreinfo b {
+    font-size: 125%;
+    display: block;
+    clear: both;
+}
+
+@keyframes play {
+    from {
+        letter-spacing: 0.1rem
+    }
+    to {
+        letter-spacing: .25rem
+    }
+}
+
+@-webkit-keyframes play {
+    from {
+        letter-spacing: 0.1rem
+    }
+    to {
+        letter-spacing: .25rem
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #GoOut .item_name {
+        font-size: 1.25rem;
+    }
+    #GoOut .item_name {
+        letter-spacing: 0.25rem;
+        animation: 0 none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #GoOut .item_name {
+        font-size: 1.25rem;
+    }
+    #GoOut.content_section .name {
+        display: none;
+    }
+}
