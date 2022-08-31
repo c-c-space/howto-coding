@@ -1,0 +1,1957 @@
+html,
+body,
+div,
+nav,
+section,
+article,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+#wrap,
+#contents,
+form,
+fieldset,
+input,
+textarea,
+blockquote,
+table,
+th,
+td,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.price_0 {
+    display: none;
+}
+
+hr {
+    border: none;
+    clear: both;
+}
+
+a {
+    word-break: break-all;
+    text-decoration: none;
+    color: #000;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+#shopinfo.info_top li:nth-last-child(1),
+#hotitem .random div:nth-last-child(1),
+.mousedragscrollable div:nth-last-child(1),
+#itemdetail #images span:nth-last-child(1) {
+    margin-right: 0;
+}
+
+.mousedragscrollable>* {
+    display: inline-block;
+}
+
+#wrap::after,
+#main::after,
+#logo::after,
+.contents::after,
+.contents_inner::after,
+.content_section::after,
+.infourl::before,
+header::after,
+section::after,
+footer::after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+/*============================================================
+font-family - font style
+============================================================*/
+/*= IE11 游ゴシックなし =*/
+
+@media all and (-ms-high-contrast: none) {
+    *::-ms-backdrop,
+    body {
+        font-family: 'Arial', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    }
+}
+
+/*= IE10 游ゴシックなし =*/
+
+@media all and (-ms-high-contrast: none) {
+    body {
+        font-family: 'Arial', "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif;
+    }
+}
+
+@font-face {
+    font-family: "MS Mincho";
+    src: url("https://creative-community.space/coding/fontbook/family/MS%20Mincho.ttf");
+}
+
+
+body {
+    font-family: "YuGothic", "Yu Gothic", "Arial", sans-serif;
+    font-size: 1rem;
+}
+
+.contents_title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.login_menu,
+.greeting b,
+#header input[type="submit"].logout,
+#itemlist .item_list .items p,
+#itemlist .item_list .items h4,
+#itemdetail .limited_icon,
+#itemdetail b,
+#itemdetail #KonCheck .no_photo,
+.infourl a,
+input[type="submit"].buynow,
+section .contents_title,
+.formbutton input[type="submit"],
+.button_style.next,
+.comment_footer {
+    font-family: 'Times New Roman', serif;
+    font-weight: 500;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1, 1.1);
+    letter-spacing: -0.1rem;
+    word-spacing: -.1rem;
+}
+
+.greeting i,
+#itemdetail i {
+    font-family: 'Times New Roman', serif;
+    font-size: 125%;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.greeting b {
+    display: block;
+    font-size: 125%;
+    font-weight: 500;
+}
+
+#main_category span,
+#sub_category span {
+    display: inline-block;
+    font-size: 150%;
+    font-weight: 500;
+}
+
+#main_category,
+#sub_category,
+.pehu {
+    font-family: "MS Mincho", "SimSong", serif;
+}
+
+/*============================================================
+common - element style
+============================================================*/
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    color: #000;
+    background-color: #fff;
+}
+
+#header .cart_menu a,
+#shopinfo.info_top li a,
+.bg_gradient {
+    color: #fff;
+    background: linear-gradient(-90deg, #eee, #FFC778, #b3cbf6);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+.greeting a,
+.login_menu a,
+#header input[type="submit"].logout,
+#itemlist .items .limited_icon,
+#itemdetail .itemdetail_info a,
+#itemdetail .item_comment a,
+#itemdetail .limited_icon,
+#recommend li a:hover,
+#buyers_bought li a:hover,
+#member a:hover {
+    text-decoration: none;
+    background: linear-gradient(90deg, #b3cbf6, #FFC778, #eee);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientBG 5s ease infinite;
+}
+
+.greeting a:hover,
+.greeting u,
+#main_category a:hover,
+#sub_category a:hover,
+#shopinfo.info_detail .shopinfo_comment a,
+#itemlist .items .item_inner a:hover .item_noimage,
+.pager a:hover,
+.button_style.next:hover,
+#itemdetail .itemdetail_info a:hover,
+#itemdetail .item_comment a:hover,
+.infourl a:hover,
+.formbutton .next:hover,
+input[type="submit"].buynow,
+#member input[type="submit"]:hover,
+.comment_footer a,
+dt {
+    color: #fff;
+    border: transparent 1px solid;
+    background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
+    background-size: 400% 400%;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: #fff;
+    animation: gradientBG 2.5s ease infinite;
+    text-decoration: none;
+}
+.button_style.next:hover,
+.formbutton .next:hover,
+.infourl a:hover,
+#member input[type="submit"]:hover {
+    border: #fff solid 2px;
+}
+
+#shopinfo.info_detail .shopinfo_comment .news {
+    border: 2px solid;
+    border-image: linear-gradient(-90deg, #B3CBF6, #FFC778, #EEE);
+    border-image-slice: 1;
+}
+
+#shopinfo.info_top ul::-webkit-scrollbar,
+#hotitem .random::-webkit-scrollbar,
+#itemdetail #images::-webkit-scrollbar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+}
+
+#shopinfo.info_top ul::-webkit-scrollbar-thumb,
+#hotitem .random::-webkit-scrollbar-thumb,
+#itemdetail #images::-webkit-scrollbar-thumb {
+    border-radius: 2.5rem;
+     background: linear-gradient(-90deg, #b3cbf6, #FFC778, #eee);
+ }
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*============================================================
+Common - Base layout
+============================================================*/
+
+#wrap {
+    position: relative;
+    padding: 4.5rem 0 1rem;
+}
+
+#main {
+    margin-bottom: 2.5rem;
+}
+
+section {
+    width: 95%;
+    max-width: 750px;
+    padding: 2.5rem;
+    margin: 2.5rem auto 0;
+    background-color: rgba(255, 255, 255, 5.5);
+}
+
+#logo {
+    display: inline-block;
+    max-width: 35rem;
+    width: 75vw;
+    padding: 0.5vw 1rem;
+}
+
+#logo img {
+    width: 100%;
+}
+
+.greeting {
+    font-size: 3.5rem;
+    margin: 2.5rem 1.25rem;
+    font-weight: 400;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1, 1.1);
+    letter-spacing: -0.01rem;
+    word-spacing: -.1rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    color: #000;
+    font-size: 1rem;
+    background-color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 2rem;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+/*============================================================
+Section - header
+============================================================*/
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem;
+    z-index: 100;
+}
+
+#header ul a {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+#header li {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+#header .category_menu {
+    float: left;
+    position: relative;
+}
+
+#header .login_menu {
+    float: left;
+}
+
+#header .cart_menu,
+#header .search_menu {
+    float: right;
+}
+
+#header .hello {
+    font-size: 0.9rem;
+    line-height: 100%;
+}
+
+#header .search_menu input[type="text"] {
+    color: #000;
+    border: 2px solid;
+    background-color: rgba(255, 255, 255, 5.5);
+    padding: 0.5rem 1rem;
+    width: 25vw;
+    font-size: 1.25rem;
+}
+
+#header .search_menu input[type="submit"].search_icon {
+    color: #000;
+    border: #000 solid 2px;
+    padding: 0.5rem;
+    font-size: 125%;
+    margin-left: 0.5rem;
+}
+
+#header input[type="submit"].logout {
+    font-size: 1.25rem;
+    border: #000 solid 1px;
+}
+
+.icon {
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: inline-block;
+}
+
+#header .cart_menu {
+    width: 4rem;
+    height: 2.5rem;
+}
+
+#header .cart_menu img {
+    width: 100%;
+    height: 100%;
+}
+
+#header .cart_menu a {
+    display: inline-block;
+    padding: 0.45rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/*============================================================
+Section - category_tabs
+============================================================*/
+
+#main_category,
+#sub_category {
+    position: relative;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+#main_category {
+    padding: 1rem;
+}
+#main_category a,
+#main_category span {
+    margin: 0.5rem;
+    border-radius: 2.5rem;
+}
+#main_category a {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #FFC778;
+    padding: 0.75rem 1.5rem;
+}
+#main_category span{
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+#sub_category {
+    padding: 0 1rem;
+}
+#sub_category a {
+    color: #fff;
+    background-color: #FFC778;
+    border: 1px solid #FFC778;
+    margin: 1.25rem 0.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2.5rem;
+}
+
+/*===============================================
+Section - shopinfo top（お知らせトップページ）
+================================================= */
+
+#shopinfo.info_top {
+    clear: both;
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+#shopinfo.info_top .contents_title {
+    position: absolute;
+    top: 9.5rem;
+    left: -7.5rem;
+    float: left;
+    font-size: 2rem;
+    pointer-events: none;
+    user-select: none;
+    transform: rotate(270deg);
+    transform-origin: 50% 50%;
+}
+
+#shopinfo.info_top .content_section {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+}
+
+#shopinfo.info_top ul {
+    margin-left: 5rem;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+#shopinfo.info_top li {
+    flex: none;
+    height: 100%;
+    width: 70vw;
+    max-width: 35rem;
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+}
+
+#shopinfo.info_top li a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    animation: gradientBG 15s ease infinite;
+}
+
+#shopinfo.info_top .news_date {
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    right: -1.5rem;
+    transform: rotate(270deg);
+    transform-origin: 50% 50%;
+}
+
+#shopinfo.info_top .news_title {
+    color: #fff;
+    font-size: 1.75rem;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+#shopinfo.info_detail .content_section {
+    width: 100%;
+    max-width: 750px;
+    padding: 0 2.5rem;
+    margin: 2.5rem auto;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+#shopinfo.info_detail p{
+    padding: 0.5rem 0;
+}
+
+#shopinfo.info_detail .shopinfo_title {
+    padding: 2.5rem 0 0;
+}
+
+#shopinfo.info_detail .news_date {
+    display: inline-block;
+    font-size: 1rem;
+    border: #000 solid 1px;
+    border-radius: 1.25rem;
+    padding: 0.25rem 0.5rem;
+}
+
+#shopinfo.info_detail .news_title {
+    font-size: 2rem;
+    display: block;
+}
+
+#shopinfo.info_detail .shopinfo_comment {
+    font-size: 1.25rem;
+    line-height: 200%;
+    padding: 2.5rem 0;
+}
+
+#shopinfo.info_detail .shopinfo_comment a {
+    display: block;
+    border: #fff solid 1px;
+    border-radius: 2rem;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 110%;
+    text-align: center;
+}
+
+#shopinfo.info_detail .shopinfo_comment img {
+    max-width: 100%;
+}
+
+#shopinfo.info_detail .shopinfo_comment .news {
+    display: block;
+    margin: 2.5rem 0;
+    padding: 0.5rem 1rem;
+}
+
+/*===============================================
+Page - itemlist
+================================================= */
+
+#itemlist {
+    padding: 2.5vw;
+}
+
+#itemlist .items {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#itemlist .items .name {
+    padding-bottom: 2.5vw;
+    margin: 0;
+    font-size: 2.5vw;
+}
+
+#itemlist .items p {
+    font-size: 1.5vw;
+}
+
+#itemlist .items .limited_icon {
+    font-size: 2vw;
+    display: inline-block;
+}
+
+#itemlist .items .item_inner {
+    position: relative;
+    width: 45.5vw;
+    margin: 0 0 4.5vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#itemlist .items .item_inner:first-child {
+    width: 95vw;
+}
+#itemlist .items .item_inner:nth-child(n+6) {
+    width: 30vw;
+}
+
+#itemlist .items .item_image {
+    width: 50%;
+    display: block;
+    position: relative;
+    float: left;
+    border-radius: 1rem;
+    margin-right: 2.5vw;
+    max-height: 20vw;
+}
+#itemlist .items .item_image img {
+    border-radius: 1rem;
+    max-width: 100%;
+    max-height: 20vw;
+}
+#itemlist .items .item_inner:first-child .item_image,
+#itemlist .items .item_inner:first-child .item_image img {
+    max-height: 45vw;
+}
+#itemlist .items .item_inner:nth-child(n+6) .item_image,
+#itemlist .items .item_inner:nth-child(n+6) .item_image img {
+    width: 100%;
+    max-height: 30vw;
+}
+
+#itemlist .items .item_noimage {
+    margin: 0;
+    display: block;
+    position: relative;
+    height: 20vw;
+    border-radius: 2em;
+    border: #000 solid 1px;
+}
+#itemlist .items .item_inner:nth-child(n+6) .item_noimage {
+    height: 30vw;
+}
+
+#itemlist .items .item_inner a:hover img,
+#itemlist .items .item_inner a:hover .item_noimage {
+    box-shadow: #000 0.75vw 0.75vw;
+}
+
+#itemlist .items .item_noimage .name {
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.content_section::before {
+    font-size: 3.5rem;
+    display: inline-block;
+    margin: 1rem 1rem 0;
+}
+
+/* =================================================
+Common - pager style
+================================================= */
+.pager {
+    text-align: center;
+    margin: 2.5rem 0;
+    line-height: 300%;
+}
+
+.pager a,
+.pager span {
+    width: auto;
+    font-size: 1.5rem;
+    margin: 0 1.5vw;
+    padding: 0.75em 1.25em;
+    border: 1px solid #eee;
+    border-radius: 5em;
+}
+
+.pager span {
+    color: #fff;
+    background-color: #eee;
+}
+
+.pager a {
+    color: #000;
+    text-decoration: none;
+}
+
+.pager .pager_total {
+    padding: 2rem 0 0;
+}
+
+/* =================================================
+    Section - recommend (おすすめ商品)
+================================================= */
+
+#recommend {
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    margin: 4.5vw auto;
+    max-width: 1250px;
+    width: 95%;
+    position: relative;
+}
+
+#buyers_bought {
+    font-family: Arial;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 1.5rem auto;
+    max-width: 1250px;
+    width: 95%;
+    position: relative;
+}
+
+#recommend h2 {
+    font-weight: 500;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+#recommend li,
+#buyers_bought li {
+    position: relative;
+    padding: 0.5rem;
+    width: 100%;
+    clear: both;
+}
+#recommend .item_image,
+#buyers_bought .item_image {
+    width: 15%;
+    max-width: 5rem;
+    float: left;
+    margin-right: 2.5vw;
+}
+#recommend .item_image img,
+#buyers_bought .item_image img {
+    width: 100%;
+}
+#recommend .name,
+#buyers_bought .name {
+    padding: 1rem 0;
+    font-weight: 500;
+}
+#recommend li a,
+#buyers_bought li a {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*===============================================
+Section - hotitem (売れ筋商品)
+================================================= */
+
+#hotitem {
+    position: relative;
+    clear: both;
+    width: 95%;
+    max-width: 1500px;
+    padding: 0 1rem;
+    margin: 2.5rem auto 1rem;
+    font-size: 1.25rem;
+}
+
+#hotitem h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 1rem 0 2rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#hotitem h2 i {
+    border: solid 2px #000;
+    color: #000;
+    padding: 0.25rem 3rem;
+    border-radius: 5rem;
+}
+
+#hotitem .random {
+    display: flex;
+    position: relative;
+    clear: both;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x;
+}
+
+#hotitem .random div {
+    display: block;
+    margin: 0 1rem 1rem 0;
+    scroll-snap-align: start;
+}
+
+#hotitem .random div img {
+    width: auto;
+    height: 20vw;
+    max-height: 10rem;
+}
+
+/*===============================================
+Page - itemdetail
+================================================= */
+
+#itemdetail,
+#itemdetail .contents_inner,
+#itemdetail .content_section,
+#itemdetail form {
+    position: relative;
+    width: 100%;
+}
+
+#itemdetail .comment_header,
+#itemdetail .itemdetail_info,
+#user_page {
+    width: 95%;
+    margin: auto;
+    padding: 0.5rem;
+    position: relative;
+}
+
+#itemdetail .itemdetail_info,
+#user_page {
+    max-width: 1250px;
+}
+#user_page {
+    margin-top: 2.5rem;
+}
+
+#itemdetail .item_name {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 1rem 0;
+    word-break: break-all;
+}
+
+#itemdetail .itemdetail_image {
+    float: left;
+    display: block;
+    width: 55%;
+    margin-right: 4.5vw;
+    margin-bottom: 1rem;
+    max-width: 750px;
+}
+
+#itemdetail .itemdetail_image .thumb {
+    text-align: center;
+    float: left;
+    width: 7.5rem;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+#itemdetail .itemdetail_image .thumb img,
+#itemdetail .itemdetail_image .thumb:first-child {
+    width: 100%;
+    max-width: 100%;
+}
+
+#itemdetail .itemdetail_info a {
+    font-size: 110%;
+    padding: 0.45rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
+#itemdetail .itemdetail_info b {
+    font-size: 150%;
+}
+
+#itemdetail .itemdetail_info i {
+    font-size: 125%;
+}
+
+#itemdetail .itemdetail_info p {
+    line-height: 200%;
+    margin: 0.5rem;
+}
+
+#itemdetail hr {
+    padding: 1rem 0;
+    clear: both;
+    border: none;
+}
+
+#itemdetail .comment1 {
+    font-size: 1.25rem;
+    padding: 1rem 0;
+}
+
+#itemdetail .item_price {
+    font-size: 1.5rem;
+    margin: 2.5rem 0;
+    clear: both;
+}
+
+#itemdetail .price_replace {
+    font-size: 175%;
+    margin-right: 0.5rem;
+}
+
+#itemdetail .item_price_normal {
+    font-size: 55%;
+}
+
+#itemdetail .item .item_type,
+#itemdetail .item .item_stock,
+#itemdetail .item .item_count {
+    font-size: 1.5rem;
+    margin: 0.5rem 1rem 0.5rem 0;
+    float: left;
+}
+
+input[type="submit"].buynow {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+    border: #fff solid 2px;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    font-weight: 500;
+    border-radius: 2.5rem;
+    text-align: center;
+}
+
+.infourl {
+    text-align: center;
+}
+
+.infourl a {
+    display: block;
+    padding: 0.5rem 0;
+    margin: 1rem auto;
+    font-size: 2rem;
+    border: #000 solid 2px;
+    font-weight: 500;
+    border-radius: 10rem;
+}
+
+#itemdetail .item_comment {
+    margin: 0 auto;
+    clear: both;
+}
+
+#itemdetail .comment2 {
+    font-size: 1.11rem;
+    padding: 2.5vw 0 4.5vw;
+    position: relative;
+}
+
+#itemdetail .comment2 p {
+    padding: 0.5rem;
+    margin: auto;
+    max-width: 1500px;
+    width: 95%;
+}
+
+#itemdetail .comment2 iframe {
+    border: solid 0.25vw #000;
+    color: #000;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 5vw;
+    width: 90vw;
+    height: 50vw;
+}
+
+#itemdetail #images {
+    width: 100%;
+    padding: 1rem 0 2rem;
+    margin: auto;
+    position: relative;
+    clear: both;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+#itemdetail #images span {
+    flex: none;
+    padding: 0;
+    margin-right: 2rem;
+    height: 55vw;
+    max-height: 450px;
+    scroll-snap-align: start;
+}
+
+#itemdetail #images img {
+    height: 100%;
+}
+
+#itemdetail #KonCheck:before {
+    content: "let's shopping and something";
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 3rem;
+    position: absolute;
+    margin: -4.5rem 5% 0;
+    border: solid 2px #000;
+    color: #000;
+    padding: 0.25rem 3rem;
+    border-radius: 5rem;
+}
+
+#itemdetail #KonCheck {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    margin-top: 4.5rem;
+}
+
+#itemdetail #KonCheck .item {
+    position: relative;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vw;
+    max-width: 30rem;
+    max-height: 30rem;
+    margin: 2.5rem 0;
+    border: solid 1px #000;
+    border-radius: 1rem;
+    background-color: #fff;
+}
+
+#itemdetail #KonCheck a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#itemdetail #KonCheck .item:hover {
+    color: #000;
+    box-shadow: #000 1vw 1vw;
+}
+
+#itemdetail #KonCheck img {
+    position: absolute;
+    z-index: 0;
+    left:0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+}
+
+#itemdetail #KonCheck marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.5vw 0;
+    margin: 0;
+    width: 100%;
+    font-size: 2rem;
+    line-height: 150%;
+}
+
+#itemdetail #KonCheck .no_photo {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 150%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+/*===============================================
+Page - checkcart (カートの中身)
+================================================= */
+
+#checkcart {
+    width: 95%;
+    max-width: 1250px;
+    padding: 1rem;
+    margin: 4.5rem auto;
+}
+
+#checkcart .edit a,
+#checkcart .count input[type="submit"],
+#checkcart .count select {
+    font-size: 1rem;
+    margin-right: 0;
+    padding: 0.5rem;
+    border: 1px solid #000;
+    border-radius: 3rem;
+}
+
+#checkcart .count select {
+    width: 75%;
+    max-width: 3rem;
+}
+
+#checkcart .table {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 2.5rem;
+}
+
+#checkcart .tr1 {
+    font-size: 120%;
+    padding: 1rem;
+}
+
+#checkcart .tr2 {
+    font-size: 125%;
+    padding: 2.5rem;
+}
+
+#checkcart .tr3 {
+    font-size: 150%;
+    padding: 1rem 0;
+}
+
+.prev_cart a {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+#regi_checkout .list {
+    position: relative;
+    padding: 2.5rem 0;
+}
+
+#regi_checkout .item {
+    padding: 1rem 0;
+    font-size: 1rem;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+#regi_checkout .item p {
+    display: inline-block;
+    padding-right: 2.5%;
+}
+
+#regi_checkout .item .name {
+    font-size: 150%;
+    width: 65%;
+}
+
+#regi_checkout .item .select {
+    font-size: 100%;
+    width: 10%;
+    text-align: center;
+}
+
+#regi_checkout .item .price {
+    font-size: 100%;
+    width: 20%;
+    text-align: right;
+}
+
+#regi_checkout .order {
+    font-size: 120%;
+}
+
+#regi_checkout .order p {
+    padding: 1rem 0;
+}
+
+#regi_checkout .order b,
+#regi_checkout .order .tortal {
+    font-size: 125%;
+    font-weight: 500;
+}
+
+#regi_checkout .order b {
+    float: right;
+}
+
+#regi_checkout .order u {
+    font-size: 150%;
+    float: right;
+    margin-left: 2rem;
+}
+
+.list .td3 font {
+    display: none;
+}
+
+.list .td3 input {
+    margin-right: 1vw;
+}
+
+.list .td3 {
+    font-size: 2vw;
+}
+
+.list .td4 {
+    font-size: 1vw;
+}
+
+.list .td4 input[type="text"] {
+    font-size: 2vw;
+}
+
+.list th {
+    width: 25vw;
+    text-align: left;
+}
+
+#international {
+    color: red;
+    font-size: 150%;
+    line-height: 60%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 100;
+    top: 1%;
+}
+
+#international span {
+    font-size: 75%;
+    line-height: 200%;
+}
+
+#checkcart .message h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin: 2.5rem 0;
+    font-family: 'Times New Roman', serif;
+}
+
+#checkcart .list {
+    border-top: 1px solid #d9d9d9;
+    margin-bottom: 8px;
+}
+
+#checkcart .item {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+#checkcart .price {
+    margin: 8px 0;
+}
+
+#checkcart .select,
+#checkcart .del {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#checkcart .select {
+    margin-right: 8px;
+}
+
+#checkcart .item dl {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#checkcart .item dl::after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+#checkcart .item dt {
+    float: left;
+    width: 120px;
+}
+
+#checkcart .item dt span {
+    display: block;
+    overflow: hidden;
+    height: 120px;
+    width: 120px;
+}
+
+#checkcart .item dd {
+    margin-left: 130px;
+}
+
+#checkcart .item dd .name {
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+#checkcart .order {
+    text-align: center;
+}
+
+#checkcart .order .tortal {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+/*===============================================
+Page - member (会員ページ)
+================================================= */
+
+#pwreissue dt,
+#member .list_form dt:nth-last-of-type(1) {
+    display: none;
+}
+
+#member .list_form dd:nth-last-of-type(1) {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+}
+
+#member .list_form dd:nth-last-of-type(1),
+#member .menber_menu {
+    display: flex;
+    display: -webkit-box;
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+}
+
+#member .list_form dd:nth-last-of-type(1) a {
+    width: 47.5%;
+}
+
+#member .menber_menu a {
+    width: 95%;
+    margin: auto;
+}
+
+#member .list_form dd:nth-last-of-type(1) a,
+#member .menber_menu a {
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 4.5rem;
+    -webkit-border-radius: 4.5rem;
+    -moz-border-radius: 4.5rem;
+    display: flex;
+    display: -webkit-box;
+    align-items: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+}
+
+#member input[type="submit"] {
+    margin-right: 0.75rem;
+    padding: 0.25rem 1rem;
+    font-size: 1.25rem;
+    border: 2px solid #000;
+}
+
+/*===============================================
+Page - login & login_page
+             (会員ログイン・レジ会員ログイン 共通)
+================================================= */
+
+section .contents_title {
+    padding-bottom: 1rem;
+}
+section .contents_subtitle {
+    padding: 1rem 0 0;
+}
+#login input,
+#login textarea,
+#login_page input,
+#login_page textarea {
+    width: 100%;
+}
+
+/*= list_form =*/
+
+.list_form dd,
+.list_form dt,
+.list_form li {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    font-size: 1.25rem;
+}
+
+.list_form dd:nth-last-of-type(1),
+.list_form dt:nth-last-of-type(1),
+.list_form li:nth-last-of-type(1) {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#member .greeting {
+    padding-bottom: 2.5rem;
+}
+
+#member dl,
+#signup dl {
+    margin: 4.5rem auto;
+}
+
+#regi_checkout dl {
+    margin: 2.5rem auto 0;
+}
+
+section dt {
+    font-weight: bold;
+    float: left;
+    margin: 0.5rem 1rem 0.5rem 0;
+    padding: 0 0.25rem;
+    font-size: 1rem;
+}
+
+section dd {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.list_form dd font {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    display: inline-block;
+    font-size: 1.25rem;
+}
+
+#member dd::after,
+#signup dd::after,
+#regi_checkout dd::after {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+#member dd::after,
+#signup dd::after {
+    border-bottom: #000 solid 1px;
+}
+
+#signup dd:nth-of-type(1)::after,
+#regi_checkout .info_regist dd:nth-of-type(1)::after {
+    content: "ID";
+}
+
+#signup dd:nth-of-type(2)::after,
+#regi_checkout .info_regist dd:nth-of-type(2)::after {
+    content: "Pass";
+}
+
+#signup dd:nth-of-type(3)::after,
+#regi_checkout .info_user dd:nth-of-type(1)::after {
+    content: "Name";
+}
+
+#signup dd:nth-of-type(4)::after,
+#regi_checkout .info_user dd:nth-of-type(2)::after {
+    content: "Email";
+}
+
+#regi_checkout .info_user dd:nth-of-type(3)::after {
+    content: "Email (Confirmation)";
+}
+
+#signup dd:nth-of-type(5)::after,
+#regi_checkout .info_user dd:nth-of-type(4)::after {
+    content: "TEL";
+}
+
+#signup dd:nth-of-type(6)::after,
+#regi_checkout .info_user dd:nth-of-type(5)::after {
+    content: "ZIP";
+}
+
+#signup dd:nth-of-type(7)::after,
+#regi_checkout .info_user dd:nth-of-type(6)::after {
+    content: "Address";
+}
+
+#regi_checkout .info_user dd:nth-of-type(8)::after {
+    content: "Note";
+}
+
+#regi_checkout .info_how dd:nth-of-type(1)::after {
+    content: "Payment Method";
+}
+
+.message {
+    margin: 1rem 0;
+}
+/* =================================================
+Common - formparts style
+================================================= */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    border: none;
+    white-space: nowrap;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    font-size: 1.25rem;
+}
+
+textarea {
+    white-space: normal;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 95%;
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+}
+
+.button_style {
+    width: 95%;
+    display: block;
+}
+.formbutton {
+    text-align: center;
+    margin: 2.5rem 0 0;
+}
+
+.formbutton input[type="submit"],
+.button_style.next {
+    color: #000;
+    font-size: 2rem;
+    border: #000 solid 2px;
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.formbutton input[type="submit"]:hover {
+    border: #fff solid 2px;
+}
+
+.system_message {
+    color: #fff;
+    background-color: red;
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.required {
+    color: #ff0000;
+}
+
+select {
+    color: #333333;
+    border: 1px solid #000000;
+    background-color: #f6f6f6;
+    background-image: url("https://cart-imgs.fc2.com/template_sp/card_simple/image/select_arrow.png");
+    background-repeat: no-repeat;
+    background-size: 8px 6px;
+    -webkit-background-size: 8px 6px;
+    -moz-background-size: 8px 6px;
+    background-position: 95% 50%;
+    text-indent: .01px;
+    /*Firefox用*/
+    text-overflow: "";
+    /*Firefox用*/
+    max-width: 100%;
+    padding: 8px 2em 8px 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+/*===============================================
+Page - laws (特定商取引法)
+================================================= */
+
+#laws,
+#laws .contents_body,
+#inquiry .form_inquiry {
+    margin: 4.5rem auto;
+    padding: 1rem;
+}
+
+#laws dd {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+/*===============================================
+Page - inquiry (お問い合わせ)
+================================================= */
+
+#inquiry textarea {
+    height: 25vh;
+}
+#inquiry .required {
+    text-align: right;
+}
+
+#inquiry dt {
+    font-size: 0.9rem;
+    padding: 0 0.25rem;
+    display: inline-block;
+}
+
+/*============================================================
+Plugin
+============================================================*/
+#plugin2 .mousedragscrollable,
+#plugin3 .mousedragscrollable {
+    position: relative;
+    padding: 0;
+    margin: 0 0 1.25rem;
+    white-space: nowrap;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+#plugin2:before,
+#plugin3:before {
+    position: absolute;
+    top: 12.5rem;
+    right: 1rem;
+    z-index: 10;
+    font-family: Arial;
+    font-size: 1.75rem;
+    transform: rotate(90deg);
+    transform-origin: top right;
+    border-bottom: solid 2px #000;
+}
+#plugin2:before {
+    content: 'Members Only';
+}
+#plugin3:before {
+    content: 'Advertisement';
+}
+
+#plugin2:after,
+#plugin3:after {
+    content: '→';
+    position: absolute;
+    top: 15.5rem;
+    right: 0;
+    z-index: 10;
+    font-size: 4rem;
+}
+
+.mousedragscrollable .plugin_contents {
+    position: relative;
+    overflow: hidden;
+    width: 30rem;
+    max-width: 75vw;
+    height: 17.5rem;
+    margin-right: 1rem;
+    overflow: hidden;
+}
+
+.mousedragscrollable .plg_body  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.mousedragscrollable .plg_body img {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.mousedragscrollable iframe {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+    border: none;
+}
+
+/*============================================================
+Section - footer
+============================================================*/
+
+footer {
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.pagetop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 20vw;
+    max-width: 200px;
+    margin: 0.5rem 0;
+    z-index: 999;
+}
+
+#pagetop img {
+    width: 100%;
+    animation: 10s linear infinite rotation;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.comment_footer {
+    margin-right: 250px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.comment_footer a {
+    font-family: "YuGothic", "Yu Gothic", "Arial", sans-serif;
+    font-weight: 500;
+    font-stretch: condensed;
+    font-variant: common-ligatures tabular-nums;
+    transform: scale(1, 1);
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+    padding: 0.1rem 0 0.1rem 0.25rem;
+    margin: 0 0.25rem;
+    border-radius: 0.25rem;
+}
+
+#copyright {
+    float: left;
+}
+
+#copyright a {
+    margin: 0 0.2rem 0 0.5rem;
+}
+
+/*============================================================
+@media screen and (max-width: 950px)
+============================================================*/
+@media screen and (max-width: 950px) {
+    #itemlist .items .limited_icon,
+    #itemlist .items p {
+        font-size: 2.5vw;
+    }
+    #itemlist .items .name {
+        font-size: 3vw;
+    }
+    #itemlist .items .item_noimage .name {
+        font-size: 3.5vw;
+    }
+    .greeting {
+        margin: 7.5vw 1.25rem;
+        font-size: 5vw;
+    }
+    .greeting b,
+    .greeting i {
+        font-size: 150%;
+    }
+    #main_category {
+        padding: 0.5rem 1rem;
+        font-size: 1.25rem;
+    }
+    #sub_category {
+        font-size: 1rem;
+    }
+    #main_category span,
+    #sub_category span {
+        font-size: 125%;
+    }
+    #main_category a {
+        margin: 0.25rem;
+    }
+    #main_category span {
+        margin: 0.25rem 0 0.25rem 0.25rem;
+    }
+    #main_category a {
+        padding: 0.5rem 0.75rem;
+    }
+    #sub_category a {
+        padding: 0.5rem 0.75rem;
+        margin: 1rem 0.25rem;
+    }
+    #shopinfo.info_top .content_section {
+        height: 20rem;
+    }
+    #shopinfo.info_top .contents_title {
+        top: 10rem;
+        left: -6.5rem;
+        font-size: 1.75rem;
+    }
+    #shopinfo.info_top .news_title {
+        font-size: 1.25rem;
+    }
+    #shopinfo.info_top ul {
+        margin-left: 4.25rem;
+    }
+    #shopinfo.info_detail .shopinfo_comment {
+        font-size: 1rem;
+        margin: 2.5vw auto;
+    }
+    #hotitem h2 {
+        font-size: 5.5vw;
+        padding: 2.5vw 0 4.5vw;
+    }
+    #hotitem h2 i {
+        padding: 0.5vw 4.5vw;
+        border-radius: 5vw;
+    }
+    #recommend,
+    #buyers_bought {
+        font-size: 1.25rem;
+    }
+    #recommend .name,
+    #buyers_bought .name {
+        padding: 0.5rem 0;
+    }
+    #itemdetail #images {
+        padding: 0.5rem 0 1rem;
+    }
+    #itemdetail #images span {
+        margin-right: 1rem;
+    }
+    #itemdetail #KonCheck {
+        margin-top: 2.5vw;
+    }
+    #itemdetail #KonCheck:before {
+        margin: -2.5vw 5% 0;
+        font-size: 4.5vw;
+        padding: 0.5vw 4.5vw;
+        border-radius: 5vw;
+    }
+    #itemdetail #KonCheck .item {
+        margin: 7.5vw 0 4.5vw;
+    }
+    #itemdetail #KonCheck .no_photo {
+        font-size: 3vw;
+        line-height: 150%;
+    }
+    #itemdetail #KonCheck marquee {
+        font-size: 2.5vw;
+    }
+    footer {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    .comment_footer {
+        margin-right: 0;
+    }
+    .pager {
+        margin: 2.5vw 0;
+    }
+    .pager .pager_total {
+        padding: 2.5vw 0 0;
+    }
+    .pager a,
+    .pager span {
+        font-size: 1rem;
+        margin: 0 1vw;
+    }
+}
+
+/*============================================================
+@media screen and (max-width: 1200px)
+============================================================*/
+@media screen and (max-width: 1200px) {
+    .greeting b,
+    .greeting i {
+        display: block;
+    }
+}
