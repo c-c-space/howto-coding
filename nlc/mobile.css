@@ -73,7 +73,6 @@ dd {
 .contents::after,
 .contents_inner::after,
 .content_section::after,
-.infourl::before,
 header::after,
 section::after,
 footer::after {
@@ -122,7 +121,8 @@ body {
 
 .login_menu,
 .greeting b,
-#header input[type="submit"].logout,
+#panel_inside .line_nav,
+#panel_inside input[type="submit"],
 #itemlist .item_list .items p,
 #itemlist .item_list .items h4,
 #itemdetail .limited_icon,
@@ -146,14 +146,14 @@ section .contents_title,
 .greeting i,
 #itemdetail i {
     font-family: 'Times New Roman', serif;
-    font-size: 125%;
+    font-size: 150%;
     font-weight: 500;
     font-style: italic;
 }
 
 .greeting b {
     display: block;
-    font-size: 125%;
+    font-size: 150%;
     font-weight: 500;
 }
 
@@ -198,7 +198,6 @@ body {
 .login_menu a,
 #header input[type="submit"].logout,
 #itemlist .items .limited_icon,
-#itemdetail .itemdetail_info a,
 #itemdetail .item_comment a,
 #itemdetail .limited_icon,
 #recommend li a:hover,
@@ -220,7 +219,6 @@ body {
 #itemlist .items .item_inner a:hover .item_noimage,
 .pager a:hover,
 .button_style.next:hover,
-#itemdetail .itemdetail_info a:hover,
 #itemdetail .item_comment a:hover,
 .infourl a:hover,
 .formbutton .next:hover,
@@ -286,10 +284,6 @@ Common - Base layout
     padding: 4.5rem 0 1rem;
 }
 
-#main {
-    margin-bottom: 2.5rem;
-}
-
 section {
     width: 95%;
     max-width: 750px;
@@ -310,8 +304,8 @@ section {
 }
 
 .greeting {
-    font-size: 3.5rem;
-    margin: 2.5rem 1.25rem;
+    margin: 7.5vw 1.25rem;
+    font-size: 5vw;
     font-weight: 400;
     font-stretch: condensed;
     font-variant: common-ligatures tabular-nums;
@@ -408,15 +402,141 @@ Section - header
     height: 2.5rem;
 }
 
+#header .cart_menu a {
+    display: inline-block;
+    padding: 0.45rem 0.5rem;
+    border-radius: 0.5rem;
+}
+
 #header .cart_menu img {
     width: 100%;
     height: 100%;
 }
 
-#header .cart_menu a {
-    display: inline-block;
-    padding: 0.45rem 0.5rem;
-    border-radius: 0.5rem;
+
+/*= header_icon =*/
+
+.category_icon {
+    background-image: url("https://cart-imgs.fc2.com/template_sp/card_simple/image/head_category_ic.png");
+}
+
+.panel_menu_open .category_icon {
+    background-image: url("https://cart-imgs.fc2.com/template_sp/card_simple/image/head_category_close_ic.png");
+}
+
+.category_icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 2.5rem auto;
+    -webkit-background-size: 2.5rem auto;
+    -moz-background-size: 2.5rem auto;
+    vertical-align: middle;
+}
+
+/* =================================================
+Section - panel_menu (メニュー)
+================================================= */
+
+.panel_menu_open #wrap {
+    display: none;
+}
+
+#panel_menu,
+#panel_menu.panel_menu_open {
+    transition: transform 2.5s;
+    -webkit-transition: transform 2.5s;
+    -moz-transition: transform 2.5s;
+}
+
+#panel_menu {
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+#panel_menu a {
+    display: block;
+    padding: 1rem;
+}
+
+#panel_menu.panel_menu_open {
+    visibility: visible;
+    height: 100vh;
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    overflow: auto;
+}
+
+#panel_inside {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    padding: 4.5rem 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+#panel_inside form {
+    position: relative;
+}
+
+#panel_inside .search {
+    margin-top: 2rem;
+}
+
+.menu input[type="text"] {
+    color: #000;
+    background-color: rgba(255, 255, 255, 5.5);
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    width: 70%;
+    font-size: 2rem;
+}
+
+.menu input[type="submit"].search_icon {
+    color: #000;
+    border: #000 solid 2px;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    font-size: 125%;
+}
+
+.menu input[type="submit"].logout {
+    margin: 0.5rem 0;
+    border: #fff solid 2px;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+#header input[type="submit"].logout {
+    font-size: 1.25rem;
+    border: #000 solid 1px;
+}
+
+.menu input[type="submit"].search_icon:hover,
+#header .search_menu input[type="submit"].search_icon:hover,
+#pwreissue input[type="submit"]:hover {
+    color: #fff;
+    background: red;
+    border: red solid 2px;
+}
+
+.menu .section_list {
+    margin: 2rem 0 0;
+    font-size: 1.5rem;
 }
 
 /*============================================================
@@ -433,37 +553,44 @@ Section - category_tabs
 }
 #main_category {
     padding: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 #main_category a,
 #main_category span {
-    margin: 0.5rem;
     border-radius: 2.5rem;
 }
 #main_category a {
     color: #000;
     background-color: #fff;
     border: 1px solid #FFC778;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0.25rem;
 }
 #main_category span{
-    margin: 0.5rem 0 0.5rem 0.5rem;
+    margin: 0.25rem 0 0.25rem 0.25rem;
 }
-
+#main_category span,
+#sub_category span {
+    font-size: 125%;
+}
 #sub_category {
+    font-size: 1rem;
     padding: 0 1rem;
 }
 #sub_category a {
     color: #fff;
     background-color: #FFC778;
     border: 1px solid #FFC778;
-    margin: 1.25rem 0.25rem;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 0.75rem;
+    margin: 1rem 0.25rem;
     border-radius: 2.5rem;
 }
 
 /*===============================================
 Section - shopinfo top（お知らせトップページ）
 ================================================= */
+
 
 #shopinfo.info_top {
     clear: both;
@@ -473,10 +600,10 @@ Section - shopinfo top（お知らせトップページ）
 
 #shopinfo.info_top .contents_title {
     position: absolute;
-    top: 9.5rem;
-    left: -7.5rem;
+    top: 10rem;
+    left: -6.5rem;
+    font-size: 1.75rem;
     float: left;
-    font-size: 2rem;
     pointer-events: none;
     user-select: none;
     transform: rotate(270deg);
@@ -491,7 +618,7 @@ Section - shopinfo top（お知らせトップページ）
 }
 
 #shopinfo.info_top ul {
-    margin-left: 5rem;
+    margin-left: 4.25rem;
     margin-right: 1rem;
     padding-bottom: 1rem;
     height: 100%;
@@ -531,7 +658,7 @@ Section - shopinfo top（お知らせトップページ）
 
 #shopinfo.info_top .news_title {
     color: #fff;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     position: absolute;
     pointer-events: none;
     top: 50%;
@@ -542,8 +669,7 @@ Section - shopinfo top（お知らせトップページ）
 
 #shopinfo.info_detail .content_section {
     width: 100%;
-    max-width: 750px;
-    padding: 0 2.5rem;
+    padding: 0 1rem;
     margin: 2.5rem auto;
     background-color: rgba(255, 255, 255, 0.55);
 }
@@ -570,9 +696,9 @@ Section - shopinfo top（お知らせトップページ）
 }
 
 #shopinfo.info_detail .shopinfo_comment {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    margin: 2.5vw auto;
     line-height: 200%;
-    padding: 2.5rem 0;
 }
 
 #shopinfo.info_detail .shopinfo_comment a {
@@ -614,68 +740,52 @@ Page - itemlist
 }
 
 #itemlist .items .name {
-    padding-bottom: 2.5vw;
+    padding-bottom: 1.5rem;
     margin: 0;
-    font-size: 2.5vw;
+    font-size: 1.5rem;
 }
 
 #itemlist .items p {
-    font-size: 1.5vw;
+    font-size: 1rem;
 }
 
 #itemlist .items .limited_icon {
-    font-size: 2vw;
+    font-size: 1rem;
     display: inline-block;
 }
 
-#itemlist .items .item_inner {
-    position: relative;
-    width: 45.5vw;
-    margin: 0 0 4.5vw;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-#itemlist .items .item_inner:first-child {
-    width: 95vw;
-}
+#itemlist .items .item_inner,
+#itemlist .items .item_inner:first-child,
 #itemlist .items .item_inner:nth-child(n+6) {
-    width: 30vw;
+    width: 92.5vw;
+    margin: 0 auto 2rem;
 }
 
-#itemlist .items .item_image {
-    width: 50%;
-    display: block;
-    position: relative;
-    float: left;
-    border-radius: 1rem;
-    margin-right: 2.5vw;
-    max-height: 20vw;
+#itemlist .items .item_image,
+#itemlist .items .item_inner:first-child .item_image,
+#itemlist .items .item_inner:nth-child(n+6) .item_image {
+    width: 100%;
+    max-height: 92.5vw;
 }
-#itemlist .items .item_image img {
+#itemlist .items .item_image img,
+#itemlist .items .item_inner:first-child .item_image img,
+#itemlist .items .item_inner:nth-child(n+6) .item_image img {
     border-radius: 1rem;
     max-width: 100%;
-    max-height: 20vw;
-}
-#itemlist .items .item_inner:first-child .item_image,
-#itemlist .items .item_inner:first-child .item_image img {
-    max-height: 45vw;
-}
-#itemlist .items .item_inner:nth-child(n+6) .item_image,
-#itemlist .items .item_inner:nth-child(n+6) .item_image img {
-    width: 100%;
-    max-height: 30vw;
+    max-height: 92.5vw;
 }
 
 #itemlist .items .item_noimage {
     margin: 0;
     display: block;
     position: relative;
-    height: 20vw;
+    height: 55vw;
     border-radius: 2em;
     border: #000 solid 1px;
 }
+#itemlist .items .item_inner:first-child .item_noimage,
 #itemlist .items .item_inner:nth-child(n+6) .item_noimage {
-    height: 30vw;
+    height: 55vw;
 }
 
 #itemlist .items .item_inner a:hover img,
@@ -706,15 +816,14 @@ Common - pager style
 ================================================= */
 .pager {
     text-align: center;
-    margin: 2.5rem 0;
+    margin: 2.5vw 0;
     line-height: 300%;
 }
-
 .pager a,
 .pager span {
     width: auto;
-    font-size: 1.5rem;
-    margin: 0 1.5vw;
+    font-size: 1rem;
+    margin: 0 1vw;
     padding: 0.75em 1.25em;
     border: 1px solid #eee;
     border-radius: 5em;
@@ -731,7 +840,7 @@ Common - pager style
 }
 
 .pager .pager_total {
-    padding: 2rem 0 0;
+    padding: 2.5vw 0 0;
 }
 
 /* =================================================
@@ -741,7 +850,7 @@ Common - pager style
 #recommend {
     font-family: Arial;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0 1rem;
     margin: 4.5vw auto;
     max-width: 1250px;
@@ -752,7 +861,7 @@ Common - pager style
 #buyers_bought {
     font-family: Arial;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0.5rem;
     margin: 1.5rem auto;
     max-width: 1250px;
@@ -761,6 +870,7 @@ Common - pager style
 }
 
 #recommend h2 {
+    font-size: 110%;
     font-weight: 500;
     text-decoration: underline;
     margin-bottom: 1rem;
@@ -785,7 +895,7 @@ Common - pager style
 }
 #recommend .name,
 #buyers_bought .name {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     font-weight: 500;
 }
 #recommend li a,
@@ -811,18 +921,17 @@ Section - hotitem (売れ筋商品)
 }
 
 #hotitem h2 {
-    font-size: 3rem;
+    font-size: 5.5vw;
     font-weight: 500;
-    padding: 1rem 0 2rem;
+    padding: 2.5vw 0 4.5vw;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
-
 #hotitem h2 i {
     border: solid 2px #000;
     color: #000;
-    padding: 0.25rem 3rem;
-    border-radius: 5rem;
+    padding: 0.5vw 4.5vw;
+    border-radius: 5vw;
 }
 
 #hotitem .random {
@@ -878,17 +987,17 @@ Page - itemdetail
 #itemdetail .item_name {
     font-weight: 500;
     font-size: 2rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     word-break: break-all;
 }
 
 #itemdetail .itemdetail_image {
     float: left;
     display: block;
-    width: 55%;
-    margin-right: 4.5vw;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
     margin-bottom: 1rem;
-    max-width: 750px;
 }
 
 #itemdetail .itemdetail_image .thumb {
@@ -907,6 +1016,7 @@ Page - itemdetail
 
 #itemdetail .itemdetail_info a {
     font-size: 110%;
+    line-height: 250%;
     padding: 0.45rem 0.5rem;
     border-radius: 0.5rem;
 }
@@ -932,12 +1042,11 @@ Page - itemdetail
 
 #itemdetail .comment1 {
     font-size: 1.25rem;
-    padding: 1rem 0;
 }
 
 #itemdetail .item_price {
     font-size: 1.5rem;
-    margin: 2.5rem 0;
+    margin: 4.5rem 0 1rem;
     clear: both;
 }
 
@@ -961,7 +1070,7 @@ Page - itemdetail
 input[type="submit"].buynow {
     display: block;
     width: 100%;
-    margin: 1rem 0;
+    margin: 2.5rem 0;
     border: #fff solid 2px;
     font-size: 2.5rem;
     padding: 1rem 0;
@@ -990,8 +1099,8 @@ input[type="submit"].buynow {
 }
 
 #itemdetail .comment2 {
-    font-size: 1.11rem;
-    padding: 2.5vw 0 4.5vw;
+    font-size: 1rem;
+    padding: 0 0 4.5vw;
     position: relative;
 }
 
@@ -1014,7 +1123,7 @@ input[type="submit"].buynow {
 
 #itemdetail #images {
     width: 100%;
-    padding: 1rem 0 2rem;
+    padding: 0.5rem 0 1rem;
     margin: auto;
     position: relative;
     clear: both;
@@ -1026,7 +1135,7 @@ input[type="submit"].buynow {
 #itemdetail #images span {
     flex: none;
     padding: 0;
-    margin-right: 2rem;
+    margin-right: 1rem;
     height: 55vw;
     max-height: 450px;
     scroll-snap-align: start;
@@ -1040,13 +1149,13 @@ input[type="submit"].buynow {
     content: "let's shopping and something";
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 4.5vw;
     position: absolute;
-    margin: -4.5rem 5% 0;
+    margin: -2.5vw 5% 0;
     border: solid 2px #000;
     color: #000;
-    padding: 0.25rem 3rem;
-    border-radius: 5rem;
+    padding: 0.5vw 4.5vw;
+    border-radius: 5vw;
 }
 
 #itemdetail #KonCheck {
@@ -1054,7 +1163,7 @@ input[type="submit"].buynow {
     display: flex;
     -webkit-justify-content: space-around;
     justify-content: space-around;
-    margin-top: 4.5rem;
+    margin-top: 2.5vw;
 }
 
 #itemdetail #KonCheck .item {
@@ -1066,7 +1175,7 @@ input[type="submit"].buynow {
     height: 30vw;
     max-width: 30rem;
     max-height: 30rem;
-    margin: 2.5rem 0 1rem;
+    margin: 7.5vw 0 0;
     border: solid 1px #000;
     border-radius: 1rem;
     background-color: #fff;
@@ -1104,13 +1213,13 @@ input[type="submit"].buynow {
     padding: 0.5vw 0;
     margin: 0;
     width: 100%;
-    font-size: 2rem;
+    font-size: 2.5vw;
     line-height: 150%;
 }
 
 #itemdetail #KonCheck .no_photo {
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 3vw;
     line-height: 150%;
     padding: 0;
     margin: 0;
@@ -1700,7 +1809,7 @@ Plugin
 #plugin2:before,
 #plugin3:before {
     position: absolute;
-    top: 12.5rem;
+    top: 14rem;
     right: 1rem;
     z-index: 10;
     font-family: Arial;
@@ -1765,8 +1874,8 @@ Section - footer
 ============================================================*/
 
 footer {
-    padding: 0 1rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    padding: 4.5vw 1rem 0;
     position: relative;
 }
 
@@ -1795,8 +1904,7 @@ footer {
 }
 
 .comment_footer {
-    margin-right: 250px;
-    margin-top: 2.5rem;
+    margin-right: 0;
     margin-bottom: 2.5rem;
 }
 
@@ -1819,131 +1927,6 @@ footer {
 
 #copyright a {
     margin: 0 0.2rem 0 0.5rem;
-}
-
-/*============================================================
-@media screen and (max-width: 950px)
-============================================================*/
-@media screen and (max-width: 950px) {
-    #itemlist .items .limited_icon,
-    #itemlist .items p {
-        font-size: 2.5vw;
-    }
-    #itemlist .items .name {
-        font-size: 3vw;
-    }
-    #itemlist .items .item_noimage .name {
-        font-size: 3.5vw;
-    }
-    .greeting {
-        margin: 7.5vw 1.25rem;
-        font-size: 5vw;
-    }
-    .greeting b,
-    .greeting i {
-        font-size: 150%;
-    }
-    #main_category {
-        padding: 0.5rem 1rem;
-        font-size: 1.25rem;
-    }
-    #sub_category {
-        font-size: 1rem;
-    }
-    #main_category span,
-    #sub_category span {
-        font-size: 125%;
-    }
-    #main_category a {
-        margin: 0.25rem;
-    }
-    #main_category span {
-        margin: 0.25rem 0 0.25rem 0.25rem;
-    }
-    #main_category a {
-        padding: 0.5rem 0.75rem;
-    }
-    #sub_category a {
-        padding: 0.5rem 0.75rem;
-        margin: 1rem 0.25rem;
-    }
-    #shopinfo.info_top .content_section {
-        height: 20rem;
-    }
-    #shopinfo.info_top .contents_title {
-        top: 10rem;
-        left: -6.5rem;
-        font-size: 1.75rem;
-    }
-    #shopinfo.info_top .news_title {
-        font-size: 1.25rem;
-    }
-    #shopinfo.info_top ul {
-        margin-left: 4.25rem;
-    }
-    #shopinfo.info_detail .shopinfo_comment {
-        font-size: 1rem;
-        margin: 2.5vw auto;
-    }
-    #hotitem h2 {
-        font-size: 5.5vw;
-        padding: 2.5vw 0 4.5vw;
-    }
-    #hotitem h2 i {
-        padding: 0.5vw 4.5vw;
-        border-radius: 5vw;
-    }
-    #recommend,
-    #buyers_bought {
-        font-size: 1.25rem;
-    }
-    #recommend .name,
-    #buyers_bought .name {
-        padding: 0.5rem 0;
-    }
-    #itemdetail #images {
-        padding: 0.5rem 0 1rem;
-    }
-    #itemdetail #images span {
-        margin-right: 1rem;
-    }
-    #itemdetail #KonCheck {
-        margin-top: 2.5vw;
-    }
-    #itemdetail #KonCheck:before {
-        margin: -2.5vw 5% 0;
-        font-size: 4.5vw;
-        padding: 0.5vw 4.5vw;
-        border-radius: 5vw;
-    }
-    #itemdetail #KonCheck .item {
-        margin: 7.5vw 0 0;
-    }
-    #itemdetail #KonCheck .no_photo {
-        font-size: 3vw;
-        line-height: 150%;
-    }
-    #itemdetail #KonCheck marquee {
-        font-size: 2.5vw;
-    }
-    footer {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-    .comment_footer {
-        margin-right: 0;
-    }
-    .pager {
-        margin: 2.5vw 0;
-    }
-    .pager .pager_total {
-        padding: 2.5vw 0 0;
-    }
-    .pager a,
-    .pager span {
-        font-size: 1rem;
-        margin: 0 1vw;
-    }
 }
 
 /*============================================================

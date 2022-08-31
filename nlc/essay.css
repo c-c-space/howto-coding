@@ -5,14 +5,12 @@
 #Essay .item_name {
     text-align: center;
     line-height: 250%;
-    padding: 0 1rem;
     background-color: #fffbe6;
 }
 
 #Essay .comment1 {
     padding: 2.5rem 4.5vw 0;
-    font-size: 1.1rem;
-    line-height: 200%;
+    font-size: 1rem;
 }
 
 #Essay .comment1 .by {
@@ -20,15 +18,14 @@
 }
 
 #Essay .comment1 .by u {
+    color:#fff;
     background: #43B149;
     text-decoration: none;
     padding: 2.5px;
 }
 
 #Essay .comment2 p {
-    padding: 0.5rem 2.5vw;
-    line-height: 200%;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 #Essay .comment2 .date {
@@ -45,8 +42,26 @@
 #Essay .comment2 .date u {
     color: #fff;
     background: #43B149;
+    display: inline-block;
     text-decoration: none;
     padding: 1px 2.5px;
+}
+
+#Essay .comment2 a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    width: 75%;
+    max-width: 25rem;
+    color: #fff;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: #fff;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    background: #43B149;
+    border: solid 1px;
+    border-radius: 50rem;
 }
 
 #plugin2 #symbol {
@@ -74,20 +89,6 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-direction: alternate;
-}
-
-#Essay .submit a {
-    display: block;
-    width: 75%;
-    max-width: 25rem;
-    color: #fff;
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: #fff;
-    position: relative;
-    text-align: center;
-    margin: auto;
-    background: #43B149;
-    border-radius: 50rem;
 }
 
 @keyframes wakaba {
