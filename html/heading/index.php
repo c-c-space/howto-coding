@@ -143,13 +143,17 @@
     <a href="#one">見出し要素</a>
   </nav>
 
-  <header id="hello" class="data_show"></header>
+  <header id="hello" class="data_show">
+    <?php include('hello.html'); ?>
+  </header>
 
   <article id="one">
     <p style="text-align: right; padding: 0.5rem;">
       <font><a href="#">×</a></font>
     </p>
-    <section id="howto" class="readme"></section>
+    <section id="howto" class="readme">
+      <?php include('howto.html'); ?>
+    </section>
     <footer>
       <aside id="contents"></aside>
     </footer>
@@ -157,11 +161,6 @@
   </article>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    $("#hello").load("hello.html");
-    $("#howto").load("howto.html");
-  })
-  </script>
+  <script src="../../hello/data_show.js" defer></script>
 </body>
 </html>
