@@ -47,7 +47,7 @@
     {
       "date" : "Web API",
       "name" : "インターネットの交信状態",
-      "url" : "/coding/js/online/",
+      "url" : "/coding/js/window/online/",
       "language" : "api",
       "status" : "guide"
     }
