@@ -74,9 +74,15 @@
       <a href="#index_js">index.js</a>
     </h2>
     <hr/>
-    <section id="index_json" class="data_show is-hide"></section>
-    <section id="index_js" class="data_show is-hide"></section>
-    <section id="index_html" class="data_show active"></section>
+    <section id="index_json" class="data_show is-hide">
+      <?php require('index_json.html'); ?>
+    </section>
+    <section id="index_js" class="data_show is-hide">
+      <?php require('index_js.html'); ?>
+    </section>
+    <section id="index_html" class="data_show active">
+      <?php require('index_html.html'); ?>
+    </section>
   </article>
   <aside id="right">
     <div id="contents"></div>
@@ -89,13 +95,7 @@
   <h1 id="title">The List of Contents | How to Coding</h1>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    $("#index_json").load("index_json.html");
-    $("#index_js").load("index_js.html");
-    $("#index_html").load("index_html.html");
-  })
-  </script>
+  <script src="../hello/data_show.js"></script>
 
   <script src="script.js"></script>
 </body>
