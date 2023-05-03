@@ -139,18 +139,18 @@ function openCheck(ダイアログ要素) {
       <small>ウィジェットの開閉によって文を実行する</small>
     </p>
     <pre>
-      const detailsAll = document.querySelectorAll('details');
-      for (details theme of detailsAll) {
-        details.addEventListener("toggle", (event) => {
-          if (details.open) {
-            /* 要素が開いた方に切り替わった */
+const detailsAll = document.querySelectorAll('details');
+for (details theme of detailsAll) {
+  details.addEventListener("toggle", (event) => {
+    if (details.open) {
+      /* 要素が開いた方に切り替わった */
 
-          } else {
-            /* 要素が閉じた方に切り替わった */
+    } else {
+      /* 要素が閉じた方に切り替わった */
 
-          }
-        });
-      };
+    }
+  });
+};
     </pre>
   </details>
 
