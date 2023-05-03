@@ -1,0 +1,120 @@
+/* Light theme */
+.light {
+  background: linear-gradient(180deg, #B3CBF6, #FFC778, #EEE) fixed;
+  background-size: 400% 400%;
+  animation: sky 10s ease infinite;
+}
+
+.light a {
+  color: #000;
+}
+
+.light details,
+.light button,
+.light dialog,
+.light .select select,
+.light .radio label {
+  background: #fff;
+  color: #000;
+}
+
+.light .folder summary::before,
+.light .folder summary::after,
+.light .radio input[type="radio"]:checked+label,
+.light dialog::backdrop {
+  background: #feeea0;
+}
+
+
+/* Dark theme */
+.dark {
+  background: radial-gradient(circle at bottom, #222, #111, #000) fixed;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.dark details,
+.dark button,
+.dark dialog,
+.dark .select select,
+.dark .radio label {
+  background: #000;
+  color: #fff;
+}
+
+.dark .folder summary::before,
+.dark .folder summary::after,
+.dark .radio input[type="radio"]:checked+label,
+.dark dialog::backdrop {
+  background: #66ccff;
+}
+
+
+/* OS Default */
+@media (prefers-color-scheme: light) {
+  body {
+    background: linear-gradient(180deg, #B3CBF6, #FFC778, #EEE) fixed;
+    background-size: 400% 400%;
+    animation: sky 10s ease infinite;
+  }
+
+  a {
+    color: #000;
+  }
+
+  details,
+  button,
+  dialog,
+  .select select,
+  .radio label {
+    background: #fff;
+    color: #000;
+  }
+
+  .folder summary::before,
+  .folder summary::after,
+  .radio input[type="radio"]:checked+label,
+  dialog::backdrop {
+    background: #feeea0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: radial-gradient(circle at bottom, #222, #111, #000) fixed;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  details,
+  button,
+  dialog,
+  .select select,
+  .radio label {
+    background: #000;
+    color: #fff;
+  }
+
+  .folder summary::before,
+  .folder summary::after,
+  .radio input[type="radio"]:checked+label,
+  dialog::backdrop {
+    background: #66ccff;
+  }
+}
+
+@keyframes sky {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 0 100%;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

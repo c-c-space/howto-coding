@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../readme/index.js" async></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="folder.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="../readme/index.css">
+  <style type="text/css">
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/ver/font/NewYork.otf");
+  }
+
+  h1 {
+    font-family: "NewYork";
+    margin: 0.5rem 0.25rem 0;
+  }
+  </style>
+</head>
+<body>
+  <button id="openModal">Dialog API</button>
+  <hr>
+  <dialog id="modal">
+    <button id="closeButton">Close</button>
+    <hr/>
+    <p>ダイアログ要素は、ダイアログボックスや、消すことができるアラート等の対話的コンポーネントを表します。</p>
+    <p><small>open属性が設定されたダイアログ要素は、使用できる状態で表示されます。</small></p>
+    <hr/>
+    <p>ダイアログ要素の操作には、JavaScriptを使用します。</p>
+    <br/>
+    <p>
+      showModal()<br/>
+      <small>ダイアログ要素をモーダルとして表示する</small>
+    </p>
+    <pre>
+const dialogModal = document.querySelector('#modal');
+const openModal = document.querySelector('#openModal');
+
+openModal.addEventListener('click', function onModal() {
+  if (typeof dialogModal.showModal === "function") {
+    dialogModal.showModal();
+  } else {
+    alert("The dialog API is not supported by this browser");
+  }
+});
+    </pre>
+    <hr/>
+    <p>
+      show()<br/>
+      <small>ダイアログ要素をモードレスに表示する</small>
+    </p>
+    <pre>
+要素.addEventListener('click', () => {
+  ダイアログ要素.show();
+});
+    </pre>
+    <hr/>
+    <p>
+      close()<br/>
+      <small>ダイアログ要素を閉じる</small>
+    </p>
+    <pre>
+const closeButton = document.querySelector('#closeButton');
+closeButton.addEventListener('click', () => {
+  dialogModal.close();
+});
+    </pre>
+    <hr/>
+    <p>
+      openCheck()<br/>
+      <small>ダイアログの開閉によって文を実行する</small>
+    </p>
+    <pre>
+function openCheck(ダイアログ要素) {
+  if (ダイアログ要素.open) {
+    /* 要素が開いた方に切り替わった */
+
+  } else {
+    /* 要素が閉じた方に切り替わった */
+
+  }
+};
+    </pre>
+    <hr/>
+    <p>
+      ::backdrop<br/>
+      <small>ダイアログ要素が showModal() で開いている時の背景色を指定</small>
+    </p>
+    <pre>
+#modal::backdrop {
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(0.25rem);
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 75%;
+  max-width: 375px;
+  max-height: 75%;
+  overflow: auto;
+}
+    </pre>
+  </dialog>
+
+  <details class="folder" open>
+    <summary>
+      <b>対話的要素</b>
+      <h1>Interactive Contents</h1>
+    </summary>
+    <p>ユーザとのやり取りのために固有にデザインされた要素</p>
+    <p><small>detail・summary・dialog 以外に、アンカー要素 (a)・埋め込み要素 (embed・iframe)・フォーム関連要素 (button・label・select・textarea) も、このカテゴリーに属します。</small></p>
+    <hr/>
+    <p><code id="lastModified"></code></p>
+  </details>
+
+  <details class="folder">
+    <summary><b>Details & Summary</b></summary>
+    <p>details 要素は、ウィジェットが「開いた」状態になった時のみ情報が表示される折りたたみウィジェットを作成します。</p>
+    <p><small>open属性が設定された details 要素は、開いた状態で表示されます。</small></p>
+    <hr/>
+    <p>子要素の summary 要素は、親の details 要素の開閉を切り替えるラベルになります。</p>
+    <p><small>折りたたみウィジェットはふつう、回転して開閉状態を示す小さな三角形が表示されます。</small></p>
+    <hr/>
+    <br/>
+    <p>
+      CSS<br/>
+      <small>独自のマーカーをスタイリングする</small>
+    </p>
+    <pre id="folder"></pre>
+    <hr/>
+    <p>
+      JavaScript<br/>
+      <small>ウィジェットの開閉によって文を実行する</small>
+    </p>
+    <pre>
+      const detailsAll = document.querySelectorAll('details');
+      for (details theme of detailsAll) {
+        details.addEventListener("toggle", (event) => {
+          if (details.open) {
+            /* 要素が開いた方に切り替わった */
+
+          } else {
+            /* 要素が閉じた方に切り替わった */
+
+          }
+        });
+      };
+    </pre>
+  </details>
+
+  <details class="folder">
+    <summary><b>Select A Theme</b></summary>
+    <p>テーマを切り替える</p>
+    <section id="theme" class="radio">
+      <input type="radio" name="theme" id="default" value="default">
+      <label for="default">OS Default</label>
+      <input type="radio" name="theme" id="light" value="light">
+      <label for="light">Light</label>
+      <input type="radio" name="theme" id="dark" value="dark">
+      <label for="dark">Dark</label>
+    </section>
+    <hr/>
+    <pre>
+const storage = localStorage;
+
+if(!storage.getItem('theme')) {
+  document.body.className = 'default';
+} else {
+  setStyles();
+}
+
+const themes = document.querySelectorAll('#theme input');
+for (const theme of themes) {
+  theme.addEventListener('change', function() {
+    storage.setItem('theme', theme.value);
+    setStyles();
+  });
+};
+
+function setStyles() {
+  document.body.className = storage.getItem('theme');
+}
+    </pre>
+    <hr/>
+    <p>
+      <small>prefers-color-scheme</small><br/>
+      カラーテーマをスタイリングする
+    </p>
+    <pre id="themeCSS"></pre>
+  </details>
+
+  <script type="text/javascript">
+  async function howto() {
+    fetch('folder.css')
+    .then(response => response.text())
+    .then(folder => {
+      document.querySelector('#folder').innerText = folder
+    });
+
+    fetch('theme.css')
+    .then(response => response.text())
+    .then(theme => {
+      document.querySelector('#themeCSS').innerText = theme
+    });
+  }
+  howto();
+  </script>
+
+  <details class="folder">
+    <summary><b>例・参考資料</b></summary>
+    <iframe width="100%" height="300" src="//jsfiddle.net/verygois/0x61y58n/35/embedded/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+    <aside id="contents"></aside>
+    <hr/>
+    <aside id="links"></aside>
+  </details>
+  <br/>
+
+  <script src="script.js" defer></script>
+  <script type="text/javascript">
+  let lastModified = document.querySelector('#lastModified');
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+</script>
+</body>
+
+</html>

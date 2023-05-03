@@ -1,0 +1,181 @@
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+button,
+input,
+select,
+textarea {
+  border: 0.1rem solid;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+textarea {
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+  width: 100%;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 10rem;
+  max-height: 50vh;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+select {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+fieldset,
+legend {
+  border: 0.2rem double;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+legend {
+  background: #000;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 75%;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+}
+
+
+button:hover,
+input:hover,
+select:hover,
+textarea:hover,
+.checkbox label:hover,
+.radio label:hover {
+  box-shadow: 0 0 0 0.2rem;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.checkbox label:hover,
+.radio label:hover {
+  cursor: pointer;
+}
+
+/* フォーカスを持っている input・select・textarea */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: solid red;
+}
+
+/* アクティブ状態の button・input・select・textarea */
+button:active,
+input:active,
+select:active,
+textarea:active {
+  transform: scale(1.1);
+}
+
+/* すべての有効な input */
+button:enabled,
+input:enabled,
+select:enabled,
+textarea:enabled {
+  background: #fff;
+}
+
+/* disabled 属性が設定されている input・textarea */
+input:disabled,
+textarea:disabled {
+  opacity: 0.5;
+}
+
+/* 子を持たない空の input・textarea */
+button,
+input:empty,
+textarea:empty {
+  color: #000;
+}
+
+/* required 属性が設定されている input・textarea */
+input:required,
+textarea:required {
+  color: red;
+  background: #fff;
+  font-weight: bold;
+}
+
+/* required 属性が設定されていない input・textarea */
+input:optional,
+textarea:optional {
+  font-weight: lighter;
+}
+
+/* 検証に失敗した input */
+input:invalid {
+  filter: invert(1);
+}
+
+/* 検証に成功した input */
+input:valid {
+  filter: invert(0);
+}
+
+
+/* チェックボックスとラジオボタン */
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none;
+}
+
+.checkbox label,
+.radio label {
+  background: #fff;
+  border: 0.1rem solid;
+  box-sizing: border-box;
+  color: #000;
+  display: inline-block;
+  margin: 0.125rem 0;
+  transition: 0.5s;
+}
+
+.checkbox label {
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.radio label {
+  border-radius: 1.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
+.checkbox input[type="checkbox"]:default+label,
+.radio input[type="radio"]:default+label {
+  font-weight: bold;
+}
+
+.checkbox input[type="checkbox"]:checked+label,
+.radio input[type="radio"]:checked+label {
+  filter: invert(1);
+}

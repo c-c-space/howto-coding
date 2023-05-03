@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+
+  <script type="text/javascript" async>
+
+  document.addEventListener('readystatechange', (event) => {
+    if (event.target.readyState === 'loading') {
+    }
+
+    else if (event.target.readyState === 'interactive') {
+    }
+
+    else if (event.target.readyState === 'complete') {
+      titleH1 = document.querySelector('h1');
+      titleH1.textContent = 'Web Storage API';
+    }
+  });
+
+  </script>
+
+  <script src="../readme/index.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../readme/index.css" />
+</head>
+<body>
+  <aside id="contents"></aside>
+  <form class="readme">
+    <h1></h1>
+    <p>
+      <button type="button" id="button" onclick="removeallStorage()">storage.clear()</button>
+    </p>
+  </form>
+
+  <article class="readme">
+    <section id="list" class="readme"></section>
+  </article>
+
+  <aside id="links"></aside>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

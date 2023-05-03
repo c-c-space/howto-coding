@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "NewYork";
+  src: url("https://creative-community.space/ver/font/NewYork.otf");
+}
+
+@font-face {
+  font-family: "San Francisco";
+  src: url("https://creative-community.space/ver/font/san-francisco/SF-Pro.ttf");
+}
+
+@font-face {
+  font-family: "ipag";
+  src: url("https://creative-community.space/ver/font/ipag.ttf");
+}
+
+body {
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+
+h1,
+i {
+  font-family: "NewYork", serif;
+}
+
+body {
+  font-family: "San Francisco", "YuGothic", "Yu Gothic Medium", "Yu Gothic", sans-serif;
+}
+
+code,
+font,
+u {
+  font-family: "ipag", monospace;
+}
+
+p {
+  font-size: 90%;
+}
+
+i {
+  font-size: 125%;
+  font-weight: 700;
+  padding: 0 0.125rem;
+}
+
+b,
+u {
+  font-size: 125%;
+}
+
+hr {
+  border: none;
+}

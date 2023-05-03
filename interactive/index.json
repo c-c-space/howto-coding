@@ -1,0 +1,107 @@
+{
+  "title" : "Interactive Content",
+  "description" : "対話的要素 | 詳細折りたたみ要素・概要明示要素・ダイアログ",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "Twitterカードの種類 (summary | summary_large_image | app | player)",
+  "src" : "ページを代表する画像のURL",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "埋め込み要素",
+      "url" : "/coding/html/iframe-embed-object/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "フォーム関連要素",
+      "url" : "/coding/form/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "擬似要素",
+      "url" : "/coding/css/pseudo-elements/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "API",
+      "name" : "Web Storage API",
+      "url" : "/coding/web-storage/",
+      "language" : "api",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "対話的な要素",
+      "name" : "details要素・summary要素・dialog要素",
+      "url" : "https://momdo.github.io/html/interactive-elements.html",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "details",
+      "name" : "詳細折りたたみ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/details",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "summary",
+      "name" : "概要明示要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/summary",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "dialog",
+      "name" : "ダイアログ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/dialog",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "::backdrop",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/::backdrop",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "backdrop-filter",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/backdrop-filter",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML DOM API",
+      "name" : "HTMLDialogElement",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/HTMLDialogElement",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "@media",
+      "name" : "prefers-color-scheme",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@media/prefers-color-scheme",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ]
+}

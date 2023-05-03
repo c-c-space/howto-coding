@@ -1,0 +1,59 @@
+<script async>
+  const data_showCSS = document.createElement( "link" );
+  data_showCSS.href = "../hello/data_show.css";
+  data_showCSS.type = "text/css";
+  data_showCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
+
+  const html_elementsCSS = document.createElement( "link" );
+  html_elementsCSS.href = "../html/elements.css";
+  html_elementsCSS.type = "text/css";
+  html_elementsCSS.rel = "stylesheet";
+  document.getElementsByTagName("head")[0].appendChild(html_elementsCSS);
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="../hello/data_show.js" defer></script>
+
+<font id="documentJS" class="doctype"></font>
+<hr/>
+<section class="html">lang="ja">
+  <div class="head"><br/>
+    <span class="meta">charset="UTF-8"</span><br/>
+    <span class="meta">name="viewport" content="width=device-width, initial-scale=1.0"</span><br/>
+    <h2 class="link">rel="stylesheet" href="<u data-id="css">style.css</u>"</h2>
+
+    <div id="css" class="hide">
+      <pre></pre>
+      <hr/>
+      <script type="text/javascript">
+        async function style() {
+          fetch('style.css')
+          .then(response => response.text())
+          .then(style => {
+            document.querySelector('#css pre').innerHTML = style
+          });
+        }
+        style();
+      </script>
+    </div>
+  </div>
+  <hr/>
+  <div id="html" class="body_tag"><font>id="cover"</font>><br/>
+    <h2>
+      <span class="main"><b>id="left"</b>><br/>
+        <span class="php">include('呼び出したいページのURL');</span><br/>
+      </span>
+      <br/>
+      <span class="article_tag"><b>id="right"</b>><br/>
+        <span class="php">include('呼び出したいページのURL');</span><br/>
+      </span>
+    </h2>
+    <h2 class="h1_tag">
+      <b>id="title"</b>>
+      h1#title
+    </h2>
+    <hr/>
+  </div>
+</section>
+<hr/>
