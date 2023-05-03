@@ -7,6 +7,7 @@
   <script src="../readme/index.js"></script>
   <base target="_blank" rel="noopener noreferrer">
   <link rel="stylesheet" href="elements.css" />
+  <link rel="stylesheet" href="../hello/data_show.css" />
   <link rel="stylesheet" href="../readme/style.css" />
   <link rel="stylesheet" href="../cover/style.css" />
   <link rel="stylesheet" href="../cover/mobile.css" media="print">
@@ -76,9 +77,11 @@
 
   <h1 id="title">HTML | Hypertext Markup Language</h1>
 
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../hello/data_show.js"></script>
+
   <script>
   let lastModified = document.querySelector('#lastModified');
-
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
   </script>
