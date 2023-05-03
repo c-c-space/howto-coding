@@ -7,6 +7,7 @@
   <script src="../../readme/index.js" async></script>
   <base target="_blank" rel="noopener noreferrer">
   <link rel="stylesheet" href="../elements.css" />
+  <link rel="stylesheet" href="../../hello/data_show.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../cover/style.css" />
   <link rel="stylesheet" href="../../cover/mobile.css" media="print">
@@ -56,17 +57,27 @@
 </head>
 <body id="cover">
   <main id="left">
-    <section id="hello" class="head data_show"></section>
+    <section id="hello" class="head data_show">
+      <?php require('hello.html'); ?>
+    </section>
     <hr/>
     <br/>
     <aside id="links"></aside>
   </main>
   <article id="right">
-    <article id="howto" class="readme data_show"></article>
-    <article id="meta" class="readme data_show"></article>
-    <article id="icon" class="readme data_show"></article>
+    <article id="howto" class="readme data_show">
+      <?php require('howto.html'); ?>
+    </article>
+    <article id="meta" class="readme data_show">
+      <?php require('meta.html'); ?>
+    </article>
+    <article id="icon" class="readme data_show">
+      <?php require('icon.html'); ?>
+    </article>
     <br/>
-    <article id="link" class="readme data_show"></article>
+    <article id="link" class="readme data_show">
+      <?php require('stylesheet.html'); ?>
+    </article>
     <br/>
     <aside id="contents"></aside>
     <br/>
@@ -76,15 +87,9 @@
   <h1 id="title">HEAD | Hypertext Markup Language</h1>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script type="text/javascript">
-  $(function() {
-    $("#hello").load("hello.html");
-    $("#howto").load("howto.html");
-    $("#meta").load("meta.html");
-    $("#icon").load("icon.html");
-    $("#link").load("stylesheet.html");
-  })
+  <script src="../../hello/data_show.js" defer></script>
 
+  <script type="text/javascript">
   let lastModified = document.querySelector('#lastModified');
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
