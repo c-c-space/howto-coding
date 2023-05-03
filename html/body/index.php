@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../readme/index.js" async></script>
+  <script src="../../readme/index.js"></script>
   <script src="../../js/window/online/script.js" defer></script>
   <base target="_blank" rel="noopener noreferrer">
   <link rel="stylesheet" href="../elements.css" />
