@@ -8,8 +8,8 @@
       <?php
       echo $_SERVER['PHP_SELF'];
       ?>
-      <br/>
     </span>
+    <br/>
     <u data-id="cgi">CGI</u>
     <span id="cgi" class="hide">
       <?php
@@ -22,8 +22,8 @@
       <?php
       echo $_SERVER['SERVER_PROTOCOL'];
       ?>
-      <br/>
     </span>
+    <br/>
     <u data-id="software">SOFTWARE</u>
     <span id="software" class="hide">
       <?php
@@ -31,18 +31,10 @@
       ?>
       <br/>
     </span>
-    <u data-id="host">HOST</u>
-    <span id="host" class="hide">
+    <u data-id="info">INFO</u>
+    <span id="info" class="hide">
       <?php
-      $host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-      echo $host
-      ?>
-      <br/>
-    </span>
-    <u data-id="port">PORT</u>
-    <span id="port" class="hide">
-      <?php
-      echo $_SERVER['REMOTE_PORT'];
+      echo $_SERVER['ORIG_PATH_INFO'];
       ?>
     </span>
   </p>
