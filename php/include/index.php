@@ -36,8 +36,8 @@
 </head>
 <body id="cover">
   <main id="left">
-    <section id="contents"></section>
-    <?php require('hello.php'); ?>
+    <nav id="contents"></nav>
+    <?php include('hello.php'); ?>
     <hr/>
     <section id="links"></section>
   </main>
