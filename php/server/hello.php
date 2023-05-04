@@ -29,7 +29,6 @@
       <?php
       echo $_SERVER['SERVER_PORT'];
       ?>
-      <br/>
     </span>
     <br/>
     <u data-id="software">SOFTWARE</u>
