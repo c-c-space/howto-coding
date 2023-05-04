@@ -1,7 +1,7 @@
 {
   "title" : "PHP",
   "description" : "",
-  "author" : "Personal Home Page Tools",
+  "author" : "Hypertext Preprocessor",
   "email" : "pehu@creative-community.space",
   "type" : "website",
   "twitter" : "@pe_hu_",
@@ -9,13 +9,6 @@
   "src" : "___",
 
   "contents" : [
-    {
-      "date" : "PHP",
-      "name" : "Personal Home Page Tools",
-      "url" : "/coding/php/",
-      "language" : "etc",
-      "status" : "basic"
-    }
   ],
 
   "links" : [
