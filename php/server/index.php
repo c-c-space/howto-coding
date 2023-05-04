@@ -13,6 +13,17 @@
   #hello p {
     word-break: break-all;
   }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #links::before {
+    font-family: "ipag", monospace;
+    display: block;
+    text-decoration: underline;
+  }
   </style>
 </head>
 <body id="cover">
