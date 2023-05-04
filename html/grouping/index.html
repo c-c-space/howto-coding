@@ -247,8 +247,8 @@
     const randomRGBbgAll = document.querySelectorAll('#nav a');
     for (const randomRGBbg of randomRGBbgAll) {
       randomRGBbg.addEventListener('click', function(event) {
-        const bgAll = document.querySelectorAll('body, #nav a, #template *, section:not(#four)');
-        for (const bgItem of bgAll) {
+        const bgClick = document.querySelectorAll('body, #nav a, #template *, section:not(#four)');
+        for (const bgThis of bgClick) {
           bgItem.style.background = randomRGB();
         }
       });
