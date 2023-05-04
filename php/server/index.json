@@ -1,0 +1,21 @@
+{
+  "title" : "$_SERVER",
+  "description" : "サーバー情報および実行時の環境情報 | Server Information & The User-Agent",
+  "author" : "Personal Home Page Tools",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary_large_image",
+  "src" : "summary_large_image.png",
+
+  "contents" : [
+  ],
+
+  "links" : [
+    {
+      "date" : "PHP",
+      "name" : "$_SERVER",
+      "url" : "https://www.php.net/manual/ja/reserved.variables.server.php"
+    }
+  ]
+}

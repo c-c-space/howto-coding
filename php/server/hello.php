@@ -1,14 +1,54 @@
-<script>
-const data_showCSS = document.createElement( "link" );
-data_showCSS.href = "../../hello/data_show.css";
-data_showCSS.type = "text/css";
-data_showCSS.rel = "stylesheet";
-document.getElementsByTagName("head")[0].appendChild(data_showCSS);
-</script>
-
 <section id="hello" class="data_show">
   <p>
-    <a href="https://www.php.net/manual/ja/reserved.variables.server.php">PHP ($_SERVER)</a>
+    <i>サーバー情報</i>
+    <br/>
+    <u data-id="php">PHP_SELF</u>
+    <span id="php" class="hide">
+      <?php
+      echo $_SERVER['PHP_SELF'];
+      ?>
+      <br/>
+    </span>
+    <u data-id="cgi">CGI</u>
+    <span id="cgi" class="hide">
+      <?php
+      echo $_SERVER['GATEWAY_INTERFACE'];
+      ?>
+    </span>
+    <u data-id="http">PROTOCOL</u>
+    <span id="http" class="hide">
+      <?php
+      echo $_SERVER['SERVER_PROTOCOL'];
+      ?>
+    </span>
+    <u data-id="addr">IP</u>
+    <span id="addr" class="hide">
+      <?php
+      echo $_SERVER['SERVER_ADDR'];
+      ?>
+    </span>
+    <br/>
+    <u data-id="software">SOFTWARE</u>
+    <span id="software" class="hide">
+      <?php
+      echo $_SERVER['SERVER_SOFTWARE'];
+      ?>
+    </span>
+    <br/>
+    <u data-id="host">HOST</u>
+    <span id="host" class="hide">
+      <?php
+      $host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+      echo $host
+      ?>
+      <br/>
+    </span>
+    <u data-id="port">PORT</u>
+    <span id="port" class="hide">
+      <?php
+      echo $_SERVER['REMOTE_PORT'];
+      ?>
+    </span>
   </p>
   <p>
     <i>通信に必要な情報</i>
@@ -48,8 +88,9 @@ document.getElementsByTagName("head")[0].appendChild(data_showCSS);
   </p>
   <hr/>
   <p>
+    インターネットに接続してウェブサイトにアクセスすると、ウェブサイトの管理人やウェブサイトを公開(管理)しているサーバーに、さまざまな情報が発信(送信)されます。<br/>
     <i>
-      これらの情報は、安心・安全なインターネット環境からウェブサイトにアクセスされているかを、ウェブサイトの制作者やウェブサイトを公開（管理）しているサーバーが確認するための仕組みとして、ページを見ている人が発信する情報です。
+      これらの情報は、個人情報を直接含むような情報ではなく、安心・安全にインターネットを利用するための仕組みとして必ず発信しなければいけない情報です。
     </i>
   </p>
 </section>
