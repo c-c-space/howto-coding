@@ -73,9 +73,15 @@
     <section id="cover" class="active cover">
       <h1></h1>
     </section>
-    <section id="api" class="is-hide"></section>
-    <section id="attributes" class="is-hide"></section>
-    <section id="size" class="is-hide"></section>
+    <section id="api" class="is-hide">
+      <?php require('api.html'); ?>
+    </section>
+    <section id="attributes" class="is-hide">
+      <?php require('attributes.html'); ?>
+    </section>
+    <section id="size" class="is-hide">
+      <?php require('size.html'); ?>
+    </section>
     <section id="etc" class="is-hide">
       <aside id="links"></aside>
     </section>
@@ -84,15 +90,26 @@
   <aside id="contents"></aside>
 
   <script src="script.js"></script>
+  <script src="size.js"></script>
   <script src="../../readme/script.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
-  $(function() {
-    $("#api").load("api.html");
-    $("#attributes").load("attributes.html");
-    $("#size").load("size.html");
-  })
+  "use strict"
+
+  const result = document.getElementById("result");
+  const attributes = document.querySelectorAll(".readme section");
+  for (const attribute of attributes) {
+    if (attribute.hasAttributes()) {
+      let attrs = attribute.attributes;
+      let output = "";
+      for(var i = attrs.length - 1; i >= 0; i--) {
+        output += `<code class="red">${attrs[i].name}</code>="<code class="red">${attrs[i].value}</code>" `;
+      }
+      result.innerHTML += `<h3>section ${output}</h3>`;
+    } else {
+      result.innerHTML = "表示する属性はありません";
+    }
+  }
   </script>
 </body>
 </html>
