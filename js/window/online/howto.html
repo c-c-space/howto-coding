@@ -1,10 +1,9 @@
-<section>
-  <h1>Network Information API</h1>
-  <h2>
-    ネットワーク情報 API<br/>
-    <i>システムのネットワーク接続に関する情報を提供するAPI</i>
-  </h2>
-  <pre>
+<h1>Network Information API</h1>
+<h2>
+  ネットワーク情報 API<br/>
+  <i>システムのネットワーク接続に関する情報を提供するAPI</i>
+</h2>
+<pre>
 const connectionInfo = <font>navigator.connection</font>;
 
 if (connectionInfo !== undefined) {
@@ -23,45 +22,46 @@ if (connectionInfo !== undefined) {
     connectionInfo.addEventListener('typechange', init);
   }
 }
-  </pre>
-  <hr/>
-  <table class="size">
-    <tbody>
-      <tr>
-        <td>NetworkInformation.type</td>
-        <td>ネットワーク接続の種類 (bluetooth・cellular・ethernet・none・wifi・wimax・other・unknown)</td>
-        <td id="type" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>NetworkInformation.effectiveType</td>
-        <td>ネットワーク接続の有効な種類 (slow-2g・2g・3g・4g)</td>
-        <td id="effectiveType" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>NetworkInformation.downlink</td>
-        <td>回線の下り速度 (インターネット上からデータを受け取る際の通信)</td>
-        <td id="downlink" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>NetworkInformation.downlinkMax</td>
-        <td>下り最大速度 | 1秒間に送受信可能なデータ量を表す単位 メガビット毎秒 (Mb/s)</td>
-        <td id="downlinkMax" class="nowValue"></td>
-      </tr>
-      <tr>
-        <td>NetworkInformation.rtt</td>
-        <td>推定有効ラウンドトリップ時間 (通信相手に信号を発信してから、応答が帰ってくるまでにかかる時間)</td>
-        <td id="rtt" class="nowValue"></td>
-      </tr>
-    </tbody>
-  </table>
-  <hr/>
-</section>
-<section>
-  <p>
-    <font>Online or Offline?</font><br/>
-    インターネットの交信状態（オンライン/オフライン）
-  </p>
-  <pre>
+</pre>
+<hr/>
+<table class="size">
+  <tbody>
+    <tr>
+      <td>NetworkInformation.type</td>
+      <td>ネットワーク接続の種類 (bluetooth・cellular・ethernet・none・wifi・wimax・other・unknown)</td>
+      <td id="type" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>NetworkInformation.effectiveType</td>
+      <td>ネットワーク接続の有効な種類 (slow-2g・2g・3g・4g)</td>
+      <td id="effectiveType" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>NetworkInformation.downlink</td>
+      <td>回線の下り速度 (インターネット上からデータを受け取る際の通信)</td>
+      <td id="downlink" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>NetworkInformation.downlinkMax</td>
+      <td>下り最大速度 | 1秒間に送受信可能なデータ量を表す単位 メガビット毎秒 (Mb/s)</td>
+      <td id="downlinkMax" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>NetworkInformation.rtt</td>
+      <td>推定有効ラウンドトリップ時間 (通信相手に信号を発信してから、応答が帰ってくるまでにかかる時間)</td>
+      <td id="rtt" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<br/>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<p>
+  <font>Online or Offline?</font><br/>
+  インターネットの交信状態（オンライン/オフライン）
+</p>
+<pre>
 function update(online) {
   document.querySelector('#status').textContent =
   online ? 'You are: Online' : 'You are: Offline';
@@ -76,6 +76,7 @@ function update(online) {
     offlineHide.style.display = online ? 'block' : 'none';
   }
 }
-  </pre>
-  <hr/>
-</section>
+</pre>
+<hr/>
+
+<script src="network.js" defer></script>
