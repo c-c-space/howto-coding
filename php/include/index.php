@@ -34,11 +34,11 @@
   <main id="left">
     <nav id="contents"></nav>
     <?php include('hello.php'); ?>
-    <hr/>
-    <section id="links"></section>
   </main>
   <article id="right">
     <?php require('howto.html'); ?>
+    <hr/>
+    <section id="links"></section>
   </article>
   <h1 id="title">include | Personal Home Page Tools</h1>
 
