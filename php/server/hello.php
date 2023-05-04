@@ -2,14 +2,6 @@
   <p>
     <i>サーバー情報</i>
     <br/>
-    <u data-id="php">PHP_SELF</u>
-    <span id="php" class="hide">
-      <br/>
-      <?php
-      echo $_SERVER['PHP_SELF'];
-      ?>
-    </span>
-    <br/>
     <u data-id="cgi">CGI</u>
     <span id="cgi" class="hide">
       <?php
@@ -21,14 +13,6 @@
       <?php
       echo $_SERVER['SERVER_PROTOCOL'];
       ?>
-    </span>
-    <br/>
-    <u data-id="software">SOFTWARE</u>
-    <span id="software" class="hide">
-      <?php
-      echo $_SERVER['SERVER_SOFTWARE'];
-      ?>
-      <br/>
     </span>
     <u data-id="addr">ADDR</u>
     <span id="addr" class="hide">
@@ -43,6 +27,21 @@
       echo $_SERVER['SERVER_NAME'];
       ?>
       <br/>
+    </span>
+    <br/>
+    <u data-id="software">SOFTWARE</u>
+    <span id="software" class="hide">
+      <?php
+      echo $_SERVER['SERVER_SOFTWARE'];
+      ?>
+      <br/>
+    </span>
+    <u data-id="php">PHP_SELF</u>
+    <span id="php" class="hide">
+      <br/>
+      <?php
+      echo $_SERVER['PHP_SELF'];
+      ?>
     </span>
   </p>
   <p>
