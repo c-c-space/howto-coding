@@ -30,11 +30,19 @@
       ?>
       <br/>
     </span>
-    <u data-id="addr">IP</u>
+    <u data-id="addr">ADDR</u>
     <span id="addr" class="hide">
       <?php
       echo $_SERVER['SERVER_ADDR'];
       ?>
+      <br/>
+    </span>
+    <u data-id="name">NAME</u>
+    <span id="name" class="hide">
+      <?php
+      echo $_SERVER['SERVER_NAME'];
+      ?>
+      <br/>
     </span>
   </p>
   <p>
