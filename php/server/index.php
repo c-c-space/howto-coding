@@ -18,8 +18,10 @@
 <body id="cover">
   <main id="left" class="readme">
     <?php require('hello.php'); ?>
+    <section id="links"></section>
   </main>
   <article id="right">
+    <section id="contents"></section>
     <?php require('howto.html'); ?>
   </article>
   <h1 id="title">$_SERVER | Personal Home Page Tools</h1>
