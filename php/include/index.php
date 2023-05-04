@@ -10,6 +10,14 @@
   <link rel="stylesheet" href="../../hello/data_show.css" />
   <link rel="stylesheet" href="../../cover/mobile.css" media="screen and (max-width: 820px)">
   <style>
+  .php::before {
+    content: '<?';
+  }
+
+  .php::after {
+    content: ' ?>';
+  }
+
   #hello p {
     word-break: break-all;
   }
@@ -28,14 +36,14 @@
 </head>
 <body id="cover">
   <main id="left">
+    <section id="contents"></section>
     <?php include('hello.php'); ?>
     <section id="links"></section>
   </main>
   <article id="right">
-    <section id="contents"></section>
-    <?php include('howto.html'); ?>
+    <?php require('howto.html'); ?>
   </article>
-  <h1 id="title">include('URL') | Personal Home Page Tools</h1>
+  <h1 id="title">include | Personal Home Page Tools</h1>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="../../hello/data_show.js"></script>
