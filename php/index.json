@@ -1,0 +1,30 @@
+{
+  "title" : "PHP",
+  "description" : "",
+  "author" : "Personal Home Page Tools",
+  "email" : "pehu@creative-community.space",
+  "type" : "website",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "___",
+
+  "contents" : [
+    {
+      "date" : "PHP",
+      "name" : "Personal Home Page Tools",
+      "url" : "/coding/php/",
+      "language" : "etc",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "The PHP Group",
+      "name" : "PHP: Hypertext Preprocessor",
+      "url" : "https://www.php.net/",
+      "language" : "etc",
+      "status" : "guide"
+    }
+  ]
+}
