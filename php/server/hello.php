@@ -24,7 +24,6 @@
       ?>
       <br/>
     </span>
-    <br/>
     <u data-id="software">SOFTWARE</u>
     <span id="software" class="hide">
       <?php
@@ -32,7 +31,6 @@
       ?>
       <br/>
     </span>
-    <br/>
     <u data-id="host">HOST</u>
     <span id="host" class="hide">
       <?php
