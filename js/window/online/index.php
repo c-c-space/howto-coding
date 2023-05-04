@@ -15,6 +15,11 @@
     background: #000;
   }
 
+  #hidden {
+    filter: invert(1);
+    mix-blend-mode: exclusion;
+  }
+
   #links::before {
     content:'参考資料';
     font-size: 75%;
@@ -41,9 +46,11 @@
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <button type="button" id="js-button"><b></b></button>
-  <article id="hidden">
+  <article id="hidden" class="hide_offline">
     <aside id="contents"></aside>
-    <article id="howto" class="readme"></article>
+    <article id="howto" class="readme">
+      <?php require('howto.html'); ?>
+    </article>
     <nav id="links"></nav>
     <p id="lastModified"></p>
   </article>
@@ -53,12 +60,8 @@
     <div id="log"></div>
   </article>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="network.js" defer></script>
   <script type="text/javascript">
-  $(function() {
-    $("#howto").load("howto.html");
-  })
-
   const button = document.querySelector('#js-button');
   const body = document.querySelector('body');
 

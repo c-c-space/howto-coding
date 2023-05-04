@@ -49,7 +49,6 @@ table.size .nowValue {
 }
 
 @media screen and (max-width: 750px) {
-
   table.size {
     font-size: 2.5vw;
   }
@@ -72,7 +71,6 @@ table.size .nowValue {
 }
 
 @media screen and (max-width: 550px) {
-
   table.size {
     font-size: 3.5vw;
   }
