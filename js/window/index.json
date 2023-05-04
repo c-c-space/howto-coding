@@ -10,8 +10,8 @@
 
   "contents" : [
     {
-      "date" : "Document Object Model",
-      "name" : "ドキュメントオブジェクトモデル",
+      "date" : "DOM",
+      "name" : "Document Object Model",
       "url" : "/coding/js/document/",
       "language" : "js",
       "status" : "basic"
