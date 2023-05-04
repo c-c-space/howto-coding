@@ -1,5 +1,4 @@
 document.onreadystatechange = function() {
-
   switch (document.readyState) {
     case "loading":
     // 文書の読み込み中に実行する
@@ -14,7 +13,6 @@ document.onreadystatechange = function() {
     coverH1.innerHTML = "JavaScript | Event<br/><code>addEventListener()</code>";
     break;
   }
-
 };
 
 function log(msg) {
