@@ -14,6 +14,7 @@ if (connectionInfo !== undefined) {
     document.getElementById('downlinkMax').textContent = connectionInfo<font>.downlinkMax</font> + ' Mb/s';
     document.getElementById('rtt').textContent = connectionInfo<font>.rtt</font> + ' ms';
   };
+
   init();
 
   if ('onchange' in connectionInfo) {
