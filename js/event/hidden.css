@@ -55,6 +55,8 @@ body,
 }
 
 #js-button {
+  appearance: none;
+  outline: none;
   background: transparent;
   border: solid 0.2rem;
   font-family: "ipag", monospace;

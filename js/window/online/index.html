@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="script.js"></script>
   <script src="../../../readme/index.js" async></script>
+  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../../event/style.css" />
   <link rel="stylesheet" href="../../event/hidden.css" />
   <link rel="stylesheet" href="../../../readme/style.css" />
@@ -13,14 +14,38 @@
   body {
     background: #000;
   }
+
+  #links::before {
+    content:'参考資料';
+    font-size: 75%;
+  }
+
+  #links::before,
+  #lastModified {
+    display: block;
+    font-family: "ipag", monospace;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
+    margin: 0.5rem 0.75rem 0.5rem 0.25rem;
+  }
+
+  #contents,
+  #links,
+  #lastModified {
+    padding: 0.5rem;
+  }
   </style>
 </head>
 <body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
   <button type="button" id="js-button"><b></b></button>
   <article id="hidden">
     <aside id="contents"></aside>
-    <article id="howto" class="readme hide_online"></article>
+    <article id="howto" class="readme"></article>
     <nav id="links"></nav>
+    <p id="lastModified"></p>
   </article>
 
   <article id="main" class="readme">
@@ -41,6 +66,10 @@
     button.classList.toggle('close');
     body.classList.toggle('open');
   });
+
+  let lastModified = document.querySelector('#lastModified');
+  lastModified.innerHTML =
+  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
   </script>
 </body>
 </html>

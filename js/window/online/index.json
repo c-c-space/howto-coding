@@ -9,8 +9,57 @@
   "src" : "card.png",
 
   "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Window",
+      "url" : "/coding/js/window/",
+      "language" : "js",
+      "status" : "basic"
+    }
   ],
 
   "links" : [
+  {
+    "date" : "Network Information API",
+    "name" : "ネットワーク情報 API",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/Network_Information_API",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
+    "date" : "Navigator.onLine",
+    "name" : "オンライン／オフラインイベント",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/onLine",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
+    "date" : "NetworkInformation",
+    "name" : "インスタンスプロパティ",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
+    "date" : "NetworkInformation",
+    "name" : ".type",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation/type",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
+    "date" : "NetworkInformation",
+    "name" : ".effectiveType",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation/effectiveType",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
+    "date" : "Effective connection type",
+    "name" : "有効接続種別",
+    "url" : "https://developer.mozilla.org/ja/docs/Glossary/Effective_connection_type",
+    "language" : "js",
+    "status" : "guide"
+  }
   ]
 }

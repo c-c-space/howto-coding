@@ -17,16 +17,9 @@
       "status" : "basic"
     },
     {
-      "date" : "Web API",
+      "date" : "Network Information API",
       "name" : "Online or Offline?",
       "url" : "/coding/js/window/online/",
-      "language" : "js",
-      "status" : "basic"
-    },
-    {
-      "date" : "Web API",
-      "name" : "Network Information API",
-      "url" : "/coding/js/window/network/",
       "language" : "js",
       "status" : "basic"
     },
@@ -100,13 +93,6 @@
       "date" : "Window",
       "name" : ".navigator",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/navigator",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Navigator",
-      "name" : ".onLine",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/onLine",
       "language" : "js",
       "status" : "guide"
     },

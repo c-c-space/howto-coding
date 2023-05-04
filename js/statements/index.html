@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-
   <script src="../../readme/index.js" async></script>
   <script type="text/javascript" async>
   function documentInfo() {
     let objectDiv = document.querySelector('div#object');
-
     let documentInfo = {
       'URL: ': document.location,
       'LastModified: ': document.lastModified,
@@ -23,7 +21,6 @@
 
   function viewColors() {
     let okCancel = confirm('このページの情報を表示する')
-
     switch (okCancel) {
       case true:
       documentInfo()
