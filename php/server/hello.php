@@ -14,8 +14,10 @@
       echo $_SERVER['SERVER_PROTOCOL'];
       ?>
     </span>
+    <br/>
     <u data-id="addr">ADDR</u>
     <span id="addr" class="hide">
+      <br/>
       <?php
       echo $_SERVER['SERVER_ADDR'];
       ?>
