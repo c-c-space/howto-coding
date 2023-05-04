@@ -2,6 +2,30 @@
   <p>
     インターネットに接続してウェブサイトにアクセスすると、ウェブサイトの管理人やウェブサイトを公開(管理)しているサーバーに、さまざまな情報が発信(送信)されます。<br/>
   </p>
+  <pre>
+<font>$_SERVER['SERVER_PROTOCOL']</font>;
+プロトコルの名前とバージョン
+
+<font>$_SERVER['SERVER_ADDR']</font>;
+サーバーの IP アドレス
+
+<font>$_SERVER['SERVER_NAME']</font>;
+サーバーのホスト名
+
+<font>$_SERVER['SERVER_PORT']</font>;
+サーバーの通信ポートとして使用されているポート番号
+
+<font>$_SERVER['SERVER_SOFTWARE']</font>;
+サーバーの認識文字列
+
+<font>$_SERVER['PHP_SELF']</font>;
+現在実行しているファイル名
+
+  </pre>
+  <hr/>
+  <p>
+    インターネットに接続してウェブサイトにアクセスすると、ウェブサイトの管理人やウェブサイトを公開(管理)しているサーバーに、さまざまな情報が発信(送信)されます。<br/>
+  </p>
   <p>
     <i>
       これらの情報は、個人情報を直接含むような情報ではなく、安心・安全にインターネットを利用するための仕組みとして必ず発信しなければいけない情報です。
@@ -22,6 +46,7 @@
 ページを見ているユーザーが使用しているブラウザの種類
 
   </pre>
+  <hr/>
   <p id="lastModified"></p>
   <script>
     let lastModified = document.querySelector('#lastModified');
