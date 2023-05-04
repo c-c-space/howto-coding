@@ -1,23 +1,25 @@
-<script>
-  const readmeCSS = document.createElement( "link" );
-
-  readmeCSS.href = "../../readme/style.css";
-  readmeCSS.type = "text/css";
-  readmeCSS.rel = "stylesheet";
-  document.getElementsByTagName("head")[0].appendChild(readmeCSS);
-</script>
-
-<div class="readme data_show">
+<div class="readme">
   <p>
-    このページでは、PHP の $_SERVER を使って、ページを見ている人が発信する情報のうち、以上の情報を表示します。
-  </p>
-  <p>
-    <b>これらは、個人情報を直接含むような情報ではありません。</b>
-  </p>
-  <p>
-    <a href="https://www.cman.jp/network/term/getinfo/">ホームページにアクセスすると情報が取られる(何が分かる)？</a>
+    インターネットに接続してウェブサイトにアクセスすると、ウェブサイトの管理人やウェブサイトを公開(管理)しているサーバーに、さまざまな情報が発信(送信)されます。<br/>
+    <i>
+      これらの情報は、個人情報を直接含むような情報ではなく、安心・安全にインターネットを利用するための仕組みとして必ず発信しなければいけない情報です。
+    </i>
   </p>
   <hr/>
+  <pre>
+<font>$_SERVER['REMOTE_ADDR']</font>;
+現在ページをみているユーザーの IP アドレス
+
+<font>gethostbyaddr($_SERVER['REMOTE_ADDR']</font>;
+現在ページをみているユーザーの IP アドレスに対応するインターネットホスト名
+
+<font>$_SERVER['REMOTE_PORT']</font>;
+ユーザーのマシンから Web サーバーへの通信に使用されているポート番号
+
+<font>$_SERVER['HTTP_USER_AGENT']</font>;
+ページを見ているユーザーが使用しているブラウザの種類
+
+  </pre>
   <p id="lastModified"></p>
   <script>
     let lastModified = document.querySelector('#lastModified');

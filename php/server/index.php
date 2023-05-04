@@ -6,6 +6,7 @@
   <meta name="format-detection" content="telephone=no" />
   <script src="../../readme/index.js" defer></script>
   <link rel="stylesheet" href="../../cover/style.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../hello/data_show.css" />
   <link rel="stylesheet" href="../../cover/mobile.css" media="screen and (max-width: 820px)">
   <style>
@@ -21,7 +22,7 @@
   <article id="right">
     <?php require('howto.html'); ?>
   </article>
-  <h1 id="title">Server Information & The User-Agent</h1>
+  <h1 id="title">$_SERVER | Personal Home Page Tools</h1>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="../../hello/data_show.js"></script>

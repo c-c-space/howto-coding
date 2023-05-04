@@ -16,6 +16,11 @@
       "date" : "PHP",
       "name" : "$_SERVER",
       "url" : "https://www.php.net/manual/ja/reserved.variables.server.php"
+    },
+    {
+      "date" : "情報は取られる？",
+      "name" : "送信（発信）されている情報",
+      "url" : "https://www.cman.jp/network/term/getinfo/"
     }
   ]
 }

@@ -83,25 +83,19 @@
     </span>
   </p>
   <hr/>
-  <p>
-    インターネットに接続してウェブサイトにアクセスすると、ウェブサイトの管理人やウェブサイトを公開(管理)しているサーバーに、さまざまな情報が発信(送信)されます。<br/>
-    <i>
-      これらの情報は、個人情報を直接含むような情報ではなく、安心・安全にインターネットを利用するための仕組みとして必ず発信しなければいけない情報です。
-    </i>
-  </p>
 </section>
 <br/>
 <pre>
-  <font>$_SERVER['REMOTE_ADDR']</font>;
-  現在ページをみているユーザーの IP アドレス
+<font>$_SERVER['REMOTE_ADDR']</font>;
+現在ページをみているユーザーの IP アドレス
 
-  <font>gethostbyaddr($_SERVER['REMOTE_ADDR']</font>;
-  現在ページをみているユーザーの IP アドレスに対応するインターネットホスト名
+<font>gethostbyaddr($_SERVER['REMOTE_ADDR']</font>;
+現在ページをみているユーザーの IP アドレスに対応するインターネットホスト名
 
-  <font>$_SERVER['REMOTE_PORT']</font>;
-  ユーザーのマシンから Web サーバーへの通信に使用されているポート番号
+<font>$_SERVER['REMOTE_PORT']</font>;
+ユーザーのマシンから Web サーバーへの通信に使用されているポート番号
 
-  <font>$_SERVER['HTTP_USER_AGENT']</font>;
-  ページを見ているユーザーが使用しているブラウザの種類
+<font>$_SERVER['HTTP_USER_AGENT']</font>;
+ページを見ているユーザーが使用しているブラウザの種類
 
 </pre>
