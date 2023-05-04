@@ -2,12 +2,6 @@
   <p>
     <i>サーバー情報</i>
     <br/>
-    <u data-id="cgi">CGI</u>
-    <span id="cgi" class="hide">
-      <?php
-      echo $_SERVER['GATEWAY_INTERFACE'];
-      ?>
-    </span>
     <u data-id="http">PROTOCOL</u>
     <span id="http" class="hide">
       <?php
@@ -27,6 +21,13 @@
     <span id="name" class="hide">
       <?php
       echo $_SERVER['SERVER_NAME'];
+      ?>
+      <br/>
+    </span>
+    <u data-id="cgi">PORT</u>
+    <span id="cgi" class="hide">
+      <?php
+      echo $_SERVER['SERVER_PORT'];
       ?>
       <br/>
     </span>
@@ -84,18 +85,23 @@
   </p>
   <hr/>
 </section>
-<br/>
 <pre>
-<font>$_SERVER['REMOTE_ADDR']</font>;
-現在ページをみているユーザーの IP アドレス
+<font>$_SERVER['SERVER_PROTOCOL']</font>;
+プロトコルの名前とバージョン
 
-<font>gethostbyaddr($_SERVER['REMOTE_ADDR']</font>;
-現在ページをみているユーザーの IP アドレスに対応するインターネットホスト名
+<font>$_SERVER['SERVER_ADDR']</font>;
+サーバーの IP アドレス
 
-<font>$_SERVER['REMOTE_PORT']</font>;
-ユーザーのマシンから Web サーバーへの通信に使用されているポート番号
+<font>$_SERVER['SERVER_NAME']</font>;
+サーバーのホスト名
 
-<font>$_SERVER['HTTP_USER_AGENT']</font>;
-ページを見ているユーザーが使用しているブラウザの種類
+<font>$_SERVER['SERVER_PORT']</font>;
+サーバーの通信ポートとして使用されているポート番号
+
+<font>$_SERVER['SERVER_SOFTWARE']</font>;
+サーバーの認識文字列
+
+<font>$_SERVER['PHP_SELF']</font>;
+現在実行しているファイル名
 
 </pre>
