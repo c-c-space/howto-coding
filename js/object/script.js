@@ -18,7 +18,7 @@ function randomBG() {
 }
 
 function randomColor() {
-  const colorAll = document.querySelectorAll('#menu a, #cover *, #random *, #etc *, #contents *');
+  const colorAll = document.querySelectorAll('#menu a, #cover *, #random *, #etc *, #contents a');
   colorAll.forEach(colorItem => {
     colorItem.style.color = randomRGB();
   })
