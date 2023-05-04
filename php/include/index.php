@@ -10,10 +10,6 @@
   <link rel="stylesheet" href="../../hello/data_show.css" />
   <link rel="stylesheet" href="../../cover/mobile.css" media="screen and (max-width: 820px)">
   <style>
-  #hello p {
-    word-break: break-all;
-  }
-
   #links::before {
     content:'参考資料';
     font-size: 75%;
@@ -28,12 +24,12 @@
 </head>
 <body id="cover">
   <main id="left">
-    <nav id="contents"></nav>
     <?php include('hello.php'); ?>
     <hr/>
     <section id="links"></section>
   </main>
   <article id="right">
+    <nav id="contents"></nav>
     <?php require('howto.html'); ?>
   </article>
   <h1 id="title">include | Personal Home Page Tools</h1>
