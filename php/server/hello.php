@@ -4,6 +4,7 @@
     <br/>
     <u data-id="php">PHP_SELF</u>
     <span id="php" class="hide">
+      <br/>
       <?php
       echo $_SERVER['PHP_SELF'];
       ?>
@@ -14,18 +15,14 @@
       <?php
       echo $_SERVER['GATEWAY_INTERFACE'];
       ?>
+      <br/>
     </span>
     <u data-id="http">PROTOCOL</u>
     <span id="http" class="hide">
       <?php
       echo $_SERVER['SERVER_PROTOCOL'];
       ?>
-    </span>
-    <u data-id="addr">IP</u>
-    <span id="addr" class="hide">
-      <?php
-      echo $_SERVER['SERVER_ADDR'];
-      ?>
+      <br/>
     </span>
     <br/>
     <u data-id="software">SOFTWARE</u>
@@ -33,6 +30,7 @@
       <?php
       echo $_SERVER['SERVER_SOFTWARE'];
       ?>
+      <br/>
     </span>
     <br/>
     <u data-id="host">HOST</u>
@@ -96,16 +94,16 @@
 </section>
 <br/>
 <pre>
-<font>$_SERVER['REMOTE_ADDR']</font>;
-現在ページをみているユーザーの IP アドレス
+  <font>$_SERVER['REMOTE_ADDR']</font>;
+  現在ページをみているユーザーの IP アドレス
 
-<font>gethostbyaddr($_SERVER['REMOTE_ADDR']</font>;
-現在ページをみているユーザーの IP アドレスに対応するインターネットホスト名
+  <font>gethostbyaddr($_SERVER['REMOTE_ADDR']</font>;
+  現在ページをみているユーザーの IP アドレスに対応するインターネットホスト名
 
-<font>$_SERVER['REMOTE_PORT']</font>;
-ユーザーのマシンから Web サーバーへの通信に使用されているポート番号
+  <font>$_SERVER['REMOTE_PORT']</font>;
+  ユーザーのマシンから Web サーバーへの通信に使用されているポート番号
 
-<font>$_SERVER['HTTP_USER_AGENT']</font>;
-ページを見ているユーザーが使用しているブラウザの種類
+  <font>$_SERVER['HTTP_USER_AGENT']</font>;
+  ページを見ているユーザーが使用しているブラウザの種類
 
 </pre>
