@@ -12,21 +12,21 @@
     {
       "date" : "HTMLの基本",
       "name" : "HyperText Markup Language",
-      "url" : "html/",
+      "url" : "/coding/html/",
       "language" : "html",
       "status" : "basic"
     },
     {
       "date" : "CSSの基本",
       "name" : "Cascading Style Sheets",
-      "url" : "css/",
+      "url" : "/coding/css/",
       "language" : "css",
       "status" : "basic"
     },
     {
       "date" : "JavaScriptの基本",
       "name" : "JavaScript",
-      "url" : "js/",
+      "url" : "/coding/js/",
       "language" : "js",
       "status" : "basic"
     }

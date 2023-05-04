@@ -117,7 +117,7 @@
     {
       "date" : "Cascading Style Sheets",
       "name" : "Backgrounds | 背景",
-      "url" : "/coding/css/backgrounds/",
+      "url" : "/coding/backgrounds/backgrounds/",
       "language" : "css",
       "status" : "guide"
     },
@@ -357,22 +357,22 @@
     },
     {
       "date" : "Cascading Style Sheets",
-      "name" : "CSS Gradients | CSS グラデーション",
-      "url" : "/coding/css/colors/gradients/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "Cascading Style Sheets",
-      "name" : "Transform | Animation",
+      "name" : "Animation | CSS アニメーション",
       "url" : "/coding/css/animation/",
       "language" : "css",
       "status" : "guide"
     },
     {
       "date" : "Cascading Style Sheets",
-      "name" : "custom properties | CSS カスタムプロパティ",
+      "name" : "Custom Properties | CSS カスタムプロパティ",
       "url" : "/coding/css/custom/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "CSS Gradients | CSS グラデーション",
+      "url" : "/coding/css/backgrounds/gradients/",
       "language" : "css",
       "status" : "guide"
     },
@@ -393,14 +393,14 @@
     {
       "date" : "JavaScript",
       "name" : "JSON | JavaScript Object Notation",
-      "url" : "/coding/js/json/",
+      "url" : "/coding/js/object/json/",
       "language" : "js",
       "status" : "guide"
     },
     {
       "date" : "Web API",
       "name" : "Web Storage API | ウェブストレージ",
-      "url" : "/coding/form/web-storage/",
+      "url" : "/coding/api/web-storage/",
       "language" : "api",
       "status" : "guide"
     },
@@ -421,7 +421,7 @@
     {
       "date" : "Web API",
       "name" : "Canvas | 2D および 3D グラフィック",
-      "url" : "/coding/interactive/canvas/",
+      "url" : "/coding/html/canvas/",
       "language" : "api",
       "status" : "guide"
     }

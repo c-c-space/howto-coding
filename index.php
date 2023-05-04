@@ -22,8 +22,21 @@
     <br/>
     <section id="contents"></section>
   </main>
+
   <article id="right">
+    <section id="readme" class="readme"></section>
     <section id="links"></section>
   </article>
+
+  <script type="text/javascript">
+    async function readme() {
+      fetch('readme.md')
+      .then(response => response.text())
+      .then(readme => {
+        document.querySelector('#readme').innerHTML = readme.replace(/\n/g, "<br>")
+      });
+    }
+    readme();
+  </script>
 </body>
 </html>
