@@ -33,7 +33,7 @@
     {
       "date" : "Web API",
       "name" : "Scroll & WheelEvent",
-      "url" : "/coding/js/scroll/",
+      "url" : "/coding/js/event/scroll/",
       "language" : "js",
       "status" : "guide"
     }
