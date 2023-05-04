@@ -85,3 +85,24 @@
   </p>
   <hr/>
 </section>
+
+<pre>
+<font>$_SERVER['SERVER_PROTOCOL']</font>;
+プロトコルの名前とバージョン
+
+<font>$_SERVER['SERVER_ADDR']</font>;
+サーバーの IP アドレス
+
+<font>$_SERVER['SERVER_NAME']</font>;
+サーバーのホスト名
+
+<font>$_SERVER['SERVER_PORT']</font>;
+サーバーの通信ポートとして使用されているポート番号
+
+<font>$_SERVER['SERVER_SOFTWARE']</font>;
+サーバーの認識文字列
+
+<font>$_SERVER['PHP_SELF']</font>;
+現在実行しているファイル名
+
+</pre>
