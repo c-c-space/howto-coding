@@ -18,7 +18,7 @@
     },
     {
       "date" : "Network Information API",
-      "name" : "Online or Offline?",
+      "name" : "ネットワーク情報 API",
       "url" : "/coding/js/window/online/",
       "language" : "js",
       "status" : "basic"
