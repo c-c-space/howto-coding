@@ -25,10 +25,12 @@
 <body id="cover">
   <main id="left">
     <nav id="contents"></nav>
+    <?php include('hello.php'); ?>
     <hr/>
     <section id="links"></section>
   </main>
   <article id="right">
+    <?php require('howto.html'); ?>
   </article>
   <h1 id="title">include | Personal Home Page Tools</h1>
 
