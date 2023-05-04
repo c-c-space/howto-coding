@@ -10,7 +10,7 @@ document.onreadystatechange = function() {
 
     case "complete":
     const coverH1 = document.querySelector('#main h1');
-    coverH1.innerHTML = "JavaScript | Event<br/><code>addEventListener()</code>";
+    coverH1.innerHTML = "Web API | EventTarget<br/><code>addEventListener()</code>";
     break;
   }
 };
