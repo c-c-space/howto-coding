@@ -16,7 +16,7 @@
   </style>
 </head>
 <body id="cover">
-  <main id="left" class="readme">
+  <main id="left">
     <?php require('hello.php'); ?>
     <section id="links"></section>
   </main>
