@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
@@ -12,7 +11,7 @@
   <link rel="stylesheet" href="../../cover/mobile.css" media="screen and (max-width: 820px)">
   <style>
   .php::before {
-    content: '<?';
+    content: '<';
   }
 
   .php::after {
