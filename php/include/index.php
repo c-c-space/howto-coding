@@ -38,6 +38,7 @@
     <section id="links"></section>
   </main>
   <article id="right">
+    <?php require('howto.html'); ?>
   </article>
   <h1 id="title">include | Personal Home Page Tools</h1>
 
