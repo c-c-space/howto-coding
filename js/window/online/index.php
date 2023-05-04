@@ -41,6 +41,7 @@
   #links,
   #lastModified {
     padding: 0.5rem;
+    margin: 0;
   }
   </style>
 </head>
