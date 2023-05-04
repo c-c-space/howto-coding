@@ -10,8 +10,8 @@
       ?>
     </span>
     <br/>
-    <u data-id="https">HTTPS</u>
-    <span id="https" class="hide">
+    <u data-id="cgi">CGI</u>
+    <span id="cgi" class="hide">
       <?php
       echo $_SERVER['GATEWAY_INTERFACE'];
       ?>
