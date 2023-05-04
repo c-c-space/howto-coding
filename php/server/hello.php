@@ -30,10 +30,10 @@
       ?>
       <br/>
     </span>
-    <u data-id="time">REQUEST TIME</u>
-    <span id="time" class="hide">
+    <u data-id="addr">IP</u>
+    <span id="addr" class="hide">
       <?php
-      echo $_SERVER['REQUEST_TIME'];
+      echo $_SERVER['SERVER_ADDR'];
       ?>
     </span>
   </p>
