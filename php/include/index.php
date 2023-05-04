@@ -37,7 +37,9 @@
 <body id="cover">
   <main id="left">
     <section id="contents"></section>
+    <hr/>
     <?php include('hello.php'); ?>
+    <hr/>
     <section id="links"></section>
   </main>
   <article id="right">
