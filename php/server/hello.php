@@ -31,10 +31,10 @@
       ?>
       <br/>
     </span>
-    <u data-id="info">INFO</u>
-    <span id="info" class="hide">
+    <u data-id="time">REQUEST TIME</u>
+    <span id="time" class="hide">
       <?php
-      echo $_SERVER['ORIG_PATH_INFO'];
+      echo $_SERVER['REQUEST_TIME'];
       ?>
     </span>
   </p>
