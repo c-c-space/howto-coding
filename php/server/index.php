@@ -22,5 +22,8 @@
     <?php require('howto.html'); ?>
   </article>
   <h1 id="title">Server Information & The User-Agent</h1>
+
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="../../hello/data_show.js"></script>
 </body>
 </html>

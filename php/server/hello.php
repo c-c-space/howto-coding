@@ -109,5 +109,3 @@
 ページを見ているユーザーが使用しているブラウザの種類
 
 </pre>
-
-<script src="../../hello/data_show.js"></script>
