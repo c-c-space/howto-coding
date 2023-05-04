@@ -24,8 +24,8 @@
       "status" : "basic"
     },
     {
-      "date" : "JavaScript",
-      "name" : "イベント",
+      "date" : "Web API",
+      "name" : "イベントターゲット",
       "url" : "/coding/js/event/",
       "language" : "js",
       "status" : "basic"

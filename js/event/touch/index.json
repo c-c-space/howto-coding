@@ -10,8 +10,8 @@
 
   "contents" : [
     {
-      "date" : "Document Object Model",
-      "name" : "Event",
+      "date" : "Web API",
+      "name" : "EventTarget",
       "url" : "/coding/js/event/",
       "language" : "js",
       "status" : "basic"
