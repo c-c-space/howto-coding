@@ -1,0 +1,72 @@
+{
+  "title" : "Screen",
+  "description" : "",
+  "author" : "Width & Height",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "Document Object Model",
+      "name" : "Window",
+      "url" : "/coding/js/window/",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "Window",
+      "name" : ".innerWidth",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerWidth",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".innerHeight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".outerWidth",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerWidth",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Window",
+      "name" : ".outerHeight",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerHeight",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS Object Model",
+      "name" : "Screen",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Screen",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".screen",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/screen",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Geolocation API",
+      "name" : "位置情報 API の使用",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Geolocation_API/Using_the_Geolocation_API",
+      "language" : "js",
+      "status" : "basic"
+    }
+  ]
+}

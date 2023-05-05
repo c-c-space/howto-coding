@@ -1,0 +1,87 @@
+<table class="size">
+  <tbody>
+    <tr>
+      <td>window.screen.width</td>
+      <td>スクリーンサイズ(解像度)</td>
+      <td id="outScreenWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>window.screen.height</td>
+      <td>スクリーンサイズ(解像度)</td>
+      <td id="outScreenheight" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>window.screen.availWidth </td>
+      <td>タスクバーなどを除くスクリーン有効域の幅</td>
+      <td id="outAvailWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>window.screen.availHeight</td>
+      <td>タスクバーなどを除くスクリーン有効域の高さ</td>
+      <td id="outAvailHeight" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<table class="size">
+  <tbody>
+    <tr>
+      <td>window.innerWidth</td>
+      <td>ブラウザ内の表示域(スクロールバーを含む)</td>
+      <td id="outInnerWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>window.outerWidth</td>
+      <td>ブラウザ表示域(ブラウザ全体の外周)</td>
+      <td id="outOuterWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>window.innerHeight</td>
+      <td>ブラウザ内の表示域(スクロールバーを含む)</td>
+      <td id="outInnerHeight" class="nowValue"></td>
+    </tr>
+    <tr >
+      <td>window.outerHeight</td>
+      <td>ブラウザ表示域(ブラウザ全体の外周)</td>
+      <td id="outOuterHeight" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+
+<!--
+
+
+const outInnerWidth = document.getElementById("outInnerWidth")
+outInnerWidth.innerText = window.innerWidth;
+
+const outInnerHeight = document.getElementById("outInnerHeight")
+outInnerHeight.innerText = window.innerHeight;
+
+const outOuterWidth = document.getElementById("outOuterWidth")
+outOuterWidth.innerText = window.outerWidth;
+
+const outOuterHeight = document.getElementById("outOuterHeight")
+outOuterHeight.innerText = window.outerHeight;
+
+
+https://developer.mozilla.org/ja/docs/Web/API/Window/resize_event
+https://developer.mozilla.org/ja/docs/Web/API/Window/resizeBy
+https://developer.mozilla.org/ja/docs/Web/API/Window/resizeTo
+-->
+
+<p>
+  <code><code class="red">resizeTo</code>(width, height)</code>
+  <input type="button" value="ウィンドウのサイズを動的に変更します。" onclick="resizeTo(200, 200)"><br/>
+  <i>width ウインドウの幅をピクセル数で表します。</i>
+  <i>height ウインドウの高さをピクセル数で表します。</i>
+</p>
+<p>
+  <code><code class="red">resizeBy</code>(xDelta, yDelta)</code>
+  <input type="button" value="ウィンドウを指定した大きさにリサイズします。" onclick="resizeBy(-200, -200)"><br/>
+  <i>xDelta はウィンドウを水平方向に広げるピクセル数です。</i>
+  <i>yDelta はウィンドウを垂直方向に広げるピクセル数です。</i>
+</p>
+<hr/>
+<script src="script.js"></script>

@@ -26,7 +26,7 @@
     {
       "date" : "Web API",
       "name" : "Scroll & WheelEvent",
-      "url" : "/coding/js/event/scroll/",
+      "url" : "/coding/js/window/scroll/",
       "language" : "js",
       "status" : "guide"
     }
@@ -42,66 +42,45 @@
     },
     {
       "date" : "Window",
-      "name" : ".innerWidth",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerWidth",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Window",
-      "name" : ".innerHeight",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Window",
-      "name" : ".outerWidth",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerWidth",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Window",
-      "name" : ".outerHeight",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerHeight",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "CSS Object Model",
-      "name" : "Screen",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Screen",
+      "name" : ".name",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/name",
       "language" : "js",
       "status" : "basic"
     },
     {
       "date" : "Window",
-      "name" : ".screen",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/screen",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Document Object Model",
-      "name" : "Navigator",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator",
+      "name" : ".open()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/open",
       "language" : "js",
       "status" : "basic"
     },
     {
       "date" : "Window",
-      "name" : ".navigator",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/navigator",
+      "name" : ".close()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/close",
       "language" : "js",
-      "status" : "guide"
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".stop()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/stop",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".print()",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/print",
+      "language" : "js",
+      "status" : "basic"
     },
     {
       "date" : "Document Object Model",
       "name" : "Location",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Location",
       "language" : "js",
-      "status" : "basic"
+      "status" : "guide"
     },
     {
       "date" : "Window",
@@ -142,6 +121,55 @@
       "date" : "Window",
       "name" : ".console",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/console",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Document Object Model",
+      "name" : "Navigator",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Window",
+      "name" : ".navigator",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/navigator",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Navigator",
+      "name" : ".language",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/language",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Navigator",
+      "name" : ".languages",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/languages",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Navigator",
+      "name" : ".deviceMemory",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/deviceMemory",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Navigator",
+      "name" : ".hardwareConcurrency",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/hardwareConcurrency",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "Navigator",
+      "name" : ".userAgent",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/userAgent",
       "language" : "js",
       "status" : "guide"
     },

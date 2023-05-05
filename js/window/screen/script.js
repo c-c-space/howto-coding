@@ -29,15 +29,12 @@ function windowScreen() {
   const outAvailHeight = document.getElementById("outAvailHeight")
   outAvailHeight.innerText = screen.availHeight;
 
-  const outInnerWidth = document.getElementById("outInnerWidth")
-  outInnerWidth.innerText = window.innerWidth;
+  const colorDepth = document.getElementById("colorDepth")
+  colorDepth.innerText = screen.colorDepth;
 
-  const outInnerHeight = document.getElementById("outInnerHeight")
-  outInnerHeight.innerText = window.innerHeight;
+  const pixelDepth = document.getElementById("pixelDepth")
+  pixelDepth.innerText = screen.pixelDepth;
 
-  const outOuterWidth = document.getElementById("outOuterWidth")
-  outOuterWidth.innerText = window.outerWidth;
-
-  const outOuterHeight = document.getElementById("outOuterHeight")
-  outOuterHeight.innerText = window.outerHeight;
+  const orientation = document.getElementById("orientation")
+  orientation.innerText = screen.orientation;
 }

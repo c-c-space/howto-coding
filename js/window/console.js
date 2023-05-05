@@ -12,9 +12,9 @@ function bodyLog() {
     this.clientY = clientY;
     this.at = at;
   }
+
   const clientDate = new XYDate( event.clientX, event.clientY, timeStr );
   console.table(clientDate);
-
   console.groupEnd();
 }
 

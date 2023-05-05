@@ -58,65 +58,37 @@
 </head>
 <body>
   <nav>
-    <a href="#api">Window</a>
+    <a href="#api">API</a>
     <a href="#console">Console</a>
+    <a href="#size">Size</a>
     <a href="#etc">参考資料</a>
   </nav>
 
   <article class="readme">
     <section id="cover" class="active cover">
       <h1></h1>
-      <table class="size">
-        <tbody>
-          <tr>
-            <td>window.innerWidth</td>
-            <td>ブラウザ内の表示域(スクロールバーを含む)</td>
-            <td id="outInnerWidth" class="nowValue"></td>
-          </tr>
-          <tr>
-            <td>window.outerWidth</td>
-            <td>ブラウザ表示域(ブラウザ全体の外周)</td>
-            <td id="outOuterWidth" class="nowValue"></td>
-          </tr>
-          <tr>
-            <td>window.innerHeight</td>
-            <td>ブラウザ内の表示域(スクロールバーを含む)</td>
-            <td id="outInnerHeight" class="nowValue"></td>
-          </tr>
-          <tr >
-            <td>window.outerHeight</td>
-            <td>ブラウザ表示域(ブラウザ全体の外周)</td>
-            <td id="outOuterHeight" class="nowValue"></td>
-          </tr>
-        </tbody>
-      </table>
-      <table class="size">
-        <tbody>
-          <tr>
-            <td>window.screen.width</td>
-            <td>スクリーンサイズ(解像度)</td>
-            <td id="outScreenWidth" class="nowValue"></td>
-          </tr>
-          <tr>
-            <td>window.screen.height</td>
-            <td>スクリーンサイズ(解像度)</td>
-            <td id="outScreenheight" class="nowValue"></td>
-          </tr>
-          <tr>
-            <td>window.screen.availWidth </td>
-            <td>タスクバーなどを除くスクリーン有効域の幅</td>
-            <td id="outAvailWidth" class="nowValue"></td>
-          </tr>
-          <tr>
-            <td>window.screen.availHeight</td>
-            <td>タスクバーなどを除くスクリーン有効域の高さ</td>
-            <td id="outAvailHeight" class="nowValue"></td>
-          </tr>
-        </tbody>
-      </table>
+      <p>
+        navigator<code class="red">.language</code> |
+        navigator<code class="red">.languages</code><br/>
+        <small>ユーザーの言語</small> <code id="language" class="nowValue"></code> |
+        <small>推奨される言語</small> <code id="languages" class="nowValue"></code>
+      </p>
+      <p>
+        navigator<code class="red">.deviceMemory</code><br/>
+        <code id="memory" class="nowValue"></code>
+        <br/>
+        <br/>
+        navigator<code class="red">.hardwareConcurrency</code><br/>
+        <code id="hardware" class="nowValue"></code>
+        <br/>
+        <br/>
+        navigator<code class="red">.userAgent</code><br/>
+        <code id="sBrowser" class="nowValue"></code>
+      </p>
     </section>
     <section id="api" class="is-hide"></section>
     <section id="console" class="is-hide"></section>
+    <section id="size" class="is-hide"></section>
     <section id="etc" class="is-hide">
       <aside id="links"></aside>
     </section>
@@ -124,7 +96,6 @@
 
   <aside id="contents"></aside>
 
-  <script src="script.js" defer></script>
   <script src="console.js"></script>
   <script src="../../readme/script.js" defer></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -132,7 +103,19 @@
   $(function() {
     $("#api").load("api.html");
     $("#console").load("console.html");
+    $("#size").load("size.html");
   })
+
+  document.querySelector('#language').innerText = navigator.language
+  document.querySelector('#languages').innerText = navigator.languages
+
+  const memory = navigator.deviceMemory
+  document.querySelector('#memory').innerText = `この端末には ${memory} GiB 以上の RAM があります。`
+
+  const hardware = navigator.hardwareConcurrency
+  document.querySelector('#hardware').innerText = `この端末の使用可能なコア数は ${hardware} CPUです。`
+
+  document.querySelector('#sBrowser').innerText = navigator.userAgent
   </script>
 </body>
 </html>
