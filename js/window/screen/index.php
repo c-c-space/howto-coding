@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="script.js"></script>
   <script src="../../../readme/index.js" async></script>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../../event/style.css" />
@@ -103,7 +102,7 @@
     </p>
   </article>
 
-  <script src="network.js" defer></script>
+  <script src="script.js"></script>
   <script type="text/javascript">
   const button = document.querySelector('#js-button');
   const body = document.querySelector('body');
