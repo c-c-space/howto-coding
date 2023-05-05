@@ -33,7 +33,7 @@ function <font>update(online)</font> {
 <p style="text-align: center;">/* ~~~ */</p>
 <hr/>
 <br/>
-<details>
+<details class="hide_offline">
   <summary>
     ネットワーク情報 API<br/>
     <font>Network Information API</font>
@@ -61,10 +61,10 @@ if (connection !== undefined) {
   </pre>
 </details>
 <hr/>
-<p>ネットワーク情報 API は、システムのネットワーク接続に関する情報を提供する 実験的な機能 です。</p>
-<p>このAPIは、ユーザーの通信環境・接続状態に基づき、提供するデータを制限する場合に便利です。</p>
+<p class="hide_offline">ネットワーク情報 API は、システムのネットワーク接続に関する情報を提供する 実験的な機能 です。</p>
+<p class="hide_offline">このAPIは、ユーザーの通信環境・接続状態に基づき、提供するデータを制限する場合に便利です。</p>
 <br/>
-<table class="size">
+<table class="size hide_offline">
   <tbody>
     <tr>
       <td>NetworkInformation.type</td>

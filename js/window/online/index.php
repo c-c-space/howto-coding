@@ -47,12 +47,12 @@
 </head>
 <body onload="update(navigator.onLine)" ononline="update(true)" onoffline="update(false)">
   <button type="button" id="js-button"><b></b></button>
-  <article id="hidden" class="hide_offline">
-    <aside id="contents"></aside>
+  <article id="hidden">
+    <aside id="contents" class="hide_offline"></aside>
     <article id="howto" class="readme">
       <?php require('howto.html'); ?>
     </article>
-    <nav id="links"></nav>
+    <nav id="links" class="hide_offline"></nav>
     <p id="lastModified"></p>
   </article>
 
