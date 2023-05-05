@@ -4,14 +4,14 @@
     <font>Online or Offline?</font>
   </summary>
   <p>Navigator.onLine は、ブラウザーのオンライン状態を意味する論理値を返します。</p>
-  <p><small>オンライン状態の場合の値は true / オフライン状態の場合の値は false です。</small></p>
+  <p><u>オンライン状態の場合の値は true / オフライン状態の場合の値は false です。</u></p>
 <pre>
 body <font>ononline="update(true)"</font> <font>onoffline="update(false)"</font> onload="update(<font>navigator.onLine</font>)"
 </pre>
   <br/>
   <p>function update(online)</p>
   <p>オンライン状態に応じて宣言する文をパッケージ化します。</p>
-  <p><small>online ? 'true の場合' : 'false の場合'</small></p>
+  <p><u>online ? 'true の場合' : 'false の場合'</u></p>
 <pre>
 function <font>update(online)</font> {
   document.querySelector('#status').textContent =
