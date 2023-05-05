@@ -104,22 +104,22 @@ if (connection !== undefined) {
   <details>
     <summary>
       if ( connection.effectiveType === '' )<br/>
-      <font>有効接続種別</font>
+      <font>Effective connection type</font>
     </summary>
-    <p>ネットワークの種類(性能) を特定し、宣言する文をパッケージ化</p>
+    <p>有効接続種別(ネットワークの性能) を測定し、宣言する文をパッケージ化</p>
     <br/>
     <pre>
 const connection = navigator.connection;
 
 if (connection) {
   if (connection.<font>effectiveType</font> === '<font>slow-2g</font>') {
-    //
+    // 最小 RTT 2000ms | 最大下り接続 50 Kbps
   } else if (connection.<font>effectiveType</font> === '<font>2g</font>') {
-    //
+    // 最小 RTT 1400ms | 最大下り接続 70 Kbps
   } else if (connection.<font>effectiveType</font> === '<font>3g</font>') {
-    //
+    // 最小 RTT 270ms | 最大下り接続 700 Kbps
   } else {
-    //
+    // 最小 RTT 0ms  | 最大下り接続 ∞
   }
 }
     </pre>
