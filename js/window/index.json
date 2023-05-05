@@ -146,20 +146,6 @@
       "status" : "guide"
     },
     {
-      "date" : "Battery Status API",
-      "name" : "バッテリー状態 API",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API",
-      "language" : "js",
-      "status" : "basic"
-    },
-    {
-      "date" : "Battery Status API",
-      "name" : "getBattery()",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Navigator/getBattery",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
       "date" : "Geolocation API",
       "name" : "位置情報 API の使用",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Geolocation_API/Using_the_Geolocation_API",
