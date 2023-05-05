@@ -32,7 +32,7 @@ function <font>update(online)</font> {
 </pre>
 </details>
 <hr/>
-<section id="networkInfo" class="hide_offline" hidden>
+<section id="networkInfo" class="hide_offline">
   <p style="text-align: center;">/* ~~~ */</p>
   <hr/>
   <br/>
@@ -96,16 +96,26 @@ if (connection !== undefined) {
       </tr>
     </tbody>
   </table>
-  <br/>
+  <hr/>
   <details>
     <summary>
-      navigator.connection<br/>
-      <font>Network Information API</font>
+      if ( connection.effectiveType === '' )<br/>
+      <font>有効接続種別</font>
     </summary>
+    <p>ネットワークの種類(性能) を特定し、宣言する文をパッケージ化</p>
+    <br/>
     <pre>
+const connection = navigator.connection;
+
 if (connection) {
-  if (connection.<font>effectiveType</font> === '4g') {
-    document.getElementById('networkInfo').hidden = false;
+  if (connection.<font>effectiveType</font> === '<font>slow-2g</font>') {
+    //
+  } else if (connection.<font>effectiveType</font> === '<font>2g</font>') {
+    //
+  } else if (connection.<font>effectiveType</font> === '<font>3g</font>') {
+    //
+  } else {
+    //
   }
 }
     </pre>
