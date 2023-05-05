@@ -51,9 +51,9 @@
     <aside id="contents" class="hide_offline"></aside>
     <article id="howto" class="readme">
       <?php require('howto.html'); ?>
+      <p id="lastModified"></p>
     </article>
     <nav id="links" class="hide_offline"></nav>
-    <p id="lastModified"></p>
   </article>
 
   <article id="main" class="readme">
