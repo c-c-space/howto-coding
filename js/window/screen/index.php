@@ -48,7 +48,7 @@
     <aside id="contents"></aside>
     <article id="howto" class="readme">
       <?php require('howto.html'); ?>
-      <br/>
+      <hr/>
       <p id="lastModified"></p>
     </article>
     <hr/>
