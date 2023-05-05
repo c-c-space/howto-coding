@@ -38,8 +38,7 @@
   }
 
   #contents,
-  #links,
-  #lastModified {
+  #links {
     padding: 0.5rem;
     margin: 0;
   }
