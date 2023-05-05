@@ -1,0 +1,123 @@
+<h2>Screen インターフェイスは、現在の画面のプロパティを検査する特別なオブジェクトです。</h2>
+<p>プロパティから画面のサイズや色深度・ピット深度などを取得できます。</p>
+<table class="size">
+  <tbody>
+    <tr>
+      <td>Screen.width</td>
+      <td>画面の幅 (px)</td>
+      <td id="outScreenWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>Screen.availWidth </td>
+      <td>タスクバーなどを除くスクリーン有効域の幅</td>
+      <td id="outAvailWidth" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>Screen.height</td>
+      <td>画面の高さ (px)</td>
+      <td id="outScreenheight" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>Screen.availHeight</td>
+      <td>タスクバーなどを除くスクリーン有効域の高さ</td>
+      <td id="outAvailHeight" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  画面の色深度<br/>
+  Screen<code class="red">.colorDepth</code> |
+  <font id="colorDepth" class="nowValue"></font> bits per pixel
+  <br/>
+  <br/>
+  画面のビット深度<br/>
+  Screen<code class="red">.pixelDepth</code> |
+  <font id="pixelDepth" class="nowValue"></font> bits per pixel
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+
+<h3>
+  <i>画面方向 API</i><br/>
+  Screen Orientation API
+</h3>
+<p>画面の向きに関する情報を取得する</p>
+<pre>
+
+// 現在の画面方向を取得する
+let orientationType = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+
+// 画面の向きに応じて宣言する文をパッケージ化
+if (orientationType === "landscape-secondary" || orientationType === "landscape-primary") {
+  document.getElementById("orientation").innerText = 'Type: ' + orientationType;
+} else if (orientationType === "portrait-secondary" || orientationType === "portrait-primary") {
+  document.getElementById("orientation").innerText = 'Type: ' + orientationType;
+} else if (orientationType === undefined) {
+  document.getElementById("orientation").innerText = "not supported by your browser";
+}
+</pre>
+<br/>
+<table class="size">
+  <p id="orientationAngel"></p>
+  <tbody>
+    <tr>
+      <td>landscape-primary</td>
+      <td>横幅が縦幅より大きい標準方位</td>
+      <td id="landscapePrimary" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>landscape-secondary</td>
+      <td>横幅が縦幅より大きい標準方位と逆の向き</td>
+      <td id="landscapeSecondary" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>portrait-primary</td>
+      <td>縦幅が横幅より大きい標準方位</td>
+      <td id="portraitPrimary" class="nowValue"></td>
+    </tr>
+    <tr>
+      <td>portrait-primary</td>
+      <td>縦幅が横幅より大きい標準方位と逆の向き</td>
+      <td id="portraitSecondary" class="nowValue"></td>
+    </tr>
+  </tbody>
+</table>
+<hr/>
+<p>
+<i>ScreenOrientation.angle</i><br/>
+画面の向きの角度
+</p>
+<pre>
+const angle= document.getElementById("angle")
+
+const screenOrientation = screen.orientation;
+angle.innerText = 'Angle: ' + screenOrientation.angle + '°';
+</pre>
+
+<script src="script.js"></script>
+<script type="text/javascript">
+  screen.orientation.lock("natural")
+
+  const orientationAngel = document.getElementById("orientationAngel")
+  const landscapePrimary = document.getElementById("landscapePrimary")
+  const landscapeSecondary = document.getElementById("landscapeSecondary")
+  const portraitPrimary = document.getElementById("portraitPrimary")
+  const portraitSecondary = document.getElementById("portraitSecondary")
+
+  let orientationType = (screen.orientation || {}).type || screen.mozOrientation || screen.msOrientation;
+  if (orientationType === "landscape-primary") {
+    orientationAngel.innerHTML = 'Your Screen is <b>Landscape</b>';
+    landscapePrimary.innerText = '0°';
+    landscapeSecondary.innerText = '180°';
+    portraitPrimary.innerText = '90°';
+    portraitSecondary.innerText = '270°';
+  } else if (orientationType === "portrait-primary") {
+    orientationAngel.innerHTML = 'Your Screen is <b>Portrait</b>';
+    landscapePrimary.innerText = '90°';
+    landscapeSecondary.innerText = '270°';
+    portraitPrimary.innerText = '0°';
+    portraitSecondary.innerText = '180°';
+  }
+</script>

@@ -20,34 +20,6 @@
 
   "links" : [
     {
-      "date" : "Window",
-      "name" : ".innerWidth",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerWidth",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Window",
-      "name" : ".innerHeight",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/innerHeight",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Window",
-      "name" : ".outerWidth",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerWidth",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
-      "date" : "Window",
-      "name" : ".outerHeight",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/outerHeight",
-      "language" : "js",
-      "status" : "guide"
-    },
-    {
       "date" : "CSS Object Model",
       "name" : "Screen",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Screen",
@@ -62,9 +34,23 @@
       "status" : "guide"
     },
     {
-      "date" : "Geolocation API",
-      "name" : "位置情報 API の使用",
-      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Geolocation_API/Using_the_Geolocation_API",
+      "date" : "画面方向 API",
+      "name" : "Screen Orientation API",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Screen_Orientation_API",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
+      "date" : "Screen",
+      "name" : ".orientation",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/API/Screen/orientation",
+      "language" : "js",
+      "status" : "guide"
+    },
+    {
+      "date" : "スクリーン方位",
+      "name" : "Screen Orientation",
+      "url" : "https://triple-underscore.github.io/screen-orientation-ja.html",
       "language" : "js",
       "status" : "basic"
     }

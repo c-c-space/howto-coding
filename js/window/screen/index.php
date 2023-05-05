@@ -15,8 +15,7 @@
   }
 
   #hidden {
-    filter: invert(1);
-    mix-blend-mode: exclusion;
+    mix-blend-mode: difference;
   }
 
   #links::before {
@@ -64,43 +63,8 @@
         <code id="angle"></code>
       </small>
     </h1>
-    <table class="size">
-      <tbody>
-        <tr>
-          <td>window.screen.width</td>
-          <td>スクリーンサイズ(解像度)</td>
-          <td id="outScreenWidth" class="nowValue"></td>
-        </tr>
-        <tr>
-          <td>window.screen.availWidth </td>
-          <td>タスクバーなどを除くスクリーン有効域の幅</td>
-          <td id="outAvailWidth" class="nowValue"></td>
-        </tr>
-        <tr>
-          <td>window.screen.height</td>
-          <td>スクリーンサイズ(解像度)</td>
-          <td id="outScreenheight" class="nowValue"></td>
-        </tr>
-        <tr>
-          <td>window.screen.availHeight</td>
-          <td>タスクバーなどを除くスクリーン有効域の高さ</td>
-          <td id="outAvailHeight" class="nowValue"></td>
-        </tr>
-      </tbody>
-    </table>
-    <p>
-      画面の色深度<br/>
-      Screen<code class="red">.colorDepth</code> |
-      <font id="colorDepth" class="nowValue"></font> bits per pixel
-      <br/>
-      <br/>
-      画面のビット深度<br/>
-      Screen<code class="red">.pixelDepth</code> |
-      <font id="pixelDepth" class="nowValue"></font> bits per pixel
-    </p>
   </article>
 
-  <script src="script.js"></script>
   <script src="orientation.js"></script>
   <script type="text/javascript">
   const button = document.querySelector('#js-button');

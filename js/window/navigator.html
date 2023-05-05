@@ -1,0 +1,42 @@
+<h2>
+Window<code class="red">.navigator</code><br/>
+<i>スクリプトを実行しているアプリケーションに関するメソッドとプロパティを持つ Navigator オブジェクトへの参照を返します。</i>
+</h2>
+<hr/>
+<p>
+  <i>ユーザーの言語を表す文字列・推奨される言語を表す文字列の配列をを返します。</i><br/>
+  <code>navigator<code class="red">.language</code></code> |
+  <code>navigator<code class="red">.languages</code></code><br/>
+  <code id="language"></code> | <code id="languages"></code>
+</p>
+<p>
+  <i>端末のおよそのメモリ量をギガバイト単位で返します。</i><br/>
+  <code>navigator<code class="red">.deviceMemory</code></code><br/>
+  <code id="memory"></code>
+</p>
+<p>
+  <i>端末上で使用可能な論理プロセッサーコアの数を返します。</i><br/>
+  <code>navigator<code class="red">.hardwareConcurrency</code></code><br/>
+  <code id="hardware"></code>
+</p>
+<p>
+  <i>現在のブラウザーのユーザーエージェント文字列を返します。</i><br/>
+  <code>navigator<code class="red">.userAgent</code></code><br/>
+  <code id="sBrowser"></code>
+</p>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+
+<script type="text/javascript">
+  document.querySelector('#language').innerText = navigator.language
+  document.querySelector('#languages').innerText = navigator.languages
+
+  const memory = navigator.deviceMemory
+  document.querySelector('#memory').innerText = `この端末には ${memory} GiB 以上の RAM があります。`
+
+  const hardware = navigator.hardwareConcurrency
+  document.querySelector('#hardware').innerText = `この端末の使用可能なコア数は ${hardware} CPUです。`
+
+  document.querySelector('#sBrowser').innerText = navigator.userAgent
+</script>
