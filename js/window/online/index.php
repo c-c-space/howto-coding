@@ -52,6 +52,7 @@
       <?php require('howto.html'); ?>
       <p id="lastModified"></p>
     </article>
+    <hr/>
     <nav id="links" class="hide_offline"></nav>
   </article>
 
