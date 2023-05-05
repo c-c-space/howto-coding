@@ -1,8 +1,34 @@
-<h2>Network Information API</h2>
+<details>
+  <summary>
+    インターネットの交信状態（オンライン/オフライン）<br/>
+    <font>Online or Offline?</font>
+  </summary>
+<pre>
+function update(online) {
+  document.querySelector('#status').textContent =
+  online ? 'You are: Online' : 'You are: Offline';
+
+  const onlineHideAll = document.querySelectorAll('.hide_online');
+  for (const onlineHide of onlineHideAll) {
+    onlineHide.style.display = online ? 'none' : 'block';
+  }
+
+  const offlineHideAll = document.querySelectorAll('.hide_offline');
+  for (const offlineHide of offlineHideAll) {
+    offlineHide.style.display = online ? 'block' : 'none';
+  }
+}
+</pre>
+</details>
+<br/>
+<hr/>
+<p style="text-align: center;">/* ~~~ */</p>
+<hr/>
+<br/>
 <details>
   <summary>
     ネットワーク情報 API<br/>
-    <i>システムのネットワーク接続に関する情報を提供するAPI</i>
+    <i>Network Information API</i>
   </summary>
   <pre>
 const connectionInfo = <font>navigator.connection</font>;
@@ -27,6 +53,8 @@ if (connectionInfo !== undefined) {
   </pre>
 </details>
 <hr/>
+<p>ネットワーク情報 API は、システムのネットワーク接続に関する情報を提供する 実験的な機能 です。</p>
+<p>このAPIは、ユーザーの通信環境・接続状態に基づき、提供するデータを制限する場合に便利な機能です。</p>
 <table class="size">
   <tbody>
     <tr>
@@ -56,31 +84,4 @@ if (connectionInfo !== undefined) {
     </tr>
   </tbody>
 </table>
-<br/>
-<hr/>
-<p style="text-align: center;">/* ~~~ */</p>
-<hr/>
-<br/>
-<details>
-  <summary>
-    インターネットの交信状態（オンライン/オフライン）<br/>
-    <font>Online or Offline?</font>
-  </summary>
-<pre>
-function update(online) {
-  document.querySelector('#status').textContent =
-  online ? 'You are: Online' : 'You are: Offline';
-
-  const onlineHideAll = document.querySelectorAll('.hide_online');
-  for (const onlineHide of onlineHideAll) {
-    onlineHide.style.display = online ? 'none' : 'block';
-  }
-
-  const offlineHideAll = document.querySelectorAll('.hide_offline');
-  for (const offlineHide of offlineHideAll) {
-    offlineHide.style.display = online ? 'block' : 'none';
-  }
-}
-</pre>
-</details>
 <hr/>
