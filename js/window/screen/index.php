@@ -58,8 +58,11 @@
 
   <article id="main" class="readme">
     <h1>
-      Screen<br/>
-      <small>Width & Height</small>
+      <b>Screen | Orientation API</b><br/>
+      <small>
+        <code id="orientation"></code><br/>
+        <code id="angle"></code>
+      </small>
     </h1>
     <table class="size">
       <tbody>
@@ -94,15 +97,11 @@
       画面のビット深度<br/>
       Screen<code class="red">.pixelDepth</code> |
       <font id="pixelDepth" class="nowValue"></font> bits per pixel
-      <br/>
-      <br/>
-      画面の向き |
-      Screen<code class="red">.orientation</code><br/>
-      <code id="orientation" class="nowValue"></code>
     </p>
   </article>
 
   <script src="script.js"></script>
+  <script src="orientation.js"></script>
   <script type="text/javascript">
   const button = document.querySelector('#js-button');
   const body = document.querySelector('body');

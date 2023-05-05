@@ -12,6 +12,7 @@ function tmResize() {
 function pageOnload() {
   windowScreen();
 }
+
 function pageResize() {
   windowScreen();
 }
@@ -34,7 +35,4 @@ function windowScreen() {
 
   const pixelDepth = document.getElementById("pixelDepth")
   pixelDepth.innerText = screen.pixelDepth;
-
-  const orientation = document.getElementById("orientation")
-  orientation.innerText = screen.orientation;
 }
