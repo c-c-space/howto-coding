@@ -1,10 +1,8 @@
 <h2>Network Information API</h2>
 <details>
   <summary>
-    <h3>
-      ネットワーク情報 API<br/>
-      <i>システムのネットワーク接続に関する情報を提供するAPI</i>
-    </h3>
+    ネットワーク情報 API<br/>
+    <i>システムのネットワーク接続に関する情報を提供するAPI</i>
   </summary>
   <pre>
 const connectionInfo = <font>navigator.connection</font>;
@@ -63,10 +61,11 @@ if (connectionInfo !== undefined) {
 <p style="text-align: center;">/* ~~~ */</p>
 <hr/>
 <br/>
-<h3>
-  インターネットの交信状態（オンライン/オフライン）<br/>
-  <font>Online or Offline?</font>
-</h3>
+<details>
+  <summary>
+    インターネットの交信状態（オンライン/オフライン）<br/>
+    <font>Online or Offline?</font>
+  </summary>
 <pre>
 function update(online) {
   document.querySelector('#status').textContent =
@@ -83,4 +82,5 @@ function update(online) {
   }
 }
 </pre>
+</details>
 <hr/>
