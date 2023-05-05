@@ -50,6 +50,7 @@
     <aside id="contents" class="hide_offline"></aside>
     <article id="howto" class="readme">
       <?php require('howto.html'); ?>
+      <hr/>
       <p id="lastModified"></p>
     </article>
     <hr/>
