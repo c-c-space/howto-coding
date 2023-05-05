@@ -105,10 +105,6 @@ nav#contents a:hover,
   min-height: 100vh;
 }
 
-.scroll #etc {
-  min-height: 75vh;
-}
-
 .scroll header h1,
 .scroll #etc aside {
   position: absolute;
