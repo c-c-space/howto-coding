@@ -45,7 +45,7 @@
   }
   </style>
 </head>
-<body ononline="update(true)" onoffline="update(false)" onload="update(navigator.onLine)">
+<body onload="update(navigator.onLine)" ononline="update(true)" onoffline="update(false)">
   <button type="button" id="js-button"><b></b></button>
   <article id="hidden" class="hide_offline">
     <aside id="contents"></aside>

@@ -34,6 +34,27 @@
     "status" : "guide"
   },
   {
+    "date" : "Window",
+    "name" : "load イベント",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/load_event",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
+    "date" : "Window",
+    "name" : "online イベント",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/online_event",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
+    "date" : "Window",
+    "name" : "offline イベント",
+    "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/offline_event",
+    "language" : "js",
+    "status" : "guide"
+  },
+  {
     "date" : "NetworkInformation",
     "name" : "インスタンスプロパティ",
     "url" : "https://developer.mozilla.org/ja/docs/Web/API/NetworkInformation",
