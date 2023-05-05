@@ -24,6 +24,13 @@
       "status" : "basic"
     },
     {
+      "date" : "Screen Orientation API",
+      "name" : "画面方向 API",
+      "url" : "/coding/js/window/screen/",
+      "language" : "js",
+      "status" : "basic"
+    },
+    {
       "date" : "Web API",
       "name" : "Scroll & WheelEvent",
       "url" : "/coding/js/window/scroll/",
@@ -111,18 +118,18 @@
       "status" : "basic"
     },
     {
-      "date" : "Living Standard",
-      "name" : "Console",
-      "url" : "https://triple-underscore.github.io/console-ja.html",
-      "language" : "js",
-      "status" : "basic"
-    },
-    {
       "date" : "Window",
       "name" : ".console",
       "url" : "https://developer.mozilla.org/ja/docs/Web/API/Window/console",
       "language" : "js",
       "status" : "guide"
+    },
+    {
+      "date" : "Living Standard",
+      "name" : "Console",
+      "url" : "https://triple-underscore.github.io/console-ja.html",
+      "language" : "js",
+      "status" : "basic"
     },
     {
       "date" : "Document Object Model",
