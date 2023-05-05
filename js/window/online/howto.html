@@ -1,16 +1,16 @@
 <details>
   <summary>
-    インターネットの交信状態（オンライン/オフライン）<br/>
+    Navigator.onLine<br/>
     <font>Online or Offline?</font>
   </summary>
-  <p>Navigator.onLine は、ブラウザーのオンライン状態を意味する論理値を返します。</p>
+  <p>インターネットの交信状態（オンライン/オフライン）を意味する論理値を返します。</p>
   <p><u>オンライン状態の場合の値は true / オフライン状態の場合の値は false です。</u></p>
 <pre>
 body <font>onload</font>="update(<font>navigator.onLine</font>)" <font>ononline</font>="update(<font>true</font>)" <font>onoffline</font>="update(<font>false</font>)"
 </pre>
   <br/>
   <p>function update(online)</p>
-  <p>オンライン状態に応じて宣言する文をパッケージ化します。</p>
+  <p>オンライン状態に応じて宣言する文をパッケージ化</p>
   <p><u>online ? 'true の場合' : 'false の場合'</u></p>
 <pre>
 function <font>update(online)</font> {
@@ -30,15 +30,16 @@ function <font>update(online)</font> {
 </pre>
 </details>
 <hr/>
-<p style="text-align: center;">/* ~~~ */</p>
-<hr/>
-<br/>
-<details class="hide_offline">
-  <summary>
-    ネットワーク情報 API<br/>
-    <font>Network Information API</font>
-  </summary>
-  <pre>
+<section class="hide_offline">
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <br/>
+  <details>
+    <summary>
+      navigator.connection<br/>
+      <font>Network Information API</font>
+    </summary>
+    <pre>
 const connection = <font>navigator.connection</font>;
 
 if (connection !== undefined) {
@@ -58,39 +59,40 @@ if (connection !== undefined) {
     connection.addEventListener('typechange', init);
   }
 }
-  </pre>
-</details>
-<hr/>
-<p class="hide_offline">ネットワーク情報 API は、システムのネットワーク接続に関する情報を提供する 実験的な機能 です。</p>
-<p class="hide_offline">このAPIは、ユーザーの通信環境・接続状態に基づき、提供するデータを制限する場合に便利です。</p>
-<br/>
-<table class="size hide_offline">
-  <tbody>
-    <tr>
-      <td>NetworkInformation.type</td>
-      <td>ネットワーク接続の種類 (bluetooth・cellular・ethernet・none・wifi・wimax・other・unknown)</td>
-      <td id="type" class="nowValue"></td>
-    </tr>
-    <tr>
-      <td>NetworkInformation.effectiveType</td>
-      <td>ネットワーク接続の有効な種類 (slow-2g・2g・3g・4g)</td>
-      <td id="effectiveType" class="nowValue"></td>
-    </tr>
-    <tr>
-      <td>NetworkInformation.downlink</td>
-      <td>回線の下り速度 (インターネット上からデータを受け取る際の通信)</td>
-      <td id="downlink" class="nowValue"></td>
-    </tr>
-    <tr>
-      <td>NetworkInformation.downlinkMax</td>
-      <td>下り最大速度 | 1秒間に送受信可能なデータ量を表す単位 メガビット毎秒 (Mb/s)</td>
-      <td id="downlinkMax" class="nowValue"></td>
-    </tr>
-    <tr>
-      <td>NetworkInformation.rtt</td>
-      <td>推定有効ラウンドトリップ時間 (通信相手に信号を発信してから、応答が帰ってくるまでにかかる時間)</td>
-      <td id="rtt" class="nowValue"></td>
-    </tr>
-  </tbody>
-</table>
+    </pre>
+  </details>
+  <hr/>
+  <p>ネットワーク情報 API は、システムのネットワーク接続に関する情報を提供する 実験的な機能 です。</p>
+  <p>この機能は、ユーザーの通信環境・接続状態に基づき、提供するデータを制限する場合などに便利です。</p>
+  <br/>
+  <table>
+    <tbody>
+      <tr>
+        <td>NetworkInformation.type</td>
+        <td>ネットワーク接続の種類 (bluetooth・cellular・ethernet・none・wifi・wimax・other・unknown)</td>
+        <td id="type" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.effectiveType</td>
+        <td>ネットワーク接続の有効な種類 (slow-2g・2g・3g・4g)</td>
+        <td id="effectiveType" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.downlink</td>
+        <td>回線の下り速度 (インターネット上からデータを受け取る際の通信)</td>
+        <td id="downlink" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.downlinkMax</td>
+        <td>下り最大速度 | 1秒間に送受信可能なデータ量を表す単位 メガビット毎秒 (Mb/s)</td>
+        <td id="downlinkMax" class="nowValue"></td>
+      </tr>
+      <tr>
+        <td>NetworkInformation.rtt</td>
+        <td>推定有効ラウンドトリップ時間 (通信相手に信号を発信してから、応答が帰ってくるまでにかかる時間)</td>
+        <td id="rtt" class="nowValue"></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 <hr/>
