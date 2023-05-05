@@ -1,27 +1,21 @@
-function random(number) {
-  return Math.floor(Math.random() * (number+1));
+'use strict'
+
+// 2 つの値の間にある整数の乱数を返す
+function random(min, max) {
+  const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  return num;
 }
 
+// RGB それぞれの値を 1~255 のうちからランダムに返す
 function randomRGB() {
-  let random255 = `rgba( ${random(255)}, ${random(255)}, ${random(255)}, 0.5)`;
-  return random255;
-}
-
-function randomGradation() {
-  let linearGradient = 'linear-gradient(0deg, rgba(';
-  for (i = 0; i < 3; i++) {
-    linearGradient = linearGradient + Math.floor(Math.random() * 255) + ',';
-  }
-  linearGradient = linearGradient + '1), rgba(0,0,0,0) 75%)'
-  return linearGradient;
+  let getRGB = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+  return getRGB;
 }
 
 document.body.onscroll = (event) => {
-  document.body.style.background = `${randomRGB()}`;
-
   setTimeout(() => {
     document.body.style.background = `${randomRGB()}`;
-  }, 0);
+  }, 100);
 };
 
 document.querySelector('#scroolTop').addEventListener('click', event => {
@@ -62,7 +56,7 @@ wheel.addEventListener('wheel', event => {
   scale += event.deltaY * -0.01;
 
   // Restrict scale
-  scale = Math.min(Math.max(.5, scale), 1.5);
+  scale = Math.min(Math.max(.75, scale), 1.25);
 
   // Apply scale transform
   wheel.style.transform = `scale(${scale})`;

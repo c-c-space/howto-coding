@@ -1,6 +1,6 @@
-var FirstandthirdToc = (function () {
-  'use strict';
+'use strict';
 
+var FirstandthirdToc = (function () {
   function isWindow(obj) {
     return obj != null && obj === obj.window;
   }
@@ -788,4 +788,3 @@ var FirstandthirdToc = (function () {
   return init$2;
 
 }());
-//# sourceMappingURL=toc.bundle.js.map

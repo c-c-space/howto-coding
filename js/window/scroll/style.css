@@ -1,12 +1,12 @@
-.scroll section {
-  filter: blur(0.5rem);
-  padding: 1rem 2.5vw;
+.scroll section.active {
+  background: #fff9;
 }
 
-.scroll section.active {
-  transition: 2s;
-  opacity: 1;
-  filter: blur(0);
+nav#contents button {
+  font-size: inherit;
+  border: solid 1px;
+  border-radius: 2rem;
+  margin: 0.25rem;
 }
 
 nav#contents a.active {
@@ -16,18 +16,6 @@ nav#contents a.active {
 code {
   font-size: 111%;
   font-style: normal;
-}
-
-button {
-  background: #fff;
-  border: 1px solid #000;
-  border-radius: 2rem;
-  cursor: pointer;
-}
-
-button {
-  padding: 0.5rem 0.75rem;
-  margin-bottom: 0.25rem;
 }
 
 pre,
