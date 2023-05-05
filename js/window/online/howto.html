@@ -86,7 +86,7 @@ if (connection !== undefined) {
       </tr>
       <tr>
         <td>NetworkInformation.downlinkMax</td>
-        <td>下り最大速度 | 1秒間に送受信可能なデータ量を表す単位 メガビット毎秒 (Mb/s)</td>
+        <td>最大下り接続 | 1秒間に送受信可能なデータ量を表す単位 メガビット毎秒 (Mb/s)</td>
         <td id="downlinkMax" class="nowValue"></td>
       </tr>
       <tr>
@@ -113,16 +113,16 @@ const connection = navigator.connection;
 
 if (connection) {
   if (connection.<font>effectiveType</font> === '<font>slow-2g</font>') {
-    // 最小 RTT 2000ms | 最大下り接続 50 Kbps
+    // 最大下り接続 50 Kbps | 最小 RTT 2000ms
 
   } else if (connection.<font>effectiveType</font> === '<font>2g</font>') {
-    // 最小 RTT 1400ms | 最大下り接続 70 Kbps
+    // 最大下り接続 70 Kbps | 最小 RTT 1400ms
 
   } else if (connection.<font>effectiveType</font> === '<font>3g</font>') {
-    // 最小 RTT 270ms | 最大下り接続 700 Kbps
+    // 最大下り接続 700 Kbps | 最小 RTT 270ms
 
   } else {
-    // 最小 RTT 0ms  | 最大下り接続 ∞ (4G以上)
+    // 最大下り接続 ∞ | 最小 RTT 0ms (4G以上)
 
   }
 }
