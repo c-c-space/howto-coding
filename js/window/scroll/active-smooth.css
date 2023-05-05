@@ -17,7 +17,7 @@ h1,
 nav#contents,
 .scroll header,
 .scroll section,
-.scroll footer,
+.scroll #footer,
 #js-button {
   transition: 1s;
 }
@@ -29,7 +29,7 @@ nav#contents a.active,
 
 .scroll header,
 .scroll section,
-.scroll footer,
+.scroll #footer,
 #links,
 #js-button {
   opacity: 1;
@@ -39,7 +39,7 @@ nav#contents a.active,
 
 .open .scroll header,
 .open .scroll section,
-.open .scroll footer,
+.open .scroll #footer,
 .open .scroll aside,
 .open #links {
   opacity: 0.25;
@@ -94,7 +94,7 @@ nav#contents a:hover,
 
 .scroll header,
 .scroll section,
-.scroll footer {
+.scroll #footer {
   position: relative;
 }
 
@@ -105,12 +105,12 @@ nav#contents a:hover,
   min-height: 100vh;
 }
 
-.scroll footer {
+.scroll #footer {
   min-height: 75vh;
 }
 
 .scroll header h1,
-.scroll footer aside {
+.scroll #footer aside {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -122,7 +122,7 @@ nav#contents a:hover,
   max-width: 550px;
 }
 
-.scroll footer aside {
+.scroll #footer aside {
   max-width: 1000px;
 }
 

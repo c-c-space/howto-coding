@@ -2,7 +2,7 @@
   background: #fff9;
 }
 
-nav#contents button {
+.scroll section button {
   font-size: inherit;
   border: solid 1px;
   border-radius: 2rem;
