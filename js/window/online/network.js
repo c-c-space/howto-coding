@@ -1,5 +1,3 @@
-"use strict"
-
 const connectionInfo = navigator.connection;
 if (connectionInfo !== undefined) {
   const init = function() {
