@@ -11,22 +11,6 @@ document.addEventListener('readystatechange', event => {
       button.classList.toggle('close');
       body.classList.toggle('open');
     });
-
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    const anchorLinksArr = Array.prototype.slice.call(anchorLinks);
-
-    anchorLinksArr.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault();
-        const targetId = link.hash;
-        const targetElement = document.querySelector(targetId);
-        const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
-        window.scrollTo({
-          top: targetOffsetTop,
-          behavior: "smooth"
-        });
-      });
-    });
   } else if (event.target.readyState === 'complete') {
     const navContents = document.querySelectorAll("nav#contents a");
     const scrollSection = document.querySelectorAll(".scroll section");
@@ -46,6 +30,22 @@ document.addEventListener('readystatechange', event => {
           navContents[i].classList.remove("active");
         }
       }
+    });
+
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    const anchorLinksArr = Array.prototype.slice.call(anchorLinks);
+
+    anchorLinksArr.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.hash;
+        const targetElement = document.querySelector(targetId);
+        const targetOffsetTop = window.pageYOffset + targetElement.getBoundingClientRect().top;
+        window.scrollTo({
+          top: targetOffsetTop,
+          behavior: "smooth"
+        });
+      });
     });
   }
 });
