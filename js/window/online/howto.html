@@ -114,12 +114,16 @@ const connection = navigator.connection;
 if (connection) {
   if (connection.<font>effectiveType</font> === '<font>slow-2g</font>') {
     // 最小 RTT 2000ms | 最大下り接続 50 Kbps
+
   } else if (connection.<font>effectiveType</font> === '<font>2g</font>') {
     // 最小 RTT 1400ms | 最大下り接続 70 Kbps
+
   } else if (connection.<font>effectiveType</font> === '<font>3g</font>') {
     // 最小 RTT 270ms | 最大下り接続 700 Kbps
+
   } else {
-    // 最小 RTT 0ms  | 最大下り接続 ∞
+    // 最小 RTT 0ms  | 最大下り接続 ∞ (4G以上)
+
   }
 }
     </pre>
