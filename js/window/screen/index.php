@@ -57,7 +57,7 @@
 
   <article id="main" class="readme">
     <h1>
-      <b>Screen | Orientation API</b><br/>
+      <b>Screen Orientation API</b><br/>
       <small>
         <code id="orientation"></code><br/>
         <code id="angle"></code>

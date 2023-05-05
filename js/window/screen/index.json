@@ -1,6 +1,6 @@
 {
   "title" : "Screen",
-  "description" : "",
+  "description" : "画面方向 API は、画面の向きに関する情報を提供します。",
   "author" : "Orientation API",
   "email" : "pehu@creative-community.space",
   "type" : "article",
