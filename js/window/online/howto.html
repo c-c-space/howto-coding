@@ -10,8 +10,10 @@ body <font>onload</font>="update(<font>navigator.onLine</font>)" <font>ononline<
 </pre>
   <br/>
   <p>function update(online)</p>
-  <p>オンライン状態に応じて宣言する文をパッケージ化</p>
-  <p><u>online ? 'true の場合' : 'false の場合'</u></p>
+  <p>
+    <u>online ? 'true の場合' : 'false の場合'</u><br/>
+    オンライン状態に応じて宣言する文をパッケージ化
+  </p>
 <pre>
 function <font>update(online)</font> {
   document.querySelector('#status').textContent =
