@@ -32,7 +32,7 @@ function <font>update(online)</font> {
 </pre>
 </details>
 <hr/>
-<section class="hide_offline">
+<section id="networkInfo" class="hide_offline" hidden>
   <p style="text-align: center;">/* ~~~ */</p>
   <hr/>
   <br/>
@@ -96,5 +96,19 @@ if (connection !== undefined) {
       </tr>
     </tbody>
   </table>
+  <br/>
+  <details>
+    <summary>
+      navigator.connection<br/>
+      <font>Network Information API</font>
+    </summary>
+    <pre>
+if (connection) {
+  if (connection.<font>effectiveType</font> === '4g') {
+    document.getElementById('networkInfo').hidden = false;
+  }
+}
+    </pre>
+  </details>
 </section>
 <hr/>
