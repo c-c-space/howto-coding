@@ -16,18 +16,17 @@
 
   #contents::before {
     content:'関連記事';
-    display: block;
     font-size: 95%;
   }
 
   #links::before {
     content:'参考資料';
-    display: inline-block;
     font-size: 75%;
   }
 
   #contents::before,
   #links::before {
+    display: block;
     font-family: "ipag", monospace;
     text-decoration: underline;
   }
