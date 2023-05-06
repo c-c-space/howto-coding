@@ -7,6 +7,7 @@
   <script src="../../readme/index.js" defer></script>
   <link rel="stylesheet" href="../../cover/style.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../hello/data_show.css" />
   <link rel="stylesheet" href="../../cover/mobile.css" media="screen and (max-width: 820px)">
   <style>
   #hello p {
