@@ -48,7 +48,7 @@
       "status" : "basic"
     },
     {
-      "date" : "言語リファレンス",
+      "date" : "$",
       "name" : "定義済みの変数",
       "url" : "https://www.php.net/manual/ja/reserved.variables.php",
       "language" : "etc",
