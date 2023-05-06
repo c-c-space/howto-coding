@@ -14,11 +14,17 @@
     word-break: break-all;
   }
 
+  #contents::before {
+    content:'関連記事';
+    font-size: 95%;
+  }
+
   #links::before {
     content:'参考資料';
     font-size: 75%;
   }
 
+    #contents::before,
   #links::before {
     font-family: "ipag", monospace;
     display: block;
@@ -29,13 +35,15 @@
 <body id="cover">
   <main id="left">
     <?php require('hello.php'); ?>
+    <hr/>
     <section id="links"></section>
   </main>
   <article id="right">
-    <section id="contents"></section>
     <?php require('howto.html'); ?>
+    <br/>
+    <section id="contents"></section>
   </article>
-  <h1 id="title">$_SERVER | Personal Home Page Tools</h1>
+  <h1 id="title">$_SERVER | PHP: Hypertext Preprocessor</h1>
 
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
   <script src="../../hello/data_show.js"></script>

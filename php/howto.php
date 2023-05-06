@@ -74,4 +74,11 @@ else {
     </p>
   </details>
   <hr/>
+  <p id="lastModified"></p>
+  <script>
+    let lastModified = document.querySelector('#lastModified');
+
+    lastModified.innerHTML =
+    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  </script>
 </section>

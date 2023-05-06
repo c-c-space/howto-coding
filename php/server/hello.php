@@ -85,8 +85,8 @@
 </section>
 <hr/>
 <p>
-  <font>$_SERVER</font> は、定義済みの変数 で サーバー情報および実行時の環境情報 を 有する配列です。<br/>
-   $_SERVER に続いて ['キーワード'] を記述すると、あらゆる情報が取得できます。
+  <font>$_SERVER</font> は、サーバー関連情報を全て保持する 特別な <code>定義済みの変数</code> です。<br/>
+   $_SERVER['キーワード'] を使って、サーバー情報および実行時の環境情報を取得できます。
 </p>
 <pre>
 <font>$_SERVER['SERVER_PROTOCOL']</font>;
@@ -105,6 +105,6 @@
 サーバーの認識文字列
 
 <font>$_SERVER['PHP_SELF']</font>;
-現在実行しているファイル名
+現在実行しているPHPファイル名
 </pre>
 <hr/>
