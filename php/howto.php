@@ -22,10 +22,10 @@
   <br/>
   <pre>
 if ( (print "Hello") && true ) {
-  echo " World", "!\n";
+  echo " World", "!<br>";
 }
 else {
-  echo " - ", "?\n";
+  echo " - ", "?<br>";
 }
 // 最初に (print "hello") が評価され、
 // "Hello" を出力した後、print が 1 を返します。
@@ -33,10 +33,10 @@ else {
   </pre>
   <?php
   if ( (print "Hello") && true ) {
-    echo " World", "!\n";
+    echo " World", "!<br>";
   }
   else {
-    echo " - ", "?\n";
+    echo " - ", "?<br>";
   }
 
   print "hello " && print "world";
