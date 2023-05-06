@@ -18,29 +18,52 @@
     content: ' ?>';
   }
 
+  #hello p {
+    word-break: break-all;
+  }
+
+  #contents::before {
+    content:'関連記事';
+    font-size: 95%;
+  }
+
   #links::before {
     content:'参考資料';
     font-size: 75%;
     margin-bottom: 0.75rem;
   }
 
+  #contents::before,
   #links::before {
-    font-family: "ipag", monospace;
     display: block;
+    font-family: "ipag", monospace;
     text-decoration: underline;
+  }
+
+  #lastModified {
+    text-align: right;
   }
   </style>
 </head>
 <body id="cover">
   <main id="left">
-    <nav id="contents"></nav>
-    <?php include('hello.php'); ?>
-  </main>
-  <article id="right">
-    <?php require('howto.php'); ?>
+    <?php readfile('hello.php'); ?>
     <hr/>
     <section id="links"></section>
+  </main>
+  <article id="right">
+    <?php readfile('howto.php'); ?>
+    <br/>
+    <section id="contents"></section>
+    <hr/>
+    <p id="lastModified"></p>
+    <script>
+    let lastModified = document.querySelector('#lastModified');
+
+    lastModified.innerHTML =
+    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+    </script>
   </article>
-  <h1 id="title">include | Personal Home Page Tools</h1>
+  <h1 id="title">include | PHP: Hypertext Preprocessor</h1>
 </body>
 </html>
