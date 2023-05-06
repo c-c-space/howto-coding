@@ -29,10 +29,22 @@
     }
   </pre>
   <?php
-  if ( (print "Hello") && false ) {
-    echo " World", "!";
-  } else {
-    echo " - ?";
+  if ( (print "hello") && false ) {
+    print " - inside if";
   }
+  else {
+    print " - inside else";
+  }
+  // "hello - inside else" を出力します。
+  // 直前の例と異なり、(print "hello") が最初に評価され、
+  // "hello" を出力した後、print が1を返します。
+  // 1 && false は false なので、else ブロックの中身が実行されます。
+
+  print "hello " && print "world";
+  // "world1"; を出力します。print "world" が先に評価され、
+  // "hello " && 1 が次に評価され、左辺の print に渡されます。
+
+  (print "hello ") && (print "world");
+  // "hello world" を出力します; 括弧が print を && より前に評価させているからです。
   ?>
 </section>
