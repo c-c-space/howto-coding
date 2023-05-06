@@ -37,13 +37,10 @@
     <?php include('hello.php'); ?>
   </main>
   <article id="right">
-    <?php require('howto.html'); ?>
+    <?php require('howto.php'); ?>
     <hr/>
     <section id="links"></section>
   </article>
   <h1 id="title">include | Personal Home Page Tools</h1>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="../../hello/data_show.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
       echo $name, " ?＞";
     }
     else {
-      echo "?", "?＞";
+      echo "?= ", "?＞";
     }
     ?>
   </h2>
@@ -41,7 +41,7 @@ if ( (print "<") && true ) {
   echo $name, " ?>";
 }
 else {
-  echo "?", " ?>";
+  echo "?= ", " ?>";
 }
 
 // 最初に (print "<") が評価され、

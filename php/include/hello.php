@@ -1,4 +1,4 @@
-<section id="hello" class="data_show">
+<section id="hello">
   <p class="php">? php include('hello.php');</p>
   <p class="php">? php require('howto.html');</p>
   <br/>
