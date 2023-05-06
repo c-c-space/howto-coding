@@ -49,8 +49,8 @@ else {
 // "Hello" を出力した後、print が 1 を返します。
 // 戻り値 1 && true は true なので、if ブロックの中身が実行されます。
     </pre>
-    <hr/>
   </details>
+  <hr/>
   <details>
     <summary>
       <i>$name = 'World';</i>
@@ -72,4 +72,5 @@ else {
       <i>定義済みの定数 を使って、サーバー情報やフォームに入力された値などのあらゆる内容が取得できます。</i>
     </p>
   </details>
+  <hr/>
 </section>
