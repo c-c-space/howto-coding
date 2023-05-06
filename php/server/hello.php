@@ -78,13 +78,15 @@
     <span id="user" class="hide">
       <br/>
       <?php
-      echo $_SERVER['HTTP_USER_AGENT'];
+      echo $_SERVER;
       ?>
     </span>
   </p>
   <hr/>
 </section>
-
+<p>
+  <b>$_SERVER</b> は、定義済みの変数 で サーバー情報および実行時の環境情報 を 有する配列です。
+</p>
 <pre>
 <font>$_SERVER['SERVER_PROTOCOL']</font>;
 プロトコルの名前とバージョン

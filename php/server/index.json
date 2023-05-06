@@ -1,7 +1,7 @@
 {
   "title" : "$_SERVER",
   "description" : "サーバー情報および実行時の環境情報 | Server and execution environment information",
-  "author" : "Personal Home Page Tools",
+  "author" : "PHP:Hypertext Preprocessor",
   "email" : "pehu@creative-community.space",
   "type" : "article",
   "twitter" : "@pe_hu_",
@@ -11,7 +11,7 @@
   "contents" : [
     {
       "date" : "PHP",
-      "name" : "Personal Home Page Tools",
+      "name" : "Hypertext Preprocessor",
       "url" : "/coding/php/",
       "language" : "etc",
       "status" : "basic"
@@ -19,6 +19,11 @@
   ],
 
   "links" : [
+    {
+      "date" : "簡易チュートリアル",
+      "name" : "実用的な例",
+      "url" : "https://www.php.net/manual/ja/tutorial.useful.php"
+    },
     {
       "date" : "PHP",
       "name" : "$_SERVER",
