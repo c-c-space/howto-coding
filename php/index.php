@@ -18,12 +18,17 @@
     content: ' ?>';
   }
 
+  #contents::before {
+    content:'関連記事';
+  }
+
   #links::before {
     content:'参考資料';
     font-size: 75%;
     margin-bottom: 0.75rem;
   }
 
+  #contents::before,
   #links::before {
     font-family: "ipag", monospace;
     display: block;
@@ -33,13 +38,14 @@
 </head>
 <body id="cover">
   <main id="left">
-    <nav id="contents"></nav>
     <?php include('hello.php'); ?>
+    <hr/>
+    <section id="links"></section>
   </main>
   <article id="right">
     <?php require('howto.html'); ?>
     <hr/>
-    <section id="links"></section>
+    <nav id="contents"></nav>
   </article>
   <h1 id="title">PHP: Hypertext Preprocessor</h1>
 

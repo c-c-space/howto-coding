@@ -9,6 +9,13 @@
   "src" : "___",
 
   "contents" : [
+    {
+      "date" : "$_SERVER",
+      "name" : "サーバー情報および実行時の環境情報",
+      "url" : "/coding/php/server/",
+      "language" : "etc",
+      "status" : "basic"
+    }
   ],
 
   "links" : [
@@ -16,6 +23,62 @@
       "date" : "The PHP Group",
       "name" : "PHP: Hypertext Preprocessor",
       "url" : "https://www.php.net/",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "Your first PHP",
+      "name" : "PHP を使用する初めてのページ",
+      "url" : "https://www.php.net/manual/ja/tutorial.firstpage.php",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "基本的な構文",
+      "name" : "PHP タグ",
+      "url" : "https://www.php.net/manual/ja/language.basic-syntax.phptags.php",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "$",
+      "name" : "変数",
+      "url" : "https://www.php.net/manual/ja/language.variables.basics.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "言語リファレンス",
+      "name" : "定義済みの変数",
+      "url" : "https://www.php.net/manual/ja/reserved.variables.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "echo",
+      "name" : "文字列を出力する",
+      "url" : "https://www.php.net/manual/ja/function.echo.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "基本的な構文",
+      "name" : "コメント",
+      "url" : "https://www.php.net/manual/ja/language.basic-syntax.comments.php",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "phpinfo",
+      "name" : "PHP の設定情報を出力する",
+      "url" : "https://www.php.net/manual/ja/function.phpinfo.php",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "PHP Manual",
+      "name" : "インストールと設定",
+      "url" : "https://www.php.net/manual/ja/install.php",
       "language" : "etc",
       "status" : "guide"
     }
