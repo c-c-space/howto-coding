@@ -20,43 +20,43 @@
 
   "links" : [
     {
-      "date" : "include",
-      "name" : "指定されたファイルを読み込み、評価する",
+      "date" : "制御構造",
+      "name" : "include",
       "url" : "https://www.php.net/manual/ja/function.include.php",
       "language" : "etc",
       "status" : "guide"
     },
     {
-      "date" : "require",
-      "name" : "include とほぼ同じですが、失敗した場合に E_COMPILE_ERROR レベルの致命的なエラーも発生する",
+      "date" : "制御構造",
+      "name" : "require",
       "url" : "https://www.php.net/manual/ja/function.require.php",
       "language" : "etc",
       "status" : "guide"
     },
     {
-      "date" : "include_once",
-      "name" : "スクリプトの実行時に指定 したファイルを読み込み評価する",
+      "date" : "制御構造",
+      "name" : "include_once",
       "url" : "https://www.php.net/manual/ja/function.include-once.php",
       "language" : "etc",
       "status" : "guide"
     },
     {
-      "date" : "require_once",
-      "name" : "require とほぼ同じ意味ですが、 ファイルがすでに読み込まれているかどうかを PHP がチェックする",
+      "date" : "制御構造",
+      "name" : "require_once",
       "url" : "https://www.php.net/manual/ja/function.require-once.php",
       "language" : "etc",
       "status" : "guide"
     },
     {
-      "date" : "get_included_files",
-      "name" : "include または require で読み込まれたファイルの名前を配列として返す",
+      "date" : "PHP Options/Info",
+      "name" : "get_included_files",
       "url" : "https://www.php.net/manual/ja/function.get-included-files.php",
       "language" : "etc",
       "status" : "guide"
     },
     {
-      "date" : "get_required_files",
-      "name" : "get_included_files() のエイリアス",
+      "date" : "PHP Options/Info",
+      "name" : "get_required_files",
       "url" : "https://www.php.net/manual/ja/function.get-required-files.php",
       "language" : "etc",
       "status" : "guide"
