@@ -39,7 +39,7 @@
     <section id="links"></section>
   </main>
   <article id="right">
-    <?php require('howto.html'); ?>
+    <?php require('howto.php'); ?>
     <br/>
     <section id="contents"></section>
   </article>

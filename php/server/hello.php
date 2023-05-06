@@ -46,42 +46,6 @@
       ?>
     </span>
   </p>
-  <p>
-    <i>通信に必要な情報</i>
-    <br/>
-    <u data-id="ip">IP</u>
-    <span id="ip" class="hide">
-      <?php
-      echo $_SERVER['REMOTE_ADDR'];
-      ?>
-    </span>
-    <br/>
-    <u data-id="host">HOST</u>
-    <span id="host" class="hide">
-      <?php
-      $host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-      echo $host
-      ?>
-      <br/>
-    </span>
-    <u data-id="port">PORT</u>
-    <span id="port" class="hide">
-      <?php
-      echo $_SERVER['REMOTE_PORT'];
-      ?>
-    </span>
-  </p>
-  <p>
-    <i>ブラウザ等情報</i>
-    <br/>
-    <u data-id="user">['HTTP_USER_AGENT']</u>
-    <span id="user" class="hide">
-      <br/>
-      <?php
-      echo $_SERVER['HTTP_USER_AGENT'];
-      ?>
-    </span>
-  </p>
 </section>
 <hr/>
 <p>
