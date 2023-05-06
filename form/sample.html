@@ -91,13 +91,28 @@
     </div>
     <div>
       <label for="submit" class="input_tag">type="<b>submit</b>"</label><br/>
-      <input id="submit" type="submit" name="submit"></input>
+      <input id="submit" type="submit" name="submit" onclick="howtoCoding()"></input>
     </div>
     <div>
       <label for="reset" class="input_tag">type="<b>reset</b>"</label><br/>
       <input id="reset" type="reset" name="reset"></input>
     </div>
   </form>
-  <script src="script.js"></script>
+
+  <script>
+  function styleClick(){
+    const styleCSS = document.createElement( "link" );
+    styleCSS.href = "style.css";
+    styleCSS.type = "text/css";
+    styleCSS.rel = "stylesheet";
+    document.getElementsByTagName("head")[0].appendChild(styleCSS);
+
+    open("css.html", "left")
+  }
+
+  function howtoCoding(){
+    open("howto.html", "right")
+  }
+  </script>
 </body>
 </html>
