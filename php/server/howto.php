@@ -16,6 +16,7 @@
       echo $host
       ?>
     </font>
+    <br/>
     <u>PORT</u>
     <font>
       <?php
@@ -28,13 +29,13 @@
     <i>これらの情報は、個人情報を直接含むような情報ではなく、安心・安全にインターネットを利用するための仕組みとして必ず発信しなければいけない情報です。</i>
   </p>
   <pre>
-<font>$_SERVER['REMOTE_ADDR']</font>;
+<code>$_SERVER['REMOTE_ADDR']</code>;
 現在ページをみているユーザーの IP アドレス
 
-<font>gethostbyaddr($_SERVER['REMOTE_ADDR']</font>;
+<code>gethostbyaddr($_SERVER['REMOTE_ADDR']</code>;
 現在ページをみているユーザーの IP アドレスに対応するインターネットホスト名
 
-<font>$_SERVER['REMOTE_PORT']</font>;
+<code>$_SERVER['REMOTE_PORT']</code>;
 ユーザーのマシンから Web サーバーへの通信に使用されているポート番号
   </pre>
   <hr/>
