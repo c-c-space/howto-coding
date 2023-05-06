@@ -1,4 +1,5 @@
 <section id="hello">
+  <p><i>/* PHP からシステムに関する情報を取得する */</i></p>
   <p class="data_show php">?php phpinfo();</p>
 
   <p class="data_show php">? php<br/>
