@@ -19,7 +19,7 @@
     {
       "date" : "$_POST | $_GET",
       "name" : "フォームの処理",
-      "url" : "/coding/php/server/",
+      "url" : "/coding/form/",
       "language" : "etc",
       "status" : "basic"
     }
