@@ -21,24 +21,23 @@
   </p>
   <br/>
   <pre>
-    // 例) print を使った式
-    if ( (print "Hello") && false ) {
-      echo " World", "!";
-    } else {
-      echo " - ?";
-    }
+if ( (print "Hello") && true ) {
+  echo " World", "!\n";
+}
+else {
+  echo " - ", "?\n";
+}
+// 最初に (print "hello") が評価され、
+// "Hello" を出力した後、print が 1 を返します。
+// 1 && true は true なので、if ブロックの中身が実行されます。
   </pre>
   <?php
-  if ( (print "hello") && false ) {
-    print " - inside if";
+  if ( (print "Hello") && true ) {
+    echo " World", "!\n";
   }
   else {
-    print " - inside else";
+    echo " - ", "?\n";
   }
-  // "hello - inside else" を出力します。
-  // 直前の例と異なり、(print "hello") が最初に評価され、
-  // "hello" を出力した後、print が1を返します。
-  // 1 && false は false なので、else ブロックの中身が実行されます。
 
   print "hello " && print "world";
   // "world1"; を出力します。print "world" が先に評価され、
