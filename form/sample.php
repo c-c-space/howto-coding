@@ -1,6 +1,4 @@
 <?php
-// $_POST グローバル変数は、POST メソッドで送信されたデータへ名前でアクセスします。
-// GET メソッドで送信されたデータにアクセスするには、$_GET が使用できます。
 $name = htmlspecialchars($_POST['name']);
 $email  = htmlspecialchars($_POST['email']);
 $website  = htmlspecialchars($_POST['website']);
@@ -110,9 +108,6 @@ $message  = htmlspecialchars($_POST['message']);
   </style>
 </head>
 <body>
-  <p>
-    <button type="button" onclick="howtoCoding()">フォーム関連要素</button>
-  </p>
   <h1>Web Form | Retrieving the data by PHP</h1>
   <main>
     <h2>I am <strong><?php echo $name ?></strong></h2>
@@ -123,43 +118,29 @@ $message  = htmlspecialchars($_POST['message']);
     <hr/>
     <p><?php echo $message ?></p>
   </main>
-  <details>
-    <summary>フォームのデータを PHP で取得する</summary>
+  <details open>
+    <summary>フォームのデータを取得する</summary>
     <p>
-      $_POST グローバル変数は、POST メソッドで送信されたデータへ名前でアクセスします。<br/>
-      <small>GET メソッドで送信されたデータにアクセスするには、$_GET が使用できます。</small>
-    </p>
-    <p>
-      <i>$変数名 = 値</i> — <small>値 を 変数 に代入する</small><br/>
-      <i>htmlspecialchars</i>( ) — <small>特殊文字を HTML エンティティに変換する</small><br/>
-      <i>$_POST</i>['コントロール名'] - <small>フォームコントロールの name 属性に設定した値を記述する</small>
+      <i>$変数名</i> <small>値 を 代入する 変数名 を設定</small><br/>
+      <i>htmlspecialchars</i>( ) <small>特殊文字を HTML エンティティに変換する</small><br/>
+      <i>$_POST</i>['コントロール名'] <small>フォームコントロールの name 属性に設定した値を記述する</small>
     </p>
     <pre>
 <<code>?php</code>
 
 $name = <code>htmlspecialchars</code>(<code>$_POST['name']</code>);
-$email  = <code>htmlspecialchars</code>(<code>$_POST['email']</code>);
-$website  = <code>htmlspecialchars</code>(<code>$_POST['website']</code>);
-$phone  = <code>htmlspecialchars</code>(<code>$_POST['phone']</code>);
+$email  = <code>$_POST['email']</code>;
+$website  = <code>$_POST['website']</code>;
+$phone  = <code>$_POST['phone']</code>;
 $message  = <code>htmlspecialchars</code>(<code>$_POST['message']</code>);
 
 <code>?</code>>
     </pre>
-  </details>
-  <details>
-    <summary>PHP で 変数の値を出力する</summary>
     <p>
-      <i>echo</i> — <small>文字列を出力する</small><br/>
-      echo <i>$変数名</i> — <small>変数に代入した値を出力する</small><br/>
+      PHP の グローバル変数 $_POST は、POST メソッドで送信されたデータへ名前でアクセスします。<br/>
+      <small>GET メソッドで送信されたデータにアクセスするには、$_GET を使用します。</small>
     </p>
-    <pre>
-<<b>?php</b> <code>echo $name</code> <b>?</b>> // input name="name" の値を出力
-<<b>?php</b> <code>echo $email</code> <b>?</b>> // input name="email" の値を出力
-<<b>?php</b> <code>echo $website</code> <b>?</b>> // input name="website" の値を出力
-<<b>?php</b> <code>echo $phone</code> <b>?</b>> // input name="phone" の値を出力
-<<b>?php</b> <code>echo $message</code> <b>?</b>> // textarea name="message" の値を出力
-    </pre>
+    <br/>
   </details>
-  <script src="script.js"></script>
 </body>
 </html>

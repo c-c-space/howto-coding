@@ -182,22 +182,8 @@
     },
     {
       "date" : "PHP",
-      "name" : "基本的な事",
-      "url" : "https://www.php.net/manual/ja/language.variables.basics.php",
-      "language" : "etc",
-      "status" : "basic"
-    },
-    {
-      "date" : "PHP",
       "name" : "外部から来る変数",
       "url" : "https://www.php.net/manual/ja/language.variables.external.php",
-      "language" : "etc",
-      "status" : "basic"
-    },
-    {
-      "date" : "PHP",
-      "name" : "htmlspecialchars",
-      "url" : "https://www.php.net/manual/ja/function.htmlspecialchars.php",
       "language" : "etc",
       "status" : "basic"
     },
@@ -217,8 +203,8 @@
     },
     {
       "date" : "PHP",
-      "name" : "echo",
-      "url" : "https://www.php.net/manual/ja/function.echo",
+      "name" : "htmlspecialchars",
+      "url" : "https://www.php.net/manual/ja/function.htmlspecialchars.php",
       "language" : "etc",
       "status" : "basic"
     },
