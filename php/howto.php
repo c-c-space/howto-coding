@@ -28,6 +28,6 @@ if ( print 'Hello ' ) {
     echo "World", "!";
   }
 
-  ( 1 === 1 ) ? print 'World' : echo "World", "!";
+  ( 1 === 1 ) ? print 'World' : print "World!";
   ?>
 </section>
