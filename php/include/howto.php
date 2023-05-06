@@ -1,9 +1,13 @@
 <section class="readme">
-  <?php
-  $included_files = get_included_files()
-
-  foreach ($included_files as $filename) {
-    echo "$filename\n";
-  }
-  ?>
+  <h2>
+    <?php
+    $name = '?php';
+    if ( (print "＜") && true ) {
+      echo $name, " ?＞";
+    }
+    else {
+      echo "?= ", "?＞";
+    }
+    ?>
+  </h2>
 </section>
