@@ -1,44 +1,43 @@
-<section id="hello" class="data_show">
+<section id="hello">
   <p>
-    <u data-id="http">['SERVER_PROTOCOL']</u>
-    <span id="http" class="hide">
+    <u>['SERVER_PROTOCOL']</u>
+    <span>
       <?php
       echo $_SERVER['SERVER_PROTOCOL'];
       ?>
     </span>
     <br/>
-    <u data-id="addr">['SERVER_ADDR']</u>
-    <span id="addr" class="hide">
+    <u>['SERVER_ADDR']</u>
+    <span>
       <br/>
       <?php
       echo $_SERVER['SERVER_ADDR'];
       ?>
-      <br/>
     </span>
-    <u data-id="name">['SERVER_NAME']</u>
-    <span id="name" class="hide">
+    <br/>
+    <u>['SERVER_NAME']</u>
+    <span>
       <?php
       echo $_SERVER['SERVER_NAME'];
       ?>
-      <br/>
     </span>
-    <u data-id="cgi">['SERVER_PORT']</u>
-    <span id="cgi" class="hide">
+    <br/>
+    <u>['SERVER_PORT']</u>
+    <span>
       <?php
       echo $_SERVER['SERVER_PORT'];
       ?>
     </span>
     <br/>
-    <u data-id="software">['SERVER_SOFTWARE']</u>
-    <span id="software" class="hide">
+    <u>['SERVER_SOFTWARE']</u>
+    <span>
       <?php
       echo $_SERVER['SERVER_SOFTWARE'];
       ?>
-      <br/>
     </span>
-    <u data-id="php">['PHP_SELF']</u>
-    <span id="php" class="hide">
-      <br/>
+    <br/>
+    <u>['PHP_SELF']</u><br/>
+    <span>
       <?php
       echo $_SERVER['PHP_SELF'];
       ?>

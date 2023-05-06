@@ -7,7 +7,6 @@
   <script src="../../readme/index.js" defer></script>
   <link rel="stylesheet" href="../../cover/style.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
-  <link rel="stylesheet" href="../../hello/data_show.css" />
   <link rel="stylesheet" href="../../cover/mobile.css" media="screen and (max-width: 820px)">
   <style>
   #hello p {
@@ -57,8 +56,5 @@
     </script>
   </article>
   <h1 id="title">$_SERVER | PHP: Hypertext Preprocessor</h1>
-
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <script src="../../hello/data_show.js"></script>
 </body>
 </html>
