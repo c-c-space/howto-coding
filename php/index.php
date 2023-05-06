@@ -49,7 +49,7 @@
   </main>
   <article id="right">
     <?php require('howto.php'); ?>
-    <hr/>
+    <br/>
     <nav id="contents"></nav>
   </article>
   <h1 id="title">PHP: Hypertext Preprocessor</h1>
