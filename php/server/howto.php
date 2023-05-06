@@ -62,4 +62,5 @@
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
   </script>
+  <br/>
 </section>
