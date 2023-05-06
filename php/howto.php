@@ -14,6 +14,7 @@
     PHP (PHP: Hypertext Preprocessor) は、動的にウェブページを生成することができるサーバーサイドのスクリプト言語です。<br/>
     <i>ラスマス・ラードフが個人的に開発していたCGIプログラムである Personal Home Page Tools（PHP Tools）を起源とします。</i>
   </p>
+  <hr/>
   <h3 class="php">?php </h3>
   <p>
     PHP は、開始タグ <<code>?php</code> から 終了タグ <code>?</code>> の間に記述します。
