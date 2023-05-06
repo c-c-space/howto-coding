@@ -47,12 +47,12 @@
 </head>
 <body id="cover">
   <main id="left">
-    <?php require('hello.php'); ?>
+    <?php include('hello.php'); ?>
     <hr/>
     <section id="links"></section>
   </main>
   <article id="right">
-    <?php require('howto.php'); ?>
+    <?php include('howto.php'); ?>
     <br/>
     <section id="contents"></section>
     <hr/>
