@@ -2,7 +2,7 @@
   <h2>
     <?php
     $name = '?php';
-    if ( (print "<") && true ) {
+    if ( (print "U+003C") && true ) {
       echo $name, " ?>";
     }
     else {
@@ -45,6 +45,7 @@ if ( (print "<") && true ) {
 else {
   echo "?", " ?>";
 }
+
 // 最初に (print "<") が評価され、
 // "<" を出力した後、print が 1 を返します。
 // 戻り値 1 && true は true なので、if ブロックの中身が実行されます。
