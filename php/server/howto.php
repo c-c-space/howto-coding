@@ -1,6 +1,6 @@
 <section class="readme">
+  <p>通信に必要な情報</p>
   <p>
-    <code>通信に必要な情報</code>
     <br/>
     <u>IP</u>
     <font>
@@ -39,14 +39,14 @@
     <i>これらの情報は、個人情報を直接含むような情報ではなく、安心・安全にインターネットを利用するための仕組みとして必ず発信しなければいけない情報です。</i>
   </p>
   <hr/>
-  <p>
-    ブラウザ等情報<br/>
+  <p>ブラウザ等情報</p>
+  <h3>
     <?php
-    echo '<code>', $_SERVER['HTTP_USER_AGENT'], '</code>';
+    echo $_SERVER['HTTP_USER_AGENT'];
     ?>
-  </p>
+  </h3>
   <p>
-    <font>$_SERVER['HTTP_USER_AGENT']</font> は、
+    <code>$_SERVER['HTTP_USER_AGENT']</code> は、
     ユーザーが使用しているブラウザの種類が保存される変数です。<br/>
     ブラウザ等情報は、ウェブサイトの表示を最適化するためにサーバーへ必ず発信しなければいけない情報です。
   </p>

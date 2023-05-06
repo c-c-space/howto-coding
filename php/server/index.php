@@ -24,7 +24,7 @@
     font-size: 75%;
   }
 
-    #contents::before,
+  #contents::before,
   #links::before {
     font-family: "ipag", monospace;
     display: block;
