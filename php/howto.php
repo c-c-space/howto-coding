@@ -27,7 +27,7 @@ if ( print 'Hello ' ) {
   if ( print 'Hello ' ) {
     echo "World", "!";
   }
-  
-  ( 1 === 1 ) ? print 'true' : print 'false';
+
+  ( 1 === 1 ) ? print 'World' : echo "World", "!";
   ?>
 </section>
