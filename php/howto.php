@@ -10,24 +10,16 @@
     ファイルの拡張子が「.html」 の場合は、PHPは認識されず、処理は実行されません。
   </p>
   <br/>
-  <pre>
-print 'Hello ';
-
-if ( print 'Hello ' ) {
-  echo "World", "!";
-}
-  </pre>
+  <p>
+    <i>print 'Hello ';</i>
+    <i>echo "World", "!"</i>
+  </p>
   <p>
     指定した文字列を出力する場合は、echo または print を使用します。<br/>
-    echo は コンマで区切られた 複数の 文字列を出力することができ、
-    print は 単一の文字列のみを受け付け、常に 戻り値 1 を返します。
-    <i>他の言語構造と異なり echo には戻り値がありません。</i>
+    echo は 文 として コンマで区切られた 複数の 文字列を出力することができ、戻り値はありません。<br/>
+    print は 式 として 単一の文字列のみを受け付け、常に 戻り値 1 を返します。
   </p>
   <?php
-  if ( print 'Hello ' ) {
-    echo "World", "!";
-  }
-
-  ( 1 === 1 ) ? print 'World' : print "World!";
+  ( 1 === 1 ) ? print 'true' : print 'false';
   ?>
 </section>
