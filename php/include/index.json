@@ -60,13 +60,6 @@
       "url" : "https://www.php.net/manual/ja/function.get-required-files.php",
       "language" : "etc",
       "status" : "guide"
-    },
-    {
-      "date" : "readfile",
-      "name" : "ファイルを出力する",
-      "url" : "https://www.php.net/manual/ja/function.readfile.php",
-      "language" : "etc",
-      "status" : "guide"
     }
   ]
 }
