@@ -148,10 +148,10 @@ $message  = <code>htmlspecialchars</code>(<code>$_POST['message']</code>);
     <pre>
 <<code>?php</code>
 
-echo '<<code>h2</code>>I am <<code>strong>', $name, '<<code>/strong</code>><<code>/h2</code>>';
-echo '<<code>h3</code>>Email: <<code>u>', $email, '<<code>/u</code>><<code>/h3</code>>';
-echo '<<code>h3</code>>Website: <<code>u>', $phone, '<<code>/u</code>><<code>/h3</code>><<code>br/</code>>';
-echo '<<code>h3</code>>Phone: <<code>u>', $phone, '<<code>/u</code>><<code>/h3</code>><<code>hr/</code>>';
+echo '<<code>h2</code>>I am <<code>strong</code>>', $name, '<<code>/strong</code>><<code>/h2</code>>';
+echo '<<code>h3</code>>Email: <<code>u</code>>', $email, '<<code>/u</code>><<code>/h3</code>>';
+echo '<<code>h3</code>>Website: <<code>u</code>>', $phone, '<<code>/u</code>><<code>/h3</code>><<code>br/</code>>';
+echo '<<code>h3</code>>Phone: <<code>u</code>>', $phone, '<<code>/u</code>><<code>/h3</code>><<code>hr/</code>>';
 echo '<<code>p</code>>', $message, '<<code>/p</code>>';
 
 <code>?</code>>
