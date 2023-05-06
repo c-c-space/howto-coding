@@ -22,6 +22,7 @@
   #links::before {
     content:'参考資料';
     font-size: 75%;
+    margin-bottom: 0.75rem;
   }
 
   #contents::before,
