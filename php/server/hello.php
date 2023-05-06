@@ -71,4 +71,4 @@
 <font>$_SERVER['PHP_SELF']</font>;
 現在実行しているPHPファイル名
 </pre>
-<hr/>
+<br/>
