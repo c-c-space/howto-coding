@@ -1,7 +1,6 @@
 <section class="readme">
   <p>通信に必要な情報</p>
   <p>
-    <br/>
     <u>IP</u>
     <font>
       <?php
