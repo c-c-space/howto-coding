@@ -30,7 +30,7 @@
   <details>
     <summary>
       <i>print '<';</i>
-      <i>echo $name, "?>";<</i>
+      <i>echo $name, "?>";</i>
     </summary>
     <p>
       PHP を使って 文字列を出力する場合は、echo または print を使用します。<br/>
@@ -43,7 +43,7 @@ if ( (print "<") && true ) {
   echo $name, " ?>";
 }
 else {
-  echo "?", "?>";
+  echo "?", " ?>";
 }
 // 最初に (print "<") が評価され、
 // "<" を出力した後、print が 1 を返します。
