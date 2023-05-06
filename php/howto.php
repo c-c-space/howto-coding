@@ -22,14 +22,14 @@
   <br/>
   <pre>
     // 例) print を使った式
-    if ( print "Hello" && 1 ) {
+    if ( print "Hello" && false ) {
       echo " World", "!";
     } else {
       echo " - ?";
     }
   </pre>
   <?php
-  if ( print "Hello" && 1 ) {
+  if ( print "Hello" && false ) {
     echo " World", "!";
   } else {
     echo " - ?";
