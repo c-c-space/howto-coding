@@ -39,6 +39,10 @@
     display: block;
     text-decoration: underline;
   }
+
+  #lastModified {
+    text-align: right;
+  }
   </style>
 </head>
 <body id="cover">
@@ -51,6 +55,14 @@
     <?php require('howto.php'); ?>
     <br/>
     <nav id="contents"></nav>
+    <hr/>
+    <p id="lastModified"></p>
+    <script>
+      let lastModified = document.querySelector('#lastModified');
+
+      lastModified.innerHTML =
+      'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+    </script>
   </article>
   <h1 id="title">PHP: Hypertext Preprocessor</h1>
 

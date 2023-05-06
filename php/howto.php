@@ -73,12 +73,5 @@ else {
       <i>定義済みの定数 を使って、サーバー情報やフォームに入力された値などのあらゆる内容が取得できます。</i>
     </p>
   </details>
-  <hr/>
-  <p id="lastModified"></p>
-  <script>
-    let lastModified = document.querySelector('#lastModified');
-
-    lastModified.innerHTML =
-    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
-  </script>
+  <br/>
 </section>

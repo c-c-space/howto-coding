@@ -30,6 +30,10 @@
     font-family: "ipag", monospace;
     text-decoration: underline;
   }
+
+  #lastModified {
+    text-align: right;
+  }
   </style>
 </head>
 <body id="cover">
