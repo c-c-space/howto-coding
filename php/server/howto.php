@@ -1,5 +1,5 @@
 <section class="readme">
-  <p>
+  <h2>
     <i>通信に必要な情報</i>
     <br/>
     <u data-id="ip">IP</u>
@@ -23,23 +23,22 @@
       echo $_SERVER['REMOTE_PORT'];
       ?>
     </span>
-  </p>
+  </h2>
   <p>$_SERVER から取得できる 通信に必要な情報（IP アドレス・ポート番号など）は、インターネットに接続してウェブサイトにアクセスする際に 必ずサーバー に送信されます。</p>
   <p>
     <i>これらの情報は、個人情報を直接含むような情報ではなく、安心・安全にインターネットを利用するための仕組みとして必ず発信しなければいけない情報です。</i>
   </p>
   <hr/>
-  <p>
+  <h3>
     <i>ブラウザ等情報</i>
     <br/>
-    <u data-id="user">['HTTP_USER_AGENT']</u>
     <span id="user" class="hide">
       <br/>
       <?php
       echo $_SERVER['HTTP_USER_AGENT'];
       ?>
     </span>
-  </p>
+  </h3>
   <pre>
     <font>$_SERVER['REMOTE_ADDR']</font>;
     現在ページをみているユーザーの IP アドレス
