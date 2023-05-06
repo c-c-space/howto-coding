@@ -1,15 +1,15 @@
 <section id="hello" class="data_show">
   <p>
-    <i>サーバー情報</i>
+    <i>$_SERVER</i>
     <br/>
-    <u data-id="http">PROTOCOL</u>
+    <u data-id="http">['SERVER_PROTOCOL']</u>
     <span id="http" class="hide">
       <?php
       echo $_SERVER['SERVER_PROTOCOL'];
       ?>
     </span>
     <br/>
-    <u data-id="addr">ADDR</u>
+    <u data-id="addr">['SERVER_ADDR']</u>
     <span id="addr" class="hide">
       <br/>
       <?php
@@ -17,28 +17,28 @@
       ?>
       <br/>
     </span>
-    <u data-id="name">NAME</u>
+    <u data-id="name">['SERVER_NAME']</u>
     <span id="name" class="hide">
       <?php
       echo $_SERVER['SERVER_NAME'];
       ?>
       <br/>
     </span>
-    <u data-id="cgi">PORT</u>
+    <u data-id="cgi">['SERVER_PORT']</u>
     <span id="cgi" class="hide">
       <?php
       echo $_SERVER['SERVER_PORT'];
       ?>
     </span>
     <br/>
-    <u data-id="software">SOFTWARE</u>
+    <u data-id="software">['SERVER_SOFTWARE']</u>
     <span id="software" class="hide">
       <?php
       echo $_SERVER['SERVER_SOFTWARE'];
       ?>
       <br/>
     </span>
-    <u data-id="php">PHP_SELF</u>
+    <u data-id="php">['PHP_SELF']</u>
     <span id="php" class="hide">
       <br/>
       <?php
@@ -74,7 +74,7 @@
   <p>
     <i>ブラウザ等情報</i>
     <br/>
-    <u data-id="user">USER_AGENT</u>
+    <u data-id="user">['HTTP_USER_AGENT']</u>
     <span id="user" class="hide">
       <br/>
       <?php
