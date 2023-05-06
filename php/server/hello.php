@@ -1,13 +1,13 @@
 <section id="hello">
   <p>
-    <u>['SERVER_PROTOCOL']</u>
+    <u>SERVER_PROTOCOL</u>
     <span>
       <?php
       echo $_SERVER['SERVER_PROTOCOL'];
       ?>
     </span>
     <br/>
-    <u>['SERVER_ADDR']</u>
+    <u>SERVER_ADDR</u>
     <span>
       <br/>
       <?php
@@ -15,7 +15,7 @@
       ?>
     </span>
     <br/>
-    <u>['SERVER_NAME']</u><br/>
+    <u>SERVER_NAME</u><br/>
     <span>
       <?php
       echo $_SERVER['SERVER_NAME'];
@@ -23,21 +23,21 @@
     </span>
   </p>
   <p>
-    <u>['SERVER_PORT']</u>
+    <u>SERVER_PORT</u>
     <span>
       <?php
       echo $_SERVER['SERVER_PORT'];
       ?>
     </span>
     <br/>
-    <u>['SERVER_SOFTWARE']</u>
+    <u>SERVER_SOFTWARE</u>
     <span>
       <?php
       echo $_SERVER['SERVER_SOFTWARE'];
       ?>
     </span>
     <br/>
-    <u>['PHP_SELF']</u><br/>
+    <u>PHP_SELF</u><br/>
     <span>
       <?php
       echo $_SERVER['PHP_SELF'];
