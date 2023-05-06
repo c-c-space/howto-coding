@@ -50,7 +50,6 @@
     lastModified.innerHTML =
     'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
     </script>
-  </section>
   </article>
   <h1 id="title">$_SERVER | PHP: Hypertext Preprocessor</h1>
 
