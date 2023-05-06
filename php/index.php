@@ -18,8 +18,13 @@
     content: ' ?>';
   }
 
+  .readme summary {
+    font-size: 125%;
+  }
+
   #contents::before {
     content:'関連記事';
+    font-size: 95%;
   }
 
   #links::before {
