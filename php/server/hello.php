@@ -15,13 +15,14 @@
       ?>
     </span>
     <br/>
-    <u>['SERVER_NAME']</u>
+    <u>['SERVER_NAME']</u><br/>
     <span>
       <?php
       echo $_SERVER['SERVER_NAME'];
       ?>
     </span>
-    <br/>
+  </p>
+  <p>
     <u>['SERVER_PORT']</u>
     <span>
       <?php
