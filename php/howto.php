@@ -16,7 +16,7 @@
   </p>
   <br/>
   <p>
-    PHP は、開始タグ <<code>?php</code> から 終了タグ <code>?</code>> の間に記述します。
+    PHP は、開始タグ <font><</font><font>?php</font> から 終了タグ <font>?</font><font>></font> の間に記述します。
   </p>
   <p>
     また、PHP の命令コードの最後には セミコロン <font>;</font> をつける決まりになっています。
