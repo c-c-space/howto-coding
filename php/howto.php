@@ -20,6 +20,17 @@
     print は 式 として 単一の文字列のみを受け付け、常に 戻り値 1 を返します。
   </p>
   <?php
-  ( 1 === 1 ) ? print 'true' : print 'false';
+  // print は戻り値があるため、式の中で使うことができます。
+  // 以下は "hello world" を出力します。
+  if ( print "hello" ) {
+    echo " world";
+  }
   ?>
+  <pre>
+// print は戻り値があるため、式の中で使うことができます。
+// 以下は "hello world" を出力します。
+if ( print "hello" ) {
+  echo " world";
+}
+  </pre>
 </section>
