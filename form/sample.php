@@ -109,23 +109,23 @@ $message  = htmlspecialchars($_POST['message']);
 </head>
 <body>
   <h1>Web Form | Retrieving the data by PHP</h1>
-  <main>
-    <?php
-    echo '<h2>I am <strong>', $name, '</strong></h2>';
-    echo '<h3>Email: <u>', $email, '</u></h3>';
-    echo '<h3>Website: <u>', $phone, '</u></h3><br/>';
-    echo '<h3>Phone: <u>', $phone, '</u></h3><hr/>';
-    echo '<p>', $message, '</p>';
-    ?>
-  </main>
   <p>
     PHP の最も強力な機能の一つは、ウェブフォームを処理する手段です。<br/>
     フォームの中の全てのコントロールが、 自動的に PHP スクリプトで利用可能になります。
   </p>
+  <main>
+    <?php
+    echo '<h2>I am <strong>', $name, '</strong></h2>';
+    echo '<h3>Email: <u>', $email, '</u></h3>';
+    echo '<h3>Website: <u>', $website, '</u></h3><br/>';
+    echo '<h3>Phone: <u>', $phone, '</u></h3><hr/>';
+    echo '<p>', $message, '</p>';
+    ?>
+  </main>
   <details>
-    <summary>フォームのデータを取得・出力する</summary>
+    <summary>フォームデータを取得・出力する</summary>
     <p>
-      <i>$変数名</i> <small>値 を 代入する 変数名 を設定</small><br/>
+      <i>$変数名</i> <small>フォームデータの値 を 代入する 変数名 を設定</small><br/>
       <i>htmlspecialchars</i>( ) <small>特殊文字を HTML エンティティに変換する</small><br/>
       <i>$_POST</i>['コントロール名'] <small>フォームコントロールの name 属性に設定した値を記述する</small>
     </p>
@@ -140,17 +140,21 @@ $message  = <code>htmlspecialchars</code>(<code>$_POST['message']</code>);
 
 <code>?</code>>
     </pre>
+    <hr/>
     <p>
-      PHP の グローバル変数 $_POST は、POST メソッドで送信されたデータへ名前でアクセスします。<br/>
-      <small>GET メソッドで送信されたデータにアクセスするには、$_GET を使用します。</small>
+      フォームデータを代入した 変数名 と HTML タグ を 出力する<br/>
+      <small>
+        echo を 使って、変数 や 文字列 を コンマ , で 連結して HTML に 出力することができます。<br/>
+        文字列は 'シングルコーテーション' または "ダブルコーテーション" で囲み、
+        変数 は $変数名 の形式で記述します。
+      </small>
     </p>
-    <br/>
     <pre>
 <<code>?php</code>
 
 echo '<<code>h2</code>>I am <<code>strong</code>>', $name, '<<code>/strong</code>><<code>/h2</code>>';
 echo '<<code>h3</code>>Email: <<code>u</code>>', $email, '<<code>/u</code>><<code>/h3</code>>';
-echo '<<code>h3</code>>Website: <<code>u</code>>', $phone, '<<code>/u</code>><<code>/h3</code>><<code>br/</code>>';
+echo '<<code>h3</code>>Website: <<code>u</code>>', $website, '<<code>/u</code>><<code>/h3</code>><<code>br/</code>>';
 echo '<<code>h3</code>>Phone: <<code>u</code>>', $phone, '<<code>/u</code>><<code>/h3</code>><<code>hr/</code>>';
 echo '<<code>p</code>>', $message, '<<code>/p</code>>';
 
