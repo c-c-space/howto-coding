@@ -10,3 +10,4 @@
   <p><i># PHP からシステムに関する情報を取得する</i></p>
   <p class="php">?php phpinfo();</p>
 </section>
+<br>
