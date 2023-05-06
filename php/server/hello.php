@@ -78,7 +78,7 @@
     <span id="user" class="hide">
       <br/>
       <?php
-      echo $_SERVER;
+      echo $_SERVER['HTTP_USER_AGENT'];
       ?>
     </span>
   </p>
