@@ -19,7 +19,7 @@
   }
 
   .readme summary {
-    font-size: 125%;
+    font-size: 150%;
   }
 
   #contents::before {
