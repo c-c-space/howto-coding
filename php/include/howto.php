@@ -1,7 +1,7 @@
 <section class="readme">
   <h2>
-    <code>include()</code>;
-    <code>require()</code>;
+    <font>include()</font>;
+    <font>require()</font>;
   </h2>
   <p>
     ウェブサイトで同じパーツを使いまわす際などに、include() または require() を使って外部ファイルを読み込みます。<br/>
@@ -12,8 +12,8 @@
   </p>
   <br>
   <h3>
-    <code>include_once()</code>;
-    <code>require_once()</code>;
+    <font>include_once()</font>;
+    <font>require_once()</font>;
   </h3>
   <p>
     ページ内に同じファイルを読み込まない場合は、include_once() または require_once() を使用します。
