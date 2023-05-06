@@ -25,6 +25,11 @@
       "url" : "https://www.php.net/manual/ja/tutorial.useful.php"
     },
     {
+      "date" : "$",
+      "name" : "定義済みの変数",
+      "url" : "https://www.php.net/manual/ja/reserved.variables.php"
+    },
+    {
       "date" : "PHP",
       "name" : "$_SERVER",
       "url" : "https://www.php.net/manual/ja/reserved.variables.server.php"
