@@ -110,16 +110,20 @@ $message  = htmlspecialchars($_POST['message']);
 <body>
   <h1>Web Form | Retrieving the data by PHP</h1>
   <main>
-    <h2>I am <strong><?php echo $name ?></strong></h2>
-    <h3>Email: <a href="mailto:<?php echo $email ?>"><?php echo $email ?></a></h3>
-    <h3>Website: <a href="<?php echo $website ?>" target="_blank" rel="noreferrer"><?php echo $website ?></a></h3>
-    <br/>
-    <h3>Phone: <u><?php echo $phone ?></u></h3>
-    <hr/>
-    <p><?php echo $message ?></p>
+    <?php
+    echo '<h2>I am <strong>', $name, '<strong></h2>';
+    echo '<h3>Email: <u>', $email, '<u></h3>';
+    echo '<h3>Website: <u>', $phone, '<u></h3><br/>';
+    echo '<h3>Phone: <u>', $phone, '<u></h3><hr/>';
+    echo '<p>', $message, '</p>';
+    ?>
   </main>
-  <details open>
-    <summary>フォームのデータを取得する</summary>
+  <p>
+    PHP の最も強力な機能の一つは、ウェブフォームを処理する手段です。<br/>
+    フォームの中の全てのコントロールが、 自動的に PHP スクリプトで利用可能になります。
+  </p>
+  <details>
+    <summary>フォームのデータを取得・出力する</summary>
     <p>
       <i>$変数名</i> <small>値 を 代入する 変数名 を設定</small><br/>
       <i>htmlspecialchars</i>( ) <small>特殊文字を HTML エンティティに変換する</small><br/>
@@ -140,6 +144,18 @@ $message  = <code>htmlspecialchars</code>(<code>$_POST['message']</code>);
       PHP の グローバル変数 $_POST は、POST メソッドで送信されたデータへ名前でアクセスします。<br/>
       <small>GET メソッドで送信されたデータにアクセスするには、$_GET を使用します。</small>
     </p>
+    <br/>
+    <pre>
+<<code>?php</code>
+
+echo '<h2>I am <strong>', $name, '<strong></h2>';
+echo '<h3>Email: <u>', $email, '<u></h3>';
+echo '<h3>Website: <u>', $phone, '<u></h3><br/>';
+echo '<h3>Phone: <u>', $phone, '<u></h3><hr/>';
+echo '<p>', $message, '</p>';
+
+<code>?</code>>
+    </pre>
     <br/>
   </details>
 </body>

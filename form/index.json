@@ -182,6 +182,13 @@
     },
     {
       "date" : "PHP",
+      "name" : "フォームの処理",
+      "url" : "https://www.php.net/manual/ja/tutorial.forms.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP",
       "name" : "外部から来る変数",
       "url" : "https://www.php.net/manual/ja/language.variables.external.php",
       "language" : "etc",
