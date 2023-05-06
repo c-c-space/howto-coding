@@ -2,11 +2,11 @@
   <h2>
     <?php
     $name = '?php';
-    if ( (print "U+003C") && true ) {
-      echo $name, " ?>";
+    if ( (print "＜") && true ) {
+      echo $name, " ?＞";
     }
     else {
-      echo "?", "?>";
+      echo "?", "?＞";
     }
     ?>
   </h2>
