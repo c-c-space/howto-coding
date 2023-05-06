@@ -20,30 +20,25 @@
     print は 式 として 単一の文字列のみを受け付け、常に 戻り値 1 を返します。
   </p>
   <br/>
+  <h3>
+    <?php
+    if ( (print "Hello") && true ) {
+      echo " World", "!";
+    }
+    else {
+      echo " - ", "?";
+    }
+    ?>
+  </h3>
   <pre>
 if ( (print "Hello") && true ) {
-  echo " World", "!<br>";
+  echo " World", "!";
 }
 else {
-  echo " - ", "?<br>";
+  echo " - ", "?";
 }
 // 最初に (print "hello") が評価され、
 // "Hello" を出力した後、print が 1 を返します。
 // 1 && true は true なので、if ブロックの中身が実行されます。
   </pre>
-  <?php
-  if ( (print "Hello") && true ) {
-    echo " World", "!<br>";
-  }
-  else {
-    echo " - ", "?<br>";
-  }
-
-  print "hello " && print "world";
-  // "world1"; を出力します。print "world" が先に評価され、
-  // "hello " && 1 が次に評価され、左辺の print に渡されます。
-
-  (print "hello ") && (print "world");
-  // "hello world" を出力します; 括弧が print を && より前に評価させているからです。
-  ?>
 </section>
