@@ -43,7 +43,7 @@
     <section id="links"></section>
   </main>
   <article id="right">
-    <?php require('howto.html'); ?>
+    <?php require('howto.php'); ?>
     <hr/>
     <nav id="contents"></nav>
   </article>

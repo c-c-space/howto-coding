@@ -56,8 +56,29 @@
     },
     {
       "date" : "echo",
-      "name" : "文字列を出力する",
+      "name" : "1つ以上の文字列を出力する",
       "url" : "https://www.php.net/manual/ja/function.echo.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "print",
+      "name" : "文字列を出力する",
+      "url" : "https://www.php.net/manual/ja/function.print.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "関数",
+      "name" : "戻り値",
+      "url" : "https://www.php.net/manual/ja/functions.returning-values.php",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "制御構造",
+      "name" : "return",
+      "url" : "https://www.php.net/manual/ja/function.return.php",
       "language" : "etc",
       "status" : "basic"
     },
