@@ -34,13 +34,6 @@
       "status" : "guide"
     },
     {
-      "date" : "readfile",
-      "name" : "ファイルを出力する",
-      "url" : "https://www.php.net/manual/ja/function.readfile.php",
-      "language" : "etc",
-      "status" : "guide"
-    },
-    {
       "date" : "include_once",
       "name" : "スクリプトの実行時に指定 したファイルを読み込み評価する",
       "url" : "https://www.php.net/manual/ja/function.include-once.php",
@@ -65,6 +58,13 @@
       "date" : "get_required_files",
       "name" : "get_included_files() のエイリアス",
       "url" : "https://www.php.net/manual/ja/function.get-required-files.php",
+      "language" : "etc",
+      "status" : "guide"
+    },
+    {
+      "date" : "readfile",
+      "name" : "ファイルを出力する",
+      "url" : "https://www.php.net/manual/ja/function.readfile.php",
       "language" : "etc",
       "status" : "guide"
     }
