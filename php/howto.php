@@ -24,10 +24,10 @@ if ( print 'Hello ' ) {
     <i>他の言語構造と異なり echo には戻り値がありません。</i>
   </p>
   <?php
-  print 'Hello ';
-
   if ( print 'Hello ' ) {
     echo "World", "!";
   }
+  
+  ( 1 === 1 ) ? print 'true' : print 'false';
   ?>
 </section>
