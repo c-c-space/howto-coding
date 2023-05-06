@@ -1,12 +1,12 @@
 <section class="readme">
   <h2>
     <?php
-    $name = 'World';
-    if ( (print "Hello ") && true ) {
-      echo $name, "!";
+    $name = '?php';
+    if ( (print "<") && true ) {
+      echo $name, " ?>";
     }
     else {
-      echo "World", "!";
+      echo "?", "?>";
     }
     ?>
   </h2>
@@ -14,8 +14,7 @@
     PHP (PHP: Hypertext Preprocessor) は、動的にウェブページを生成することができるサーバーサイドのスクリプト言語です。<br/>
     <i>ラスマス・ラードフが個人的に開発していたCGIプログラムである Personal Home Page Tools（PHP Tools）を起源とします。</i>
   </p>
-  <hr/>
-  <h3 class="php">?php </h3>
+  <br/>
   <p>
     PHP は、開始タグ <<code>?php</code> から 終了タグ <code>?</code>> の間に記述します。
   </p>
@@ -30,8 +29,8 @@
   <hr/>
   <details>
     <summary>
-      <i>print 'Hello ';</i>
-      <i>echo $name, "!"</i>
+      <i>print '<';</i>
+      <i>echo $name, "?>";<</i>
     </summary>
     <p>
       PHP を使って 文字列を出力する場合は、echo または print を使用します。<br/>
@@ -40,21 +39,21 @@
     </p>
     <br/>
     <pre>
-if ( (print "Hello ") && true ) {
-  echo $name, "!";
+if ( (print "<") && true ) {
+  echo $name, " ?>";
 }
 else {
-  echo "World", "!";
+  echo "?", "?>";
 }
-// 最初に (print "hello") が評価され、
-// "Hello" を出力した後、print が 1 を返します。
+// 最初に (print "<") が評価され、
+// "<" を出力した後、print が 1 を返します。
 // 戻り値 1 && true は true なので、if ブロックの中身が実行されます。
     </pre>
   </details>
   <hr/>
   <details>
     <summary>
-      <i>$name = 'World';</i>
+      <i>$name = '?php';</i>
     </summary>
     <p>
       $（ドル記号）の後に名前（変数名）が続く形式で 変数を定義して、変数名から値を代入することができます。<br/>
@@ -62,7 +61,7 @@ else {
     </p>
     <p>
       PHP で $変数名を使うと、代入した値を呼び出すことができます。<br/>
-      <i>例) echo $name, "!"; は、文字列 World! を出力します。</i><br/>
+      <i>例) echo $name, " ?>"; は、文字列 ?php ?> を出力します。</i><br/>
     </p>
     <hr/>
     <h3>
