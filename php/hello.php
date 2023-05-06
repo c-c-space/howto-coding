@@ -1,7 +1,10 @@
-<section id="hello" class="data_show php">
-  ? php
-  <p><i>/* 文字列 を 変数へ格納 */</i></p>
-  <p>$hello =  "Hello, World!";</p>
-  <p><i>// 文字列を出力</i></p>
-  <p>echo  $hello;</p>
+<section id="hello">
+  <p class="data_show php">?php phpinfo();</p>
+
+  <p class="data_show php">? php<br/>
+  <i>/* 文字列 を 変数へ格納 */</i><br/>
+  $hello =  "Hello, World!";<br/>
+  <i>// 文字列を出力</i><br/>
+  echo  $hello;<br/>
+  </p>
 </section>

@@ -35,8 +35,6 @@
   <main id="left">
     <nav id="contents"></nav>
     <?php include('hello.php'); ?>
-
-    <?php phpinfo(); ?>
   </main>
   <article id="right">
     <?php require('howto.html'); ?>
