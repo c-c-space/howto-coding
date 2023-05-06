@@ -11,6 +11,7 @@
       foreach ($included_files as $filename) {<br/>echo "$filename\n";<br/>}<br/>
     </p>
   </div>
+  <hr/>
   <div class="php">
     ?php
     <p><i>指定されたファイルを一度だけ読み込み、評価する</i></p>
