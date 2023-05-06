@@ -54,13 +54,4 @@
       この情報は、レジストリの変更やブラウザの設定により加工(偽装)することができるため、100%の精度ではありません。
     </i>
   </p>
-  <hr/>
-  <p id="lastModified"></p>
-  <script>
-  let lastModified = document.querySelector('#lastModified');
-
-  lastModified.innerHTML =
-  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
-  </script>
   <br/>
-</section>
