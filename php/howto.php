@@ -9,7 +9,7 @@
     PHP タグ を組み込んだ HTML ドキュメントの拡張子を「.php」にすると、サーバーは "PHPモード" で処理を実行し、その結果をクライアントへ返します。<br/>
     ファイルの拡張子が「.html」 の場合は、PHPは認識されず、処理は実行されません。
   </p>
-  <br/>
+  <hr/>
   <p>
     <i>print 'Hello ';</i>
     <i>echo "World", "!"</i>
@@ -19,18 +19,20 @@
     echo は 文 として コンマで区切られた 複数の 文字列を出力することができ、戻り値はありません。<br/>
     print は 式 として 単一の文字列のみを受け付け、常に 戻り値 1 を返します。
   </p>
+  <br/>
+  <pre>
+    // 例) print を使った式
+    if ( print "Hello" && 1 ) {
+      echo " World", "!";
+    } else {
+      echo " - ?";
+    }
+  </pre>
   <?php
-  // print は戻り値があるため、式の中で使うことができます。
-  // 以下は "hello world" を出力します。
-  if ( print "hello" ) {
-    echo " world";
+  if ( print "Hello" && 1 ) {
+    echo " World", "!";
+  } else {
+    echo " - ?";
   }
   ?>
-  <pre>
-// print は戻り値があるため、式の中で使うことができます。
-// 以下は "hello world" を出力します。
-if ( print "hello" ) {
-  echo " world";
-}
-  </pre>
 </section>
