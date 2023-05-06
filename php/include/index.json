@@ -1,6 +1,6 @@
 {
   "title" : "include",
-  "description" : "ファイルを読み込む・出力する",
+  "description" : "ファイルを出力する",
   "author" : "PHP:Hypertext Preprocessor",
   "email" : "pehu@creative-community.space",
   "type" : "website",
