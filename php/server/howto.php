@@ -3,25 +3,25 @@
     <code>通信に必要な情報</code>
     <br/>
     <u>IP</u>
-    <code>
+    <font>
       <?php
       echo $_SERVER['REMOTE_ADDR'];
       ?>
-    </code>
+    </font>
     <br/>
     <u>HOST</u>
-    <code>
+    <font>
       <?php
       $host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
       echo $host
       ?>
-    </code>
+    </font>
     <u>PORT</u>
-    <span>
+    <font>
       <?php
       echo $_SERVER['REMOTE_PORT'];
       ?>
-    </span>
+    </font>
   </h2>
   <p>$_SERVER から取得できる 通信に必要な情報（IP アドレス・ポート番号など）は、インターネットに接続してウェブサイトにアクセスする際に 必ずサーバー に送信されます。</p>
   <p>
