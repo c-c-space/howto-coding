@@ -47,12 +47,12 @@
 </head>
 <body id="cover">
   <main id="left">
-    <?php readfile('hello.php'); ?>
+    <?php require('hello.php'); ?>
     <hr/>
     <section id="links"></section>
   </main>
   <article id="right">
-    <?php readfile('howto.php'); ?>
+    <?php require('howto.php'); ?>
     <br/>
     <section id="contents"></section>
     <hr/>
