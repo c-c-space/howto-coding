@@ -1,7 +1,5 @@
 <section id="hello" class="data_show">
   <p>
-    <i>$_SERVER</i>
-    <br/>
     <u data-id="http">['SERVER_PROTOCOL']</u>
     <span id="http" class="hide">
       <?php
