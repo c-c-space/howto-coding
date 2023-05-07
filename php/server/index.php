@@ -17,6 +17,7 @@
   #contents::before {
     content:'関連記事';
     font-size: 95%;
+    margin-bottom: 0.5rem;
   }
 
   #links::before {
