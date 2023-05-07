@@ -17,16 +17,16 @@
       "status" : "basic"
     },
     {
-      "date" : "$_POST | $_GET",
-      "name" : "フォームの処理",
-      "url" : "/coding/form/",
+      "date" : "include",
+      "name" : "外部ファイルを読み込む",
+      "url" : "/coding/php/include/",
       "language" : "etc",
       "status" : "basic"
     },
     {
-      "date" : "include",
-      "name" : "ファイルを読み込む・出力する",
-      "url" : "/coding/php/include/",
+      "date" : "$_POST | $_GET",
+      "name" : "フォームの処理",
+      "url" : "/coding/form/",
       "language" : "etc",
       "status" : "basic"
     }

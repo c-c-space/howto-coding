@@ -150,6 +150,27 @@
       "status" : "guide"
     },
     {
+      "date" : "PHP",
+      "name" : "Personal Home Page Tools | Hypertext Preprocessor",
+      "url" : "/coding/php/",
+      "language" : "etc",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP:Hypertext Preprocessor",
+      "name" : "$_SERVER | サーバー情報および実行時の環境情報",
+      "url" : "/coding/php/",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "PHP:Hypertext Preprocessor",
+      "name" : "include | 外部ファイルを読み込む",
+      "url" : "/coding/php/include/",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
       "date" : "Cascading Style Sheets",
       "name" : "CSS layout | CSS レイアウト",
       "url" : "/coding/css/layout/",
@@ -203,6 +224,13 @@
       "name" : "Pseudo-elements | 擬似要素",
       "url" : "/coding/css/pseudo-elements/",
       "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "Hypertext Markup Language",
+      "name" : "Form-associated Content | フォーム関連要素",
+      "url" : "/coding/form/",
+      "language" : "html",
       "status" : "guide"
     },
     {
@@ -327,13 +355,6 @@
   ],
 
   "links" : [
-    {
-      "date" : "Hypertext Markup Language",
-      "name" : "Form-associated Content | フォーム関連要素",
-      "url" : "/coding/form/",
-      "language" : "html",
-      "status" : "guide"
-    },
     {
       "date" : "Web API",
       "name" : "MediaStream | Media Capture and Streams API",
