@@ -3,7 +3,9 @@
 <h3>開いた本のようなウェブページ</h3>
 <hr/>
 <details>
-  <summary><span class="link">rel="stylesheet" href="<b class="red">style.css</b>" /</span></summary>
+  <summary>
+    <span class="link">rel="stylesheet" href="<b class="red">style.css</b>" /</span>
+  </summary>
   <div>
     <p>
       #cover を フルスクリーンサイズで固定し、
@@ -23,8 +25,16 @@
 </details>
 <hr/>
 <details>
-  <summary><span class="body_tag"><b class="red">id="cover"</b>></span></summary>
-  <p>開始タグに <b class="red">id="cover"</b> を設定した body の中に、</p>
+  <summary>
+    <span class="body_tag">
+      <b class="red">id="cover"</b>>
+    </span>
+  </summary>
+  <p>
+    開始タグに
+    <b class="red">id="cover"</b>
+    を設定した body の中に、
+  </p>
   <p class="main">
     <b class="red">id="left"</b>><br/>
     表紙になる main 要素 (#left)<br/>
@@ -43,10 +53,8 @@
 <details class="php">
   <summary><b class="red">include</b>('呼び出したいページのURL');</summary>
   <p>
-    PHP の
-    <a href="https://www.php.net/manual/ja/function.include.php">include</a>
-    式を使って、
-    #left と #right に 特定のファイルを呼びだします。
+    PHP関数 include で
+    #left と #right に 特定のファイルを読み込みます。
   </p>
 </details>
 <hr/>
