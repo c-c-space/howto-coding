@@ -24,7 +24,8 @@
 
   #contents::before {
     content:'関連記事';
-    font-size: 90%;
+    font-size: 95%;
+    margin-bottom: 0.75rem;
   }
 
   #links::before {
