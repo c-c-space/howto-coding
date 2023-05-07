@@ -150,8 +150,8 @@
       "status" : "guide"
     },
     {
-      "date" : "PHP",
-      "name" : "Personal Home Page Tools | Hypertext Preprocessor",
+      "date" : "PHP:Hypertext Preprocessor",
+      "name" : "PHPの基本",
       "url" : "/coding/php/",
       "language" : "etc",
       "status" : "basic"
