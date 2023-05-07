@@ -47,14 +47,14 @@
 </head>
 <body id="cover">
   <main id="left">
-    <?php require_once('hello.php'); ?>
+    <section id="contents"></section>
     <hr/>
-    <section id="links"></section>
+    <?php require_once('hello.php'); ?>
   </main>
   <article id="right">
     <?php require_once('howto.php'); ?>
-    <br/>
-    <section id="contents"></section>
+    <hr/>
+    <section id="links"></section>
     <hr/>
     <p id="lastModified"></p>
     <script>
