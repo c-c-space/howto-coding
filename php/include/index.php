@@ -22,18 +22,12 @@
     word-break: break-all;
   }
 
-  #contents::before {
-    content:'関連記事';
-    font-size: 95%;
-  }
-
   #links::before {
     content:'参考資料';
     font-size: 75%;
     margin-bottom: 0.75rem;
   }
 
-  #contents::before,
   #links::before {
     display: block;
     font-family: "ipag", monospace;
@@ -48,7 +42,7 @@
 <body id="cover">
   <main id="left">
     <section id="contents"></section>
-    <hr/>
+    <br/>
     <?php require_once('hello.php'); ?>
   </main>
   <article id="right">
