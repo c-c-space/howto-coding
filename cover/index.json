@@ -50,6 +50,13 @@
       "url" : "/coding/css/transform/",
       "language" : "css",
       "status" : "guide"
+    },
+    {
+      "date" : "PHP",
+      "name" : "外部ファイルを読み込む",
+      "url" : "/coding/php/include/",
+      "language" : "css",
+      "status" : "guide"
     }
   ],
 
