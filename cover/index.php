@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../readme/index.js" defer></script>
-  <script src="randomGradient.js" defer></script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../readme/style.css" />
   <style>
@@ -57,5 +56,6 @@
     <p id="lastModified">Copyright (C) 2020 creative-community.space</p>
   </article>
   <h1 id="title">The Coverpage | How to Coding</h1>
+  <script src="randomGradient.js" defer></script>
 </body>
 </html>
