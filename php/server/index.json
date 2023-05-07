@@ -15,6 +15,13 @@
       "url" : "/coding/php/",
       "language" : "etc",
       "status" : "basic"
+    },
+    {
+      "date" : "$_POST | $_GET",
+      "name" : "フォームの処理",
+      "url" : "/coding/form/",
+      "language" : "etc",
+      "status" : "basic"
     }
   ],
 
