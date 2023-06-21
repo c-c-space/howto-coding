@@ -1,0 +1,70 @@
+#hello {
+  font-size: 4.5vw;
+}
+
+#hello p {
+  margin: 1vw 0 1.5vw;
+}
+
+#hello a {
+  border: 0.1vw solid;
+  border-radius: 5vw;
+  padding: 1vw 2vw;
+  margin: 0.5vw 0 1vw;
+}
+
+#hello b {
+  padding: 0.25vw;
+}
+
+#hello u {
+  border-bottom: 0.3vw solid;
+  padding: 0.1vw;
+}
+
+@media screen and (max-width: 750px) {
+  #hello {
+    font-size: 7vw;
+    padding: 1vw;
+  }
+
+  #hello p {
+    font-size: 75%;
+    margin: 0 0 3vw;
+  }
+
+  #hello a {
+    border-radius: 10vw;
+    padding: 1.5vw 3vw;
+    margin: 1vw 0 2.5vw;
+  }
+
+  #hello u {
+    border-bottom: 0.5vw solid;
+    padding: 0.5vw 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #hello {
+    padding: 0;
+    width: 95%;
+    height: 95%;
+    writing-mode: vertical-rl;
+  }
+
+  #hello p {
+    margin: 0 0 0 3vw;
+  }
+
+  #hello a {
+    padding: 3vw 1.5vw;
+    margin: 0 1.25vw 0 2.5vw;
+  }
+
+  #hello u {
+    border-bottom: none;
+    border-left: 0.5vw solid;
+    padding: 0 0.5vw;
+  }
+}

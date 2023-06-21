@@ -4,39 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="index.js" async></script>
-  <script src="readme/index.js" async></script>
-  <link rel="stylesheet" href="readme/style.css">
+  <script src="readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  fetchHTML('hello.html', '#hello');
+  fetchText('readme.md', '#readme');
+  </script>
+  <script src="readystate.js" async></script>
+  <link rel="stylesheet" href="hello/data_show.css">
+  <link rel="stylesheet" href="hello/style.css">
   <link rel="stylesheet" href="cover/style.css">
+  <link rel="stylesheet" href="readme/style.css">
+  <link rel="stylesheet" href="hello/mobile.css" media="screen and (max-width: 1000px)">
   <link rel="stylesheet" href="cover/mobile.css" media="screen and (max-width: 820px)">
   <link rel="icon" href="/ver/icon.png">
   <link rel="icon" href="/ver/icon/android.png" sizes="192x192" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="/ver/icon/apple.png" sizes="180x180" type="image/png">
 </head>
-
 <body id="cover">
   <main id="left">
-    <section id="hello" class="data_show">
-      <?php require('hello.html'); ?>
-    </section>
-    <br/>
+    <section id="hello" class="data_show"></section>
     <section id="contents"></section>
   </main>
-
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="hello/data_show.js"></script>
   <article id="right">
     <section id="readme" class="readme"></section>
     <section id="links"></section>
   </article>
-
-  <script type="text/javascript">
-    async function readme() {
-      fetch('readme.md')
-      .then(response => response.text())
-      .then(readme => {
-        document.querySelector('#readme').innerHTML = readme.replace(/\n/g, "<br>")
-      });
-    }
-    readme();
-  </script>
 </body>
 </html>

@@ -1,3 +1,5 @@
+'use strict'
+
 const heading = document.createElement("h1");
 heading.setAttribute("id", "title");
 document.body.appendChild(heading);

@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="../readme/index.js" defer></script>
+  <script src="../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
+  <base target="_blank" rel="noopener noreferrer">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../hello/data_show.css">
+  <link rel="stylesheet" href="../hello/style.css">
   <link rel="stylesheet" href="../readme/style.css" />
+  <link rel="stylesheet" href="../html/elements.css">
   <style>
   #contents::before {
     content:'関連記事';
@@ -35,21 +42,15 @@
     }
   }
   </style>
-  <base target="_blank" rel="noopener noreferrer">
 </head>
 
 <body id="cover">
   <main id="left" class="randomGradient">
-    <section id="greeting" class="readme data_show">
-      <?php include('hello.html'); ?>
-    </section>
-    <br/>
+    <section id="greeting" class="readme data_show"></section>
     <aside id="links"></aside>
   </main>
   <article id="right" class="randomGradient">
-    <section id="howto" class="readme data_show">
-      <?php include('howto.html'); ?>
-    </section>
+    <section id="howto" class="readme data_show"></section>
     <hr/>
     <nav id="contents"></nav>
     <hr/>
@@ -57,5 +58,11 @@
   </article>
   <h1 id="title">The Coverpage | How to Coding</h1>
   <script src="randomGradient.js" defer></script>
+  <script type="text/javascript">
+  fetchHTML('hello.html', '#greeting');
+  fetchHTML('howto.html', '#howto');
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="../hello/data_show.js" defer></script>
 </body>
 </html>

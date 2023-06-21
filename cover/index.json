@@ -43,20 +43,6 @@
       "url" : "/coding/css/layout/",
       "language" : "css",
       "status" : "guide"
-    },
-    {
-      "date" : "CSS",
-      "name" : "回転・拡大縮小・傾斜・移動",
-      "url" : "/coding/css/transform/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "PHP",
-      "name" : "外部ファイルを読み込む",
-      "url" : "/coding/php/include/",
-      "language" : "css",
-      "status" : "guide"
     }
   ],
 

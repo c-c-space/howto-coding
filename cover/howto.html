@@ -1,4 +1,4 @@
-<a href="https://jsfiddle.net/verygois/3kL6fqmr/87/" target="_blank" rel="noreferrer">The Coverpage That Seems Like a cover of the book</a>
+<a href="https://jsfiddle.net/verygois/3kL6fqmr/89/" target="_blank" rel="noreferrer">The Coverpage That Seems Like a cover of the book</a>
 
 <h3>開いた本のようなウェブページ</h3>
 <hr/>
@@ -50,14 +50,21 @@
   を記述します。
 </details>
 <hr/>
-<details class="php">
-  <summary><b class="red">include</b>('ファイル名');</summary>
-  <p>
-    PHP関数 include で
-    #left と #right に 特定のファイルを読み込みます。
-  </p>
+<details>
+  <summary><b class="script">src="<b class="red">fetch.js</b>"></b></summary>
+<pre class="script">
+
+async function fetchHTML(url = '', query = '') {
+  fetch(url)
+  .then(response => response.text())
+  .then(html => {
+    document.querySelector(query).innerHTML = html
+  });
+}
+</pre>
+  <p>Fetch API を使って、#left・#right に HTML を出力します。</p>
 </details>
-<hr/>
+<br/>
 <p><i>スクリーンサイズが 820px 以下の場合に適応するスタイルシート</i></p>
 <details>
   <summary>
@@ -69,16 +76,5 @@
     通常フローに沿ってページの上から、#left・#right の順に要素をレイアウト・
     h1#titleは、ページ右上の position に fixed します。
   </p>
-  <pre id="mobile"></pre>
-  <script type="text/javascript">
-    async function mobile() {
-      fetch('mobile.css')
-      .then(response => response.text())
-      .then(mobile => {
-        document.querySelector('#mobile').innerHTML = mobile
-      });
-    }
-    mobile();
-  </script>
 </details>
 <br/>

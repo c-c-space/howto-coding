@@ -1,14 +1,6 @@
-<script async>
-  const data_showCSS = document.createElement( "link" );
-  data_showCSS.href = "hello/data_show.css";
-  data_showCSS.type = "text/css";
-  data_showCSS.rel = "stylesheet";
-  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
-</script>
-
 <p>
   The
-  <u class="randomRGBcolor" data-id="website">Website</u>
+  <u data-id="website">Website</u>
   <span id="website" class="hide">seems like a cover of the book
     <a href="cover/" target="_parent">開いた本のようなウェブページ</a>
     <br />
@@ -45,51 +37,3 @@
   </span>
 </p>
 -->
-<script type="text/javascript">
-  // Add .randomRGBcolor
-  const newRGBcolorAll = document.querySelectorAll('#hello u, #contents a, #links a');
-  for (const newRGBcolor of newRGBcolorAll) {
-    newRGBcolor.classList.add("randomRGBcolor")
-  }
-
-  // Add .randomRGBbg
-  const newRGBbgAll = document.querySelectorAll('#hello a');
-  for (const newRGBbg of newRGBbgAll) {
-    newRGBbg.classList.add("randomRGBbg")
-  }
-
-  // 2 つの値の間にある整数の乱数を返す
-  function random(min, max) {
-    const num = Math.floor(Math.random() * (max - min + 1)) + min;
-    return num;
-  }
-
-  // RGB それぞれの値を 1~255 のうちからランダムに返す
-  function randomRGB() {
-    let getRGB = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
-    return getRGB;
-  }
-
-  const randomRGBcolorAll = document.querySelectorAll('.randomRGBcolor');
-  for (const randomRGBcolor of randomRGBcolorAll) {
-    randomRGBcolor.addEventListener('mouseenter', function(event) {
-      event.target.style.color = randomRGB();
-    });
-    randomRGBcolor.addEventListener('mouseleave', function(event) {
-      event.target.style.color = "";
-    });
-  }
-
-  const randomRGBbgAll = document.querySelectorAll('.randomRGBbg');
-  for (const randomRGBbg of randomRGBbgAll) {
-    randomRGBbg.addEventListener('mouseenter', function(event) {
-      event.target.style.backgroundColor = randomRGB();
-    });
-    randomRGBbg.addEventListener('mouseleave', function(event) {
-      event.target.style.backgroundColor = "";
-    });
-  }
-</script>
-
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="hello/data_show.js"></script>

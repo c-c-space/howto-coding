@@ -1,18 +1,30 @@
-/* Copyright (C) 2022 creative-community.space */
+'use strict'
 
-let requestURL = 'index.json';
-let request = new XMLHttpRequest();
+async function fetchHTML(url = '', query = '') {
+  fetch(url)
+  .then(response => response.text())
+  .then(html => {
+    document.querySelector(query).innerHTML = html
+  });
+}
 
-request.open('GET', requestURL);
-request.responseType = 'text';
-request.send();
+async function fetchText(url = '', query = '') {
+  fetch(url)
+  .then(response => response.text())
+  .then(text => {
+    document.querySelector(query).innerText = text
+  });
+}
 
-request.onload = function() {
-  const indexJSON = request.response;
-  const indexIndex = JSON.parse(indexJSON);
-  indexHead(indexIndex);
-  indexContents(indexIndex);
-  indexLinks(indexIndex);
+async function indexJSON(requestURL = '') {
+  const request = new Request(requestURL);
+  const response = await fetch(request);
+  const indexJson = await response.text();
+
+  const index = JSON.parse(indexJson);
+  indexHead(index);
+  indexContents(index);
+  indexLinks(index);
 }
 
 function indexHead(obj) {
@@ -66,6 +78,15 @@ function indexHead(obj) {
   head.appendChild(twitter);
   head.appendChild(twitterCard);
 
+  const ogIMG = document.createElement( "meta" );
+  const twitterIMG = document.createElement( "meta" );
+  ogIMG.setAttribute("property", "og:image");
+  twitterIMG.setAttribute("name", "twitter:image");
+  ogIMG.setAttribute("content", obj['src']);
+  twitterIMG.setAttribute("content", obj['src']);
+  head.appendChild(ogIMG);
+  head.appendChild(twitterIMG);
+
   const ogSite = document.createElement( "meta" );
   ogSite.setAttribute("property", "og:site_name");
   ogSite.setAttribute("content", location.hostname);
@@ -75,15 +96,6 @@ function indexHead(obj) {
   ogURL.setAttribute("property", "og:url");
   ogURL.setAttribute("content", location.href);
   head.appendChild(ogURL);
-
-  const ogIMG = document.createElement( "meta" );
-  const twitterIMG = document.createElement( "meta" );
-  ogIMG.setAttribute("property", "og:image");
-  twitterIMG.setAttribute("name", "twitter:image");
-  ogIMG.setAttribute("content", location.protocol + '//' + location.hostname + location.pathname + obj['src']);
-  twitterIMG.setAttribute("content", location.protocol + '//' + location.hostname + location.pathname + obj['src']);
-  head.appendChild(ogIMG);
-  head.appendChild(twitterIMG);
 }
 
 function indexContents(obj) {
@@ -132,3 +144,5 @@ function indexLinks(obj) {
     linkA.appendChild(linkP);
   }
 }
+
+/* Copyright (C) 2022 creative-community.space */
