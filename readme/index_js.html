@@ -1,29 +1,26 @@
 <p>
-  JSON (index.json) を取得し、
+  Fetch API で JSONを取得し、
   <u data-id="DOM">DOM (Document Object Model)</u>
   操作を行う
 </p>
-<pre>
-let requestURL = '<font color="red">index.json</font>';
-let request = new XMLHttpRequest();
-
-request.open('GET', requestURL);
-request.responseType = 'text';
-request.send();
-</pre>
+<p>
+  ここでは、HEAD要素にメタデータコンテンツを生成 (indexHead)
+  / #contents と #links 内に、テキストコンテンツを生成 (indexContents・indexLinks)
+  するDOM操作を行います。
+</p>
 <div id="DOM" class="hide">
-  <p>
-    ここでは、HEAD要素にメタデータコンテンツを生成 (indexHead)
-    / #contents と #links 内に、テキストコンテンツを生成 (indexContents・indexLinks)
-    するDOM操作を行います。
-  </p>
   <pre>
-request.onload = function() {
-  const indexJSON = request.response;
-  const indexIndex = JSON.parse(indexJSON);
-  <font color="red">indexHead</font>(indexIndex);
-  <font color="red">indexContents</font>(indexIndex);
-  <font color="red">indexLinks</font>(indexIndex);
+<font color="red">indexJSON('index.json');</font>
+
+async function indexJSON(<font color="red">requestURL = ''</font>) {
+  const request = new Request(requestURL);
+  const response = await fetch(request);
+  const indexJson = await response.text();
+
+  const index = JSON.parse(indexJson);
+  <font color="red">indexHead</font>(index);
+  <font color="red">indexContents</font>(index);
+  <font color="red">indexLinks</font>(index);
 }
   </pre>
 </div>
@@ -61,15 +58,15 @@ function indexHead(obj) {
   const head = document.querySelector('head');
   const indexTitle = document.createElement('title');
   const ogTitle = document.createElement('meta');
-  const twitterTitle = document.createElement('meta');
+  const twittetTitle = document.createElement('meta');
   indexTitle.textContent = obj['title'] + ' | ' + obj['author'];
   ogTitle.setAttribute("property", "og:title");
   ogTitle.setAttribute("content", obj['title'] + ' | ' + obj['author']);
-  twitterTitle.setAttribute("name", "twitter:title");
-  twitterTitle.setAttribute("content", obj['title'] + ' | ' + obj['author']);
+  twittetTitle.setAttribute("name", "twitter:title");
+  twittetTitle.setAttribute("content", obj['title'] + ' | ' + obj['author']);
   head.appendChild(indexTitle);
   head.appendChild(ogTitle);
-  head.appendChild(twitterTitle);
+  head.appendChild(twittetTitle);
 
   const indexDescription = document.createElement('meta');
   const ogDescription = document.createElement('meta');
@@ -108,6 +105,15 @@ function indexHead(obj) {
   head.appendChild(twitter);
   head.appendChild(twitterCard);
 
+  const ogIMG = document.createElement( "meta" );
+  const twitterIMG = document.createElement( "meta" );
+  ogIMG.setAttribute("property", "og:image");
+  twitterIMG.setAttribute("name", "twitter:image");
+  ogIMG.setAttribute("content", obj['src']);
+  twitterIMG.setAttribute("content", obj['src']);
+  head.appendChild(ogIMG);
+  head.appendChild(twitterIMG);
+
   const ogSite = document.createElement( "meta" );
   ogSite.setAttribute("property", "og:site_name");
   ogSite.setAttribute("content", location.hostname);
@@ -117,15 +123,6 @@ function indexHead(obj) {
   ogURL.setAttribute("property", "og:url");
   ogURL.setAttribute("content", location.href);
   head.appendChild(ogURL);
-
-  const ogIMG = document.createElement( "meta" );
-  const twitterIMG = document.createElement( "meta" );
-  ogIMG.setAttribute("property", "og:image");
-  twitterIMG.setAttribute("name", "twitter:image");
-  ogIMG.setAttribute("content", location.protocol + '//' + location.hostname + location.pathname + obj['src']);
-  twitterIMG.setAttribute("content", location.protocol + '//' + location.hostname + location.pathname + obj['src']);
-  head.appendChild(ogIMG);
-  head.appendChild(twitterIMG);
 }
 </pre>
 
@@ -197,12 +194,13 @@ function indexLinks(obj) {
 
   for (const link of links) {
     const linkA = document.createElement('a');
-    const linkP = document.createElement('p');
     const linkI = document.createElement('i');
+    const linkP = document.createElement('p');
 
     linkA.href = link.url;
     linkA.setAttribute("target", '_blank');
     linkA.setAttribute("rel", 'noopener noreferrer');
+    linkA.setAttribute("class", 'list_item');
     linkI.innerHTML = link.date;
     linkP.innerHTML = link.name;
 

@@ -1,10 +1,3 @@
-<p>
-  <a href="https://jsfiddle.net/verygois/ax506do8/63/" target="_blank" rel="noreferrer">a[href^="#"]</a>
-</p>
-<h3>
-  a[href^="#"]
-</h3>
-<hr/>
 <details class="stylesheet">
   <summary><b class="red">// .readme セクション要素をクラス名によってスタイリングする</b></summary>
   <h3>
@@ -49,18 +42,26 @@
 <hr/>
 <details>
   <summary><span class="script"> src="<font class="red">script.js</font>"></span></summary>
-  <pre id="script"></pre>
+  <pre id="script">
+"use strict"
 
-  <script type="text/javascript">
-    async function script() {
-      fetch('script.js')
-      .then(response => response.text())
-      .then(script => {
-        document.querySelector('#script').innerText = script
-      });
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+const anchorLinksArr = Array.prototype.slice.call(anchorLinks);
+
+anchorLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    const readmeSectionAll = document.querySelectorAll(".readme section");
+    for (const readmeSection of readmeSectionAll) {
+      readmeSection.classList.remove("active");
+      readmeSection.classList.add("is-hide");
     }
-    script();
-  </script>
+    const targetId = link.hash;
+    const targetElement = document.querySelector(targetId);
+    targetElement.classList.replace("is-hide", "active");
+  });
+});
+  </pre>
 </details>
 <hr/>
 <p>

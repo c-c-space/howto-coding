@@ -32,5 +32,10 @@
   ],
 
   "links" : [
+  {
+    "date" : "How to Coding",
+    "name" : "a[href^='#'] & .readme section",
+    "url" : "https://jsfiddle.net/verygois/ax506do8/63/"
+  }
   ]
 }
