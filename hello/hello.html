@@ -1,20 +1,3 @@
-<script async>
-  const data_showCSS = document.createElement( "link" );
-  data_showCSS.href = "data_show.css";
-  data_showCSS.type = "text/css";
-  data_showCSS.rel = "stylesheet";
-  document.getElementsByTagName("head")[0].appendChild(data_showCSS);
-
-  const html_elementsCSS = document.createElement( "link" );
-  html_elementsCSS.href = "../html/elements.css";
-  html_elementsCSS.type = "text/css";
-  html_elementsCSS.rel = "stylesheet";
-  document.getElementsByTagName("head")[0].appendChild(html_elementsCSS);
-</script>
-
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script src="data_show.js" defer></script>
-
 <p class="doctype"></p>
 <div class="html">lang="ja">
   <div class="head">
@@ -27,7 +10,14 @@
 
 .data_show u {
   cursor: help;
+  transition: 1s;
 }
+
+.data_show b,
+.data_show span {
+  font-style: normal;
+}
+
       </pre>
     </div>
   </div>
