@@ -130,6 +130,20 @@
       "url" : "https://docs.google.com/presentation/d/1KDDbJaRVJe2kQQ2U_Wwdq7RobrsrbN2UeX9xqKrdLyo/edit?usp=sharing",
       "language" : "html",
       "status" : "basic"
+    },
+    {
+      "date" : "とほほのWWW入門",
+      "name" : "HTML Living StandardとHTMLの歴史",
+      "url" : "https://www.tohoho-web.com/html/memo/htmlls.htm",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "とほほのWWW入門",
+      "name" : "HTML要素一覧",
+      "url" : "https://www.tohoho-web.com/html/memo/tags.htm",
+      "language" : "html",
+      "status" : "library"
     }
   ]
 }
