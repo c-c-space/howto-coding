@@ -50,14 +50,11 @@
   }
 
   document.body.style.backgroundColor = randomRGB();
-
-  const randomRGBbg = document.querySelectorAll('#hello *');
+  const randomRGBbg = document.querySelectorAll('#hello, #nav, #one *');
   for (let i = 0; i < randomRGBbg.length; i++) {
-
     randomRGBbg[i].addEventListener('mouseenter', function(e) {
       document.body.style.backgroundColor = randomRGB();
     });
-
     randomRGBbg[i].addEventListener('mouseleave', function(e) {
       document.body.style.backgroundColor = randomRGB();
     });
