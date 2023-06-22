@@ -45,6 +45,13 @@
       "status" : "guide"
     },
     {
+      "date" : "IMG PICTURE",
+      "name" : "画像要素",
+      "url" : "/coding/html/images/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
       "date" : "Listing Content",
       "name" : "リスト要素",
       "url" : "/coding/html/listing/",
@@ -55,13 +62,6 @@
       "date" : "Grouping Content",
       "name" : "グループ化要素",
       "url" : "/coding/html/grouping/",
-      "language" : "html",
-      "status" : "guide"
-    },
-    {
-      "date" : "IMG PICTURE",
-      "name" : "画像要素",
-      "url" : "/coding/html/images/",
       "language" : "html",
       "status" : "guide"
     },
