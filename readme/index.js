@@ -96,6 +96,11 @@ function indexHead(obj) {
   ogURL.setAttribute("property", "og:url");
   ogURL.setAttribute("content", location.href);
   head.appendChild(ogURL);
+
+  const iconCC = document.createElement( "link" );
+  iconCC.rel = "icon";
+  iconCC.href = "/ver/icon.png";
+  head.appendChild(iconCC);
 }
 
 function indexContents(obj) {
