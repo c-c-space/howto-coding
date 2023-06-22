@@ -12,12 +12,12 @@
     {
       "date" : "META",
       "name" : "メタデータ要素",
-      "url" : "/html/head/meta/"
+      "url" : "/coding/html/head/meta/"
     },
     {
       "date" : "LINK",
       "name" : "外部リソースへのリンク要素",
-      "url" : "/html/head/link/"
+      "url" : "/coding/html/head/link/"
     },
     {
       "date" : "CSSの基本",
