@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../elements.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../css/pseudo-classes/lightbox.css" />
+  <link rel="stylesheet" href="../../css/pseudo-classes/target.css" />
+  <style>
+  #one:target,
+  #two:target,
+  #three:target,
+  #four:target {
+    color: #fff;
+    background: #000;
+  }
+
+  .readme .close {
+    color: #fff;
+    filter: invert();
+  }
+
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/ver/font/NewYork.otf");
+  }
+
+  h1#title {
+    font-family: "NewYork", serif;
+  }
+  </style>
+</head>
+<body>
+  <nav id="nav">
+    <a href="#one">表の基本</a>
+    <a href="#etc">関連記事</a>
+  </nav>
+  <article id="readme" class="readme">
+    <h1 id="title">HTML tables | Hypertext Markup Language</h1>
+    <h2>HTML でのとてもよくある仕事はテーブルデータの構造化で、数々の要素と属性がこの目的のためにあります。</h2>
+    <h3>テーブル関連要素 と CSS を組み合わせると、独自の表を簡単に作成できます。</h3>
+  </article>
+  <main id="table"></main>
+  <br/>
+  <article id="howto"></article>
+  <hr/>
+  <p id="lastModified"></p>
+
+  <aside class="lightbox" id="etc">
+    <a href="#" class="close" onclick="window.history.back(); return false;"></a>
+    <section id="contents" class="translate_center"></section>
+    <section id="links" class="fixed_bottom"></section>
+  </aside>
+
+  <script type="text/javascript">
+  document.addEventListener('readystatechange', (event) => {
+    fetchHTML('table.html', '#table');
+    fetchHTML('howto.html', '#howto');
+
+    let lastModified = document.querySelector('#lastModified');
+    lastModified.innerHTML =
+    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+  "title" : "HTML tables",
+  "description" : "HTML テーブル",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "CSS",
+      "name" : "ボックスモデル",
+      "url" : "/coding/css/boxmodel/",
+      "language" : "css",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "HTML table basics",
+      "name" : "HTML の表の基本",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Tables/Basics",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML table advanced features and accessibility",
+      "name" : "HTML 表の高度な機能とアクセシビリティ",
+      "url" : "https://developer.mozilla.org/ja/docs/Learn/HTML/Tables/Advanced",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "table",
+      "name" : "表要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/table",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "tr",
+      "name" : "表の行要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/tr",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "th",
+      "name" : "表見出し要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/th",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "td",
+      "name" : "表データセル要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/td",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "caption",
+      "name" : "表キャプション要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/caption",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "thead",
+      "name" : "表ヘッダー要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/thead",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "tbody",
+      "name" : "テーブル本体要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/tbody",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "tfoot",
+      "name" : "表フッター要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/tfoot",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "colgroup",
+      "name" : "表の列グループ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/colgroup",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "col",
+      "name" : "表の列要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/col",
+      "language" : "guide",
+      "status" : "basic"
+    }
+  ]
+}
