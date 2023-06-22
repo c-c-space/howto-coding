@@ -18,20 +18,6 @@
     },
     {
       "date" : "CSS",
-      "name" : "テキストの装飾",
-      "url" : "/coding/css/text/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "CSS",
-      "name" : "フォントの指定",
-      "url" : "/coding/css/fonts/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "CSS",
       "name" : "背景",
       "url" : "/coding/css/backgrounds/",
       "language" : "css",
@@ -72,6 +58,20 @@
       "date" : "time",
       "name" : "時刻または日付",
       "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/time",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "bdo",
+      "name" : "双方向文字列上書き要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/bdo",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "bdi",
+      "name" : "書字方向分離要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/bdi",
       "language" : "guide",
       "status" : "basic"
     },

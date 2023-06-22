@@ -2,50 +2,52 @@
   transition: 2.5s;
 }
 
-#one,
-#two,
-#three,
-#four {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
-  user-select: none;
-  pointer-events: none;
-  transition: 2.5s;
+#contents::before {
+  content:'関連記事';
+  font-size: 90%;
 }
 
-#one:target,
-#two:target,
-#three:target,
-#four:target {
-  padding: 1rem;
-  width: 95%;
-  height: 75%;
-  opacity: 1;
-  overflow: auto;
-  user-select: auto;
-  pointer-events: auto;
+#links::before {
+  content:'参考資料';
+  font-size: 75%;
 }
 
-.readme .close {
-  color: #fff;
-  filter: invert();
+#contents::before,
+#links::before {
+  display: block;
+  text-decoration: underline;
+  margin: 0.5rem 0.25rem;
 }
 
-@font-face {
-  font-family: "NewYork";
-  src: url("https://creative-community.space/ver/font/NewYork.otf");
+section:target font,
+section:target .blue,
+section:target a {
+  color: #000;
+  border-color: #000;
 }
 
-h1#title {
-  font-family: "NewYork", serif;
+code,
+.sample,
+#lastModified {
+  font-family: "ipag", monospace;
+}
+
+#howto a {
+  filter: invert(0);
+}
+
+code,
+#lastModified {
+  text-align: right;
+  line-height: 125%;
+  padding: 0.5rem;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 820px) {
+  .sample {
+    font-size: 3.21vw;
+    padding: 20% 2.5% 10%;
+    min-height: -webkit-fill-available;
+  }
 }

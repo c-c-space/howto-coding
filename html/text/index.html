@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../readme/index.js" async></script>
+  <script src="../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../css/pseudo-classes/lightbox.css" />
+  <link rel="stylesheet" href="../../css/pseudo-classes/target.css" />
   <style>
   #one:target,
   #two:target,
@@ -19,38 +23,9 @@
     filter: invert();
   }
 
-  h1#title::before {
-    content:'Text | Hypertext Markup Language';
-  }
-
-  #contents::before {
-    content:'関連記事';
-    font-size: 90%;
-  }
-
-  #links::before {
-    content:'参考資料';
-    font-size: 75%;
-  }
-
-  #contents::before,
-  #links::before {
-    display: block;
-    text-decoration: underline;
-    margin: 0.5rem 0.25rem;
-  }
-
-  section:target font,
-  section:target .blue,
-  section:target a {
-    color: #000;
-    border-color: #000;
-  }
-
-  code,
-  .sample,
-  #lastModified {
-    font-family: "ipag", monospace;
+  .readme .close {
+    color: #fff;
+    filter: invert();
   }
 
   .sample {
@@ -61,24 +36,17 @@
     min-height: 100vh;
   }
 
-  #howto a {
-    filter: invert(0);
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/ver/font/NewYork.otf");
   }
 
-  code,
-  #lastModified {
-    text-align: right;
-    line-height: 125%;
-    padding: 0.5rem;
-    word-break: break-word;
+  h1#title {
+    font-family: "NewYork", serif;
   }
 
-  @media screen and (max-width: 820px) {
-    .sample {
-      font-size: 3.21vw;
-      padding: 20% 2.5% 10%;
-      min-height: -webkit-fill-available;
-    }
+  h1#title::before {
+    content:'Text | Hypertext Markup Language';
   }
   </style>
 </head>
@@ -112,12 +80,8 @@
     <span class="span_element" contenteditable="true"></span>
   </main>
   <br/>
-  <article id="sample" class="readme">
-    <?php readfile('sample.html'); ?>
-  </article>
-  <article id="howto">
-    <?php readfile('howto.html'); ?>
-  </article>
+  <article id="sample" class="readme"></article>
+  <article id="howto"></article>
   <hr/>
   <br/>
   <p id="lastModified"></p>
@@ -130,6 +94,9 @@
 
   <script type="text/javascript">
   document.addEventListener('readystatechange', (event) => {
+    fetchHTML('sample.html', '#sample');
+    fetchHTML('howto.html', '#howto');
+
     if (event.target.readyState === 'interactive') {
       let lastModified = document.querySelector('#lastModified');
       lastModified.innerHTML =

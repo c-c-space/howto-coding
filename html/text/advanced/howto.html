@@ -57,6 +57,31 @@ a[href^='tel']::before {
   </p>
   <br/>
   <h3>
+    <i>双方向文字列上書き要素</i>
+    <br/>
+    <font><code><</code>bdo<code>></code></font>
+  </h3>
+  <p>
+    現在のテキストの書字方向を上書きし、中のテキストが異なる書字方向で描画されるようにします。<br/>
+    <i>テキストが描画される方向は、dir属性で設定します。</i>
+  </p>
+  <bdo class="bdo" dir="ltr">ltr">テキストを左から右へ (left-to-right)</bdo><br/>
+  <bdo class="bdo" dir="rtl">dir="rtl">テキストを右から左へ (right-to-left)</bdo>
+  <br/>
+  <h3>
+    <i>書字方向分離要素</i>
+    <br/>
+    <font><code><</code>bdi<code>></code></font>
+  </h3>
+  <p>
+    ブラウザーの書字方向アルゴリズムにこのテキストが周囲のテキストから独立しているものと扱うよう指示します。<br/>
+    <i>これは特に、ウェブサイトがテキストを動的に挿入するとき、挿入されるテキストの書字方向が不明な場合に便利です。</i>
+  </p>
+  <bdi class="bdi"></bdi>
+  <p>???</p>
+  <br/>
+  <hr/>
+  <h3>
     <i>関心のある文字列のマーク</i>
     <br/>
     <font><code><</code>mark<code>></code></font>
@@ -125,6 +150,24 @@ q::after {
   <p style="text-align:center;">~~~</p>
   <hr/>
   <h3>
+    <i>定義要素</i>
+    <br/>
+    <font><code><</code>dfn<code>></code></font>
+  </h3>
+  <p>
+    定義句や文の文脈の中で定義している用語
+    <br/>
+    <i>dfn 要素の使用については、完全に明らかになっていない側面がいくつかあります。</i>
+  </p>
+  <pre>
+<span class="dfn_element"><font><dfn>HTML Definition element</dfn></font></span>
+  </pre>
+  <mark class="mark">
+    <code>title 属性がある場合、値が定義される用語とみなされます。</code><br/>
+    <code>id 属性をつけた場合は、 a 要素を使用してそこにリンクすることができます。</code>
+  </mark>
+  <hr/>
+  <h3>
     <i>略語や頭字語</i>
     <br/>
     <font><code><</code>abbr<code>></code></font>
@@ -145,24 +188,6 @@ abbr:hover::after {
   font-size: 75%;
 }
   </pre>
-  <hr/>
-  <h3>
-    <i>定義要素</i>
-    <br/>
-    <font><code><</code>dfn<code>></code></font>
-  </h3>
-  <p>
-    定義句や文の文脈の中で定義している用語
-    <br/>
-    <i>dfn 要素の使用については、完全に明らかになっていない側面がいくつかあります。</i>
-  </p>
-  <pre>
-<span class="dfn_element"><font><dfn>HTML Definition element</dfn></font></span>
-  </pre>
-  <mark class="mark">
-    <code>title 属性がある場合、値が定義される用語とみなされます。</code><br/>
-    <code>id 属性をつけた場合は、 a 要素を使用してそこにリンクすることができます。</code>
-  </mark>
   <hr/>
   <a href="#" onclick="window.history.back(); return false;">×</a>
 </section>
@@ -216,20 +241,20 @@ ins {
   <h3>
     <i>コンピューターのコードを表現する</i>
     <br/>
-    <font><code><</code>code<code>></code></font>
-    行内コード要素
-    <br/>
     <font><code><</code>pre<code>></code></font>
     整形済みテキスト要素
     <br/>
-    <font><code><</code>var<code>></code></font>
-    変数要素
+    <font><code><</code>code<code>></code></font>
+    行内コード要素
+    <br/>
+    <font><code><</code>samp<code>></code></font>
+    サンプル出力要素
     <br/>
     <font><code><</code>kbd<code>></code></font>
     キーボード入力要素
     <br/>
-    <font><code><</code>samp<code>></code></font>
-    サンプル出力要素
+    <font><code><</code>var<code>></code></font>
+    変数要素
   </h3>
   <p>
     これらは、HTMLにコンピュータのコードをマークアップするために利用できる要素です。<br/>

@@ -737,6 +737,22 @@
   content: '</time>';
 }
 
+.bdo::before {
+  content: '<bdo dir="';
+}
+
+.bdo::after {
+  content: '</bdo>';
+}
+
+.bdi::before {
+  content: '<bdi>';
+}
+
+.bdi::after {
+  content: '</bdi>';
+}
+
 .main_element::before {
   content: '<main>';
 }
