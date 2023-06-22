@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <script src="../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../elements.css" />
+  <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../hello/data_show.css" />
+  <link rel="stylesheet" href="../../hello/style.css" />
+  <link rel="stylesheet" href="../../hello/mobile.css" media="screen and (max-width: 1000px)">
+</head>
+<body id="cover">
+  <nav id="nav">
+    <a href="#one">見出し要素</a>
+  </nav>
+
+  <header id="hello" class="data_show"></header>
+
+  <article id="one">
+    <p style="text-align: right; padding: 0.5rem;">
+      <font><a href="#">×</a></font>
+    </p>
+    <section id="howto" class="readme"></section>
+    <footer>
+      <aside id="contents"></aside>
+    </footer>
+    <aside id="links"></aside>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../../hello/data_show.js"></script>
+  <script type="text/javascript">
+  fetchHTML('hello.html', '#hello');
+  fetchHTML('howto.html', '#howto');
+
+  function random(number) {
+    return Math.floor(Math.random() * (number+1));
+  }
+
+  function randomRGB() {
+    let random255 = `rgb( ${random(255)}, ${random(255)}, ${random(255)} )`;
+    return random255;
+  }
+
+  document.body.style.backgroundColor = randomRGB();
+
+  const randomRGBbg = document.querySelectorAll('#hello *');
+  for (let i = 0; i < randomRGBbg.length; i++) {
+
+    randomRGBbg[i].addEventListener('mouseenter', function(e) {
+      document.body.style.backgroundColor = randomRGB();
+    });
+
+    randomRGBbg[i].addEventListener('mouseleave', function(e) {
+      document.body.style.backgroundColor = randomRGB();
+    });
+  }
+  </script>
+</body>
+</html>

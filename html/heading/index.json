@@ -24,10 +24,10 @@
       "status" : "guide"
     },
     {
-      "date" : "CSS",
-      "name" : "テキストの装飾",
-      "url" : "/coding/css/text/",
-      "language" : "css",
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
       "status" : "guide"
     },
     {
@@ -35,20 +35,6 @@
       "name" : "文字表記の方向",
       "url" : "/coding/css/text/writing-mode/",
       "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "CSS",
-      "name" : "フォントの指定",
-      "url" : "/coding/css/fonts/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
-      "date" : "HTML",
-      "name" : "高度なテキスト整形",
-      "url" : "/coding/html/text/advanced/",
-      "language" : "html",
       "status" : "guide"
     }
   ],

@@ -35,28 +35,3 @@
 <p id="heading6" class="hide">
   見出し要素の最下位レベルです。
 </p>
-
-<script type="text/javascript">
-  function random(number) {
-    return Math.floor(Math.random() * (number+1));
-  }
-
-  function randomRGB() {
-    let random255 = `rgb( ${random(255)}, ${random(255)}, ${random(255)} )`;
-    return random255;
-  }
-
-  document.body.style.backgroundColor = randomRGB();
-
-  const randomRGBbg = document.querySelectorAll('#hello *');
-  for (let i = 0; i < randomRGBbg.length; i++) {
-
-    randomRGBbg[i].addEventListener('mouseenter', function(e) {
-      document.body.style.backgroundColor = randomRGB();
-    });
-
-    randomRGBbg[i].addEventListener('mouseleave', function(e) {
-      document.body.style.backgroundColor = randomRGB();
-    });
-  }
-</script>
