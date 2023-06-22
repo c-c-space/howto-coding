@@ -1,0 +1,33 @@
+#one,
+#two,
+#three,
+#four {
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  transition: 2.5s;
+}
+
+#one:target,
+#two:target,
+#three:target,
+#four:target {
+  padding: 1rem;
+  width: 95%;
+  height: 75%;
+  opacity: 1;
+  overflow: auto;
+  user-select: auto;
+  pointer-events: auto;
+}

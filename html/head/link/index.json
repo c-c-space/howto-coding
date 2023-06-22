@@ -1,0 +1,28 @@
+{
+  "title" : "LINK",
+  "description" : "外部リソースへのリンク要素",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HEAD",
+      "name" : "文書メタデータ (ヘッダー) 要素",
+      "url" : "/html/head/"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "link",
+      "name" : "外部リソースへのリンク要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/link",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

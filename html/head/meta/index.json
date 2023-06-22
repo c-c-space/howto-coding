@@ -1,0 +1,49 @@
+{
+  "title" : "META",
+  "description" : "メタデータ要素",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HEAD",
+      "name" : "文書メタデータ (ヘッダー) 要素",
+      "url" : "/html/head/"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "meta",
+      "name" : "メタデータ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "meta",
+      "name" : "標準メタデータ名",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta/name",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "OGP",
+      "name" : "The Open Graph protocol",
+      "url" : "https://ogp.me/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Twitter",
+      "name" : "Cards",
+      "url" : "https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 </p>
 <p id="charset" class="hide">
   <i>
-    文字コードをUTF-8に設定し、HTMLの文字化けを防ぐ<br/>
+    文字コードをUTF-8に設定し、文字化けを防ぐ<br/>
     この宣言によって、基本的にはどんなテキストコンテンツでも扱えるようになります。
   </i>
 </p>
@@ -12,8 +12,8 @@
 </p>
 <p id="viewport" class="hide">
   <i>
-    ビューポートのメタタグを設定し、レスポンシブウェブデザインを行う<br/>
-    画面のサイズや方向が大きく異なる場合でも、ページがうまく動作するようになります。
+    ビューポートのメタ要素を設定し、レスポンシブウェブデザインを行う<br/>
+    画面のサイズや方向が異なる場合でも、ページがうまく動作するようになります。
   </i>
 </p>
 <p class="title">
@@ -21,8 +21,8 @@
 </p>
 <p id="head_title" class="hide">
   <i>
-    TITLE要素は、ページが読み込まれた時にブラウザーのタブに表示されます。<br/>
-    また、ブックマークやお気に入りに登録した時の説明にも使われます。
+    ページが読み込まれた時にブラウザーのタブに表示するページタイトルを設定<br/>
+    また、ブックマークやお気に入りに登録した時のページタイトルにも使われます。
   </i>
 </p>
 <i>
@@ -67,6 +67,16 @@
   </p>
 </div>
 <hr/>
+<p class="link">
+  <u data-id="head_icon">rel="icon" href="ファビコン"</u>
+</p>
+<div id="head_icon" class="hide">
+  <p><i>ファビコン・Webクリップアイコン（ホーム画面のタッチアイコン）を指定</i></p>
+  <p>
+    <span class="link">rel="apple-touch-icon-precomposed" href="iOS端末用Webクリップアイコン" sizes="180x180" type="image/png"</span><br/>
+    <span class="link">rel="icon" href="Android端末用Webクリップアイコン" sizes="192x192" type="image/png"</span>
+  </p>
+</div>
 <p class="base">
   <u data-id="base">target="_blank" rel="noopener noreferrer"</u>
 </p>
@@ -74,14 +84,3 @@
   <i>BASE要素は、HEAD内に 1つ だけ置くことができます。</i><br/>
   文書内におけるすべての相対 URL の基点となる URL を指定します。
 </p>
-<hr/>
-<p class="link">
-  <u data-id="icon">rel="icon" href="ファビコン"</u>
-</p>
-<div id="icon" class="hide">
-  <p><i>ファビコン・Webクリップアイコン（ホーム画面のタッチアイコン）を指定</i></p>
-  <p>
-    <span class="link">rel="apple-touch-icon-precomposed" href="iOS端末用Webクリップアイコン" sizes="180x180" type="image/png"</span><br/>
-    <span class="link">rel="icon" href="Android端末用Webクリップアイコン" sizes="192x192" type="image/png"</span>
-  </p>
-</div>

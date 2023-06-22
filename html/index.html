@@ -93,14 +93,12 @@
   <h1 id="title">HTML | Hypertext Markup Language</h1>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../hello/data_show.js"></script>
   <script type="text/javascript">
   fetchHTML('hello.html', '#hello');
   fetchHTML('howto.html', '#howto');
   fetchHTML('elements.html', '#www');
-  </script>
-  <script src="../hello/data_show.js"></script>
 
-  <script>
   let lastModified = document.querySelector('#lastModified');
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';

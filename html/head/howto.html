@@ -5,18 +5,16 @@
 <p>
   <b class="red">HEAD要素</b>
   は、ページが読み込まれても
-  <b class="red">ウェブブラウザーには表示されない</b>
-  部分です。<br/>
-  HTML要素の中の 最初の要素として、一つだけ配置できます。
-</p>
-<p>
-  HEAD要素には、HTMLについてよい基礎を与える情報
-  <b class="red">メタデータコンテンツ</b>
-  を記述し、HTMLを正しく表示する設定を行います。
+  <b class="red">ウェブブラウザには表示されない</b>
+  部分ですが、HTMLについてよい基礎を与える
+  <b class="red">ページタイトル</b>・
+  <b class="red">ファビコン</b>・
+  <b class="red">メタデータ</b> などの情報を設定する重要な要素です。<br/>
+  <b>文書メタデータ (ヘッダー) 要素は、HTML要素の中の最初の要素として、一つだけ配置できます。</b>
 </p>
 
 <p>
-  はじめに、ページがあらゆるOS・言語に対応できるよう 2つ の メタデータコンテンツ を設定します。
+  HEAD要素のはじめには、ページがあらゆるOS・言語に対応できるよう 2つ の メタデータコンテンツ を設定します。
 </p>
 <pre>
 <<font>meta charset="utf-8"</font>>
@@ -27,9 +25,19 @@
 </p>
 <br/>
 <p>
-  次に、SEO (Search Engine Optimization, 検索エンジン最適化) を向上させるため、検索エンジンでページを上位にできる可能性がある情報を記述します。<br/>
-  <i>これらの情報は、ページの内容によって変更する必要があります。</i>
+  <i>meta要素に name="format-detection" を追加すると、電話番号の自動リンク機能を無効化することができます。</i>
 </p>
+<pre>
+<<font>meta name="format-detection" content="telephone=no"</font>>
+</pre>
+<p>
+  <i>※ これはモバイル端末向けの機能で、HTML Living Standardでは正式に定義されていません。</i>
+</p>
+<br/>
+<p>
+  次に、SEO (Search Engine Optimization, 検索エンジン最適化) を向上させるため、検索エンジンでページを上位にできる可能性がある情報を記述します。
+</p>
+<p><u>これらの情報は、ページの内容によって変更する必要があります。</u></p>
 <pre>
 <<font>title</font>> <font>ページタイトル</font> <<font>/title</font>>
 <<font>meta name="description" content="ページのディスクリプション（説明書き）"</font>>
@@ -41,6 +49,11 @@
     <br/>
     また、ページの著者 (author) と、ページの説明 (description) を与える 2つのメタ要素も、関連検索で、ページをより上位にできる可能性があるため役立ちます。
   </i>
+</p>
+<hr/>
+<p>
+  その他、OGP(Open Graph Protocol)と呼ばれる 特定のサイト（SNS サイトなど）が独占的に作成したメタデータ を設定すると、
+  SNS でリンクやシェアした際のリンク先情報を設定できます。
 </p>
 <hr/>
 <br/>

@@ -24,6 +24,13 @@
       "status" : "basic"
     },
     {
+      "date" : "Text",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "text",
+      "status" : "guide"
+    },
+    {
       "date" : "Attributes",
       "name" : "属性",
       "url" : "/coding/html/attributes/",
@@ -35,13 +42,6 @@
       "name" : "アンカー要素とID属性",
       "url" : "/coding/html/href/",
       "language" : "html",
-      "status" : "guide"
-    },
-    {
-      "date" : "Text",
-      "name" : "テキストの基礎",
-      "url" : "/coding/html/text/",
-      "language" : "text",
       "status" : "guide"
     },
     {

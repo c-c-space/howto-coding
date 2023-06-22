@@ -4,45 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../readme/index.js" async></script>
+  <script src="../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
   <link rel="stylesheet" href="../../css/pseudo-classes/lightbox.css" />
+  <link rel="stylesheet" href="../../css/pseudo-classes/target.css" />
   <style>
-  #one,
-  #two,
-  #three,
-  #four {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    user-select: none;
-    pointer-events: none;
-    transition: 2.5s;
-  }
-
   #one:target,
   #two:target,
   #three:target,
   #four:target {
-    padding: 1rem;
-    width: 95%;
-    height: 75%;
     background: yellow;
-    opacity: 1;
-    overflow: auto;
-    user-select: auto;
-    pointer-events: auto;
   }
 
   .readme .close {
@@ -184,17 +160,14 @@
     <section id="links" class="fixed_bottom"></section>
   </aside>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
-  $(function() {
-    $("#global").load("global.html");
-    $("#id").load("../sectioning/section.html");
-    $("#class").load("class.html");
-    $("#date").load("date.html");
-    $("#href").load("../href/href.html");
-    $("#img").load("../images/img.html");
-    $("#iframe").load("../iframe-embed-object/iframe.html");
-  })
+  fetchHTML('global.html', '#global');
+  fetchHTML('../sectioning/section.html', '#id');
+  fetchHTML('class.html', '#class');
+  fetchHTML('date.html', '#date');
+  fetchHTML('../href/href.html', '#href');
+  fetchHTML('../images/img.html', '#img');
+  fetchHTML('../iframe-embed-object/iframe.html', '#iframe');
 
   let lastModified = document.querySelector('#lastModified');
   lastModified.innerHTML =
