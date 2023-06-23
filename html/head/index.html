@@ -74,20 +74,16 @@
     <br/>
     <p id="lastModified"></p>
   </article>
-
   <h1 id="title">HEAD | Hypertext Markup Language</h1>
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
   fetchHTML('hello.html', '#hello');
   fetchHTML('howto.html', '#howto');
-  </script>
-  <script src="../../hello/data_show.js" defer></script>
 
-  <script type="text/javascript">
   let lastModified = document.querySelector('#lastModified');
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
   </script>
+  <script src="../../hello/data_show.js" defer></script>
 </body>
 </html>
