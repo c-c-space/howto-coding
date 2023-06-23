@@ -271,4 +271,9 @@ nav a,
     padding: 0.5vw 2vw;
     margin: 0.5vw 0;
   }
+
+  #contents,
+  #links {
+    display: none;
+  }
 }
