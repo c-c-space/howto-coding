@@ -280,6 +280,11 @@ nav a,
     break-before: page;
   }
 
+  pre {
+    width: 100%;
+    word-break:break-all;
+  }
+
   .noprint,
   #contents,
   #links,
