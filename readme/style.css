@@ -258,3 +258,17 @@ nav a,
     margin: 0.5vw 0;
   }
 }
+
+@media print {
+  .readme {
+    font-size: 3vw;
+  }
+
+  .readme a {
+    border: 0.1vw solid;
+    border-radius: 2.5vw;
+    font-size: 75%;
+    padding: 0.5vw 2vw;
+    margin: 0.5vw 0;
+  }
+}
