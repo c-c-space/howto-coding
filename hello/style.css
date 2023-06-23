@@ -49,8 +49,8 @@
   }
 
   #hello {
-    break-after: page;
     font-size: 4.5vw;
+    break-after: page;
   }
 
   #hello p {

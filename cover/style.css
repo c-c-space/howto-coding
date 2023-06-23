@@ -86,3 +86,15 @@ h1#title {
     padding: 10% 0 0 2.5%;
   }
 }
+
+@media print {
+  h1#title {
+    position: absolute;
+    font-size: 4.5vw;
+  }
+
+  #left,
+  #right {
+    break-after: page;
+  }
+}
