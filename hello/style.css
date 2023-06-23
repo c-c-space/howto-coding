@@ -42,3 +42,33 @@
   font-size: 55%;
   line-height: 200%;
 }
+
+@media print {
+  .data_show .hide {
+    display: inline-block;
+  }
+
+  #hello {
+    font-size: 4.5vw;
+  }
+
+  #hello p {
+    margin: 1vw 0 1.5vw;
+  }
+
+  #hello a {
+    border: 0.1vw solid;
+    border-radius: 5vw;
+    padding: 1vw 2vw;
+    margin: 0.5vw 0 1vw;
+  }
+
+  #hello b {
+    padding: 0.25vw;
+  }
+
+  #hello u {
+    border-bottom: 0.3vw solid;
+    padding: 0.1vw;
+  }
+}
