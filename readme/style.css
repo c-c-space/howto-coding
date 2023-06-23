@@ -277,7 +277,7 @@ nav a,
   }
 
   .readme section {
-    break-after: page;
+    break-before: page;
   }
 
   .noprint,
