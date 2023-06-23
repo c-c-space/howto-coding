@@ -38,3 +38,15 @@ h1#title {
     font-size: 4.5vw;
   }
 }
+
+@media print {
+  h1#title {
+    position: absolute;
+    font-size: 4.5vw;
+  }
+
+  #left,
+  #right {
+    break-after: page;
+  }
+}
