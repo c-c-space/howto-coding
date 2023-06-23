@@ -196,6 +196,10 @@ nav a,
     margin: 0.5vw 0;
   }
 
+  section {
+    break-after: page;
+  }
+
   nav a,
   #contents a,
   #links a {
@@ -273,7 +277,8 @@ nav a,
   }
 
   #contents,
-  #links {
+  #links,
+  #lastModified {
     display: none;
   }
 }
