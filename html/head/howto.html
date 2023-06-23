@@ -1,111 +1,102 @@
-<h2 class="head">
-  <br/>
-  文書メタデータ (ヘッダー) 要素
-  <br/>
-</h2>
+<h2>文書メタデータ (ヘッダー) 要素</h2>
 <p>
   <b>文書メタデータ (ヘッダー) 要素</b> は、
   HTML 1.0 から使われる最古の要素の一つで
   HTMLの <b>最初の要素</b> として、<b>一つだけ</b> 配置できます。
 </p>
-<h3>
-  <b class="red">HEAD要素</b>
-  は、ページが読み込まれても
-  <b class="red">ウェブブラウザには表示されない</b>
-  部分ですが、HTMLについてよい基礎を与える
-  <b class="red">ページタイトル</b>・
-  <b class="red">メタデータ</b>・
-  <b class="red">ファビコン</b>
-  などの情報を設定する重要な要素です。
-</h3>
-<p>
-  コンピューターは、HEAD要素の情報を元に、ブラウザにページを表示します。<br/>
-  HEAD要素のはじめには、ページがあらゆるOS・言語に対応できるよう 2つ の メタデータコンテンツ を設定するのが一般的です。
-</p>
-<pre>
+
+<section id="head" class="hide">
+  <p>
+    コンピューターは、HEAD要素の情報を元に、ブラウザにページを表示します。<br/>
+    HEAD要素のはじめには、ページがあらゆるOS・言語に対応できるよう 2つ の メタデータコンテンツ を設定するのが一般的です。
+  </p>
+  <pre>
 <<font>meta charset="utf-8"</font>>
 <<font>meta name="viewport" content="width=device-width, initial-scale=1.0"</font>>
-</pre>
-<p>
-  utf-8 は普遍的な文字セットで、この設定は あらゆる人間の言語のほとんどすべての文字を扱うことができることを意味します。<br/>
-  viewport は ブラウザの表示領域を設定するメタデータで、この設定は 端末の画面サイズや方向を認識し、ページを最適化することを意味します。
-</p>
-<p>
-  <i>この記述は、W3C・WHATWG(Apple, Google, Mozilla, Microsoft)が推奨するcharset属性とviewportの設定方法です。</i>
-</p>
-<br/>
-<p>
-  format-detection は モバイル端末に向けた指示を設定するメタデータです。
-</p>
-<pre>
+  </pre>
+  <p>
+    utf-8 は普遍的な文字セットで、この設定は あらゆる人間の言語のほとんどすべての文字を扱うことができることを意味します。<br/>
+    viewport は ブラウザの表示領域を設定するメタデータで、この設定は 端末の画面サイズや方向を認識し、ページを最適化することを意味します。
+  </p>
+  <p>
+    <i>この記述は、W3C・WHATWG(Apple, Google, Mozilla, Microsoft)が推奨するcharset属性とviewportの設定方法です。</i>
+  </p>
+  <br/>
+  <p>
+    format-detection は モバイル端末に向けた指示を設定するメタデータです。
+  </p>
+  <pre>
 <<font>meta name="format-detection" content="telephone=no"</font>>
-</pre>
-<p>
-  telephone=no は、数字の羅列を電話番号と認識する自動リンク機能を無効化する設定です。
-</p>
-<pre>
+  </pre>
+  <p>
+    telephone=no は、数字の羅列を電話番号と認識する自動リンク機能を無効化する設定です。
+  </p>
+  <pre>
 <<font>meta name="format-detection" content="address=no, email=no"</font>>
-</pre>
-<p>
-  content属性に、address=no, email=no を含めると、メールアドレスや住所への自動リンク機能が無効化されます。<br/>
-  <i>※ Android端末の一部では、メールアドレスや住所が自動的にリンクされてしまう場合があるそうです。</i>
-</p>
-<p>
-  <i>※ これはモバイル端末向けの機能で、HTML Living Standardでは正式に定義されていません。</i>
-</p>
-<br/>
-<hr/>
-<p>
-  次に、ブラウザのタイトルバーやページのタブ、ブックマーク・検索エンジンなどに提供する情報を設定します。
-</p>
-<pre>
+  </pre>
+  <p>
+    content属性に、address=no, email=no を含めると、メールアドレスや住所への自動リンク機能が無効化されます。<br/>
+    <i>※ Android端末の一部では、メールアドレスや住所が自動的にリンクされてしまう場合があるそうです。</i>
+  </p>
+  <p>
+    <i>※ これはモバイル端末向けの機能で、HTML Living Standardでは正式に定義されていません。</i>
+  </p>
+  <br/>
+  <hr/>
+</section>
+
+<section id="meta" class="hide">
+  <p>
+    <a href="/coding/html/head/meta/" target="_parent">メタデータ要素</a>
+  </p>
+  <p>
+    META要素は
+    HTML 2.0 から使われている要素で、
+    ブラウザのタイトルバーやページのタブ、ブックマーク・検索エンジンなどに提供する情報など
+    さまざまなブラウザ・OS、コンピョーターにとって重要な情報を設定します。
+  </p>
+  <pre>
 <<font>title</font>> <font>ページタイトル</font> <<font>/title</font>>
 <<font>meta name="description" content="ページのディスクリプション（説明書き）"</font>>
 <<font>meta name="author" content="著者"</font>>
 <<font>meta name="reply-to" content="Eメールアドレス（連絡先）"</font>>
-</pre>
-<p>
-  TITLE要素は、
-  HTML 1.0 から使われる最古の要素の一つで
-  コンピューター・検索エンジンなどに、ページタイトルを定義します。<br/>
-  <i>
-    ページタイトルは、検索エンジンのアルゴリズムが検索結果にページを列挙する順序を決定するために使用する材料の一つです。<br/>
-    一般的に、長く説明的な題名は、短く一般的な題名よりも効果があります。（検索エンジンは通常、ページタイトルとしておよそ 55–60 文字を表示します。）
-  </i>
-</p>
-<p>
-  コンピューター・検索エンジンなどは、ページタイトルに加えて、ページの著者 (author)・ページの説明 (description) などの内容から ページを評価します。
-</p>
-<p>
-  <i>
-    説明 (description) に ページの内容に関連したキーワードをうまく取り入れるなど
-    メタデータを充実させ、検索エンジンでページをより上位にするために対策することを
-    Search Engine Optimization（検索エンジン最適化）または SEOといいます。
-  </i>
-</p>
-<hr/>
-<p>
-  <a href="/coding/html/head/meta/" target="_parent">メタデータ要素</a>
-</p>
-<p>
-  META要素は
-  HTML 2.0 から使われている要素で、
-  さまざまなブラウザ・OS、コンピョーターにとって重要な情報を設定します。
-</p>
-<p>
-  現在では、
-  特定のサイト（SNS サイトなど）が特定の情報の断片を取得するために独占的に設計されたメタデータ
-  など、さまざまな型があります。
-</p>
-<hr/>
-<br/>
-<section>
+  </pre>
+  <p>
+    TITLE要素は、
+    HTML 1.0 から使われる最古の要素の一つで
+    コンピューター・検索エンジンなどに、ページタイトルを定義します。<br/>
+    <i>
+      ページタイトルは、検索エンジンのアルゴリズムが検索結果にページを列挙する順序を決定するために使用する材料の一つです。<br/>
+      一般的に、長く説明的な題名は、短く一般的な題名よりも効果があります。（検索エンジンは通常、ページタイトルとしておよそ 55–60 文字を表示します。）
+    </i>
+  </p>
+  <p>
+    コンピューター・検索エンジンなどは、ページタイトルに加えて、ページの著者 (author)・ページの説明 (description) などの内容から ページを評価します。
+  </p>
+  <p>
+    <i>
+      説明 (description) に ページの内容に関連したキーワードをうまく取り入れるなど
+      メタデータを充実させ、検索エンジンでページをより上位にするために対策することを
+      Search Engine Optimization（検索エンジン最適化）または SEOといいます。
+    </i>
+  </p>
+  <hr/>
+  <p>
+    現在では、
+    特定のサイト（SNS サイトなど）が特定の情報の断片を取得するために独占的に設計されたメタデータ
+    など、さまざまな型のメタデータがあります。
+  </p>
+  <hr/>
+  <br/>
+</section>
+
+<section id="link" class="hide">
   <h3>外部リソースへのリンク</h3>
   <p>
     LINK要素 は、
     HTML 1.0 から使われる最古の要素の一つで
-    カスタムアイコン・HTMLに適用する CSSなど、
-    現在の文書に関係する外部のリソースを指定します。
+    カスタムアイコン・HTMLに適用するCSSなど、
+    文書に関係する外部のリソースを設定します。
     <br/>
     <i>
       リンク要素のリンク種別属性(rel)に
@@ -113,12 +104,8 @@
       href属性に外部リソースの場所を設定します。
     </i>
   </p>
-</section>
-<hr>
-<section>
+  <hr>
   <h3 class="link">rel="icon" href="カスタムアイコン"</h3>
-</section>
-<section>
   <p>
     もっとサイトデザインを豊かにするために
     ファビコン・Webクリップアイコン（ホーム画面のタッチアイコン）など
@@ -132,44 +119,71 @@
       を参照ください。
     </i>
   </p>
+  <br/>
+  <section class="stylesheet">
+    <h3>
+      /* スタイル情報要素 */
+    </h3>
+    <p>
+      まだCSSが充実していなかったころは、HEAD要素内の STYLE要素に CSS を 記述していました。<br/>
+      現在は、CSSを外部スタイルシートに記述して、LINK 要素を使用して HTML に適用する方法が推奨されています。
+    </p>
+  </section>
+  <h3 class="link">rel="stylesheet" href="<b class="red">styles.css</b>"</h3>
+  <hr>
+  <br>
 </section>
-<br/>
-<section class="stylesheet">
-  <h3>
-    /* スタイル情報要素 */
-  </h3>
-  <p>
-    まだCSSが充実していなかったころは、HEAD要素内の STYLE要素に CSS を 記述していました。<br/>
-    現在は、CSSを外部スタイルシートに記述して、LINK 要素を使用して HTML に適用する方法が推奨されています。
-  </p>
-</section>
-<h3 class="link">rel="stylesheet" href="<b class="red">styles.css</b>"</h3>
-<hr>
-<br>
-<h3>文書の基底URL要素</h3>
-<pre>
+
+<section id="base" class="hide">
+  <h3>文書の基底URL要素</h3>
+  <pre>
 <<font>base</font> href="基底URL" target="閲覧コンテキスト">
-</pre>
-<p>
-  BASE要素は、
-  HTML 1.0 から使われる最古の要素の一つで
-  文書内におけるすべての相対URL の基点となる URL
-  を指定します。<br/>
-  <i>BASE要素は、HEAD内に 1つ だけ置くことができ、URL の属性値を持つ LINK要素 などの前に置く必要があります。</i>
-</p>
-<p>
-  <font>href</font><br/>
-  相対 URL に使用される基底 URLを設定する属性<br/>
-  <i>絶対 URL と相対 URL が使用できます。</i>
-</p>
-<p>
-  <font>target</font><br/>
-   a または form 要素が target 属性を持たない場合に移動する閲覧コンテキストを設定する属性<br/>
-  <i>
-    閲覧コンテキストについては
-    <a href="/coding/html/href/" target="_parent">アンカー要素とID属性</a>
-    を参照ください。
-  </i>
-</p>
-<hr/>
-<br/>
+  </pre>
+  <p>
+    BASE要素は、
+    HTML 1.0 から使われる最古の要素の一つで
+    文書内におけるすべての相対URL の基点となる URL
+    を指定します。<br/>
+    <i>BASE要素は、HEAD内に 1つ だけ置くことができ、URL の属性値を持つ LINK要素 などの前に置く必要があります。</i>
+  </p>
+  <p>
+    <font>href</font><br/>
+    相対 URL に使用される基底 URLを設定する属性<br/>
+    <i>絶対 URL と相対 URL が使用できます。</i>
+  </p>
+  <p>
+    <font>target</font><br/>
+     a または form 要素が target 属性を持たない場合に移動する閲覧コンテキストを設定する属性<br/>
+    <i>
+      閲覧コンテキストについては
+      <a href="/coding/html/href/" target="_parent">アンカー要素とID属性</a>
+      を参照ください。
+    </i>
+  </p>
+  <hr/>
+  <br/>
+</section>
+
+<h3>
+  <u data-id="head">
+    <b class="red">HEAD要素</b>
+  </u>
+  は、ページが読み込まれても
+  <b class="red">ウェブブラウザには表示されない</b>
+  部分ですが、HTMLについてよい基礎を与える
+  <u data-id="meta">
+    <b class="red">ページタイトル</b>・
+    <b class="red">メタデータ</b>
+  </u>
+  ・
+  <u data-id="link">
+    <b class="red">カスタムアイコン</b>・
+    <b class="red">スタイルシート</b>
+  </u>
+  ・
+  <u data-id="base">
+    <b class="red">基底URL</b>
+  </u>
+  などを設定する重要な要素です。
+</h3>
+<hr>

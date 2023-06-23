@@ -68,7 +68,7 @@
     <aside id="links"></aside>
   </main>
   <article id="right">
-    <article id="howto" class="readme data_show"></article>
+    <article id="howto" class="head readme data_show"></article>
     <br/>
     <aside id="contents"></aside>
     <br/>
@@ -76,6 +76,7 @@
   </article>
   <h1 id="title">HEAD | Hypertext Markup Language</h1>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../../hello/data_show.js" defer></script>
   <script type="text/javascript">
   fetchHTML('hello.html', '#hello');
   fetchHTML('howto.html', '#howto');
@@ -84,6 +85,5 @@
   lastModified.innerHTML =
   'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
   </script>
-  <script src="../../hello/data_show.js" defer></script>
 </body>
 </html>
