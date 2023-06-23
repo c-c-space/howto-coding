@@ -1,4 +1,5 @@
-<h2 class="head"><br/>
+<h2 class="head">
+  <br/>
   文書メタデータ (ヘッダー) 要素
   <br/>
 </h2>
@@ -8,52 +9,156 @@
   <b class="red">ウェブブラウザには表示されない</b>
   部分ですが、HTMLについてよい基礎を与える
   <b class="red">ページタイトル</b>・
-  <b class="red">ファビコン</b>・
-  <b class="red">メタデータ</b> などの情報を設定する重要な要素です。<br/>
+  <b class="red">メタデータ</b>・
+  <b class="red">ファビコン</b>
+  などの情報を設定する重要な要素です。
+</p>
+<p>
   <b>文書メタデータ (ヘッダー) 要素は、HTML要素の中の最初の要素として、一つだけ配置できます。</b>
 </p>
 
 <p>
-  HEAD要素のはじめには、ページがあらゆるOS・言語に対応できるよう 2つ の メタデータコンテンツ を設定します。
+  コンピューターは、HEAD要素の情報を元に、ブラウザにページを表示します。<br/>
+  HEAD要素のはじめには、ページがあらゆるOS・言語に対応できるよう 2つ の メタデータコンテンツ を設定するのが一般的です。
 </p>
 <pre>
 <<font>meta charset="utf-8"</font>>
 <<font>meta name="viewport" content="width=device-width, initial-scale=1.0"</font>>
 </pre>
 <p>
+  utf-8 は普遍的な文字セットで、この設定は あらゆる人間の言語のほとんどすべての文字を扱うことができることを意味します。<br/>
+  viewport は ブラウザの表示領域を設定するメタデータで、この設定は 端末の画面サイズや方向を認識し、ページを最適化することを意味します。
+</p>
+<p>
   <i>この記述は、W3C・WHATWG(Apple, Google, Mozilla, Microsoft)が推奨するcharset属性とviewportの設定方法です。</i>
 </p>
 <br/>
 <p>
-  <i>meta要素に name="format-detection" を追加すると、電話番号の自動リンク機能を無効化することができます。</i>
+  format-detection は モバイル端末に向けた指示を設定するメタデータです。
 </p>
 <pre>
 <<font>meta name="format-detection" content="telephone=no"</font>>
 </pre>
 <p>
+  telephone=no は、数字の羅列を電話番号と認識する自動リンク機能を無効化する設定です。
+</p>
+<pre>
+<<font>meta name="format-detection" content="address=no, email=no"</font>>
+</pre>
+<p>
+  content属性に、address=no, email=no を含めると、メールアドレスや住所への自動リンク機能が無効化されます。<br/>
+  <i>※ Android端末の一部では、メールアドレスや住所が自動的にリンクされてしまう場合があるそうです。</i>
+</p>
+<p>
   <i>※ これはモバイル端末向けの機能で、HTML Living Standardでは正式に定義されていません。</i>
 </p>
 <br/>
+<hr/>
 <p>
-  次に、SEO (Search Engine Optimization, 検索エンジン最適化) を向上させるため、検索エンジンでページを上位にできる可能性がある情報を記述します。
+  次に、ブラウザのタイトルバーやページのタブ、ブックマーク・検索エンジンなどに提供する情報を設定します。
 </p>
-<p><u>これらの情報は、ページの内容によって変更する必要があります。</u></p>
 <pre>
 <<font>title</font>> <font>ページタイトル</font> <<font>/title</font>>
 <<font>meta name="description" content="ページのディスクリプション（説明書き）"</font>>
 <<font>meta name="author" content="著者"</font>>
+<<font>meta name="reply-to" content="Eメールアドレス（連絡先）"</font>>
 </pre>
 <p>
+  TITLE要素 は、コンピューター・検索エンジンなどに、ページタイトルを定義するメタデータです。<br/>
   <i>
-    TITLE要素 は、ブラウザーのタイトルバーやページのタブ、ブックマーク・検索エンジンなど、いろいろな方法で使われます。
-    <br/>
-    また、ページの著者 (author) と、ページの説明 (description) を与える 2つのメタ要素も、関連検索で、ページをより上位にできる可能性があるため役立ちます。
+    ページタイトルは、検索エンジンのアルゴリズムが検索結果にページを列挙する順序を決定するために使用する材料の一つです。<br/>
+    一般的に、長く説明的な題名は、短く一般的な題名よりも効果があります。（検索エンジンは通常、ページタイトルとしておよそ 55–60 文字を表示します。）
+  </i>
+</p>
+<p>
+  コンピューター・検索エンジンなどは、ページタイトルに加えて、ページの著者 (author)・ページの説明 (description) などの内容から ページを評価します。
+</p>
+<p>
+  <i>
+    説明 (description) に ページの内容に関連したキーワードをうまく取り入れるなど
+    メタデータを充実させ、検索エンジンでページをより上位にするために対策することを
+    Search Engine Optimization（検索エンジン最適化）または SEOといいます。
   </i>
 </p>
 <hr/>
 <p>
-  その他、OGP(Open Graph Protocol)と呼ばれる 特定のサイト（SNS サイトなど）が独占的に作成したメタデータ を設定すると、
-  SNS でリンクやシェアした際のリンク先情報を設定できます。
+  <a href="/coding/html/head/meta/" target="_parent">メタデータの他の種類</a>
+</p>
+<p>
+  他にも、
+  特定のサイト（SNS サイトなど）が特定の情報の断片を取得するために独占的に設計されたメタデータ
+  など、メタデータにはさまざまな型があります。
+</p>
+<hr/>
+<br/>
+<section>
+  <h3>外部リソースへのリンク</h3>
+  <p>
+    LINK要素 は、
+    カスタムアイコン・HTMLに適用する CSSなど、
+    現在の文書に関係する外部のリソースを指定する要素です。
+    <br/>
+    <i>
+      リンク要素のリンク種別属性(rel)に
+      外部リソースの種類を設定し、
+      href属性に外部リソースの場所を設定します。
+    </i>
+  </p>
+</section>
+<hr>
+<section>
+  <h3 class="link">rel="icon" href="カスタムアイコン"</h3>
+</section>
+<section>
+  <p>
+    もっとサイトデザインを豊かにするために
+    ファビコン・Webクリップアイコン（ホーム画面のタッチアイコン）など
+    のカスタムアイコンをHTMLにリンクします。
+  </p>
+  <p>
+    <i>
+      カスタムアイコンのサイズは、端末によって様々です。
+      一般的なカスタムアイコンのサイズ一覧は
+      <a href="/coding/html/head/meta/" target="_parent">外部リソースへのリンク要素</a>
+      を参照ください。
+    </i>
+  </p>
+</section>
+<br/>
+<section class="stylesheet">
+  <h3>
+    /* スタイル情報要素 */
+  </h3>
+  <p>
+    まだCSSが充実していなかったことは、HEAD要素内の STYLE要素に、CSS を 記述していました。<br/>
+    現在は、CSSを外部スタイルシートに記述して、LINK 要素を使用して HTML に適用する方法が推奨されています。
+  </p>
+</section>
+<h3 class="link">rel="stylesheet" href="<b class="red">styles.css</b>"</h3>
+<hr>
+<br>
+<h3>文書の基底URL要素</h3>
+<pre>
+<<font>base</font> href="基底URL" target="閲覧コンテキスト">
+</pre>
+<p>
+  BASE要素は、文書内におけるすべての相対URL の基点となる URL
+  を指定する要素で HEAD内に 1つ だけ置くことができます。<br/>
+  <i>BASE要素は、URL の属性値を持つ LINK要素 などの前に置く必要があります。</i>
+</p>
+<p>
+  <font>href</font><br/>
+  相対 URL に使用される基底 URLを設定する属性<br/>
+  <i>絶対 URL と相対 URL が使用できます。</i>
+</p>
+<p>
+  <font>target</font><br/>
+   a または form 要素が target 属性を持たない場合に移動する閲覧コンテキストを設定する属性<br/>
+  <i>
+    閲覧コンテキストについては
+    <a href="/coding/html/href/" target="_parent">アンカー要素とID属性</a>
+    を参照ください。
+  </i>
 </p>
 <hr/>
 <br/>

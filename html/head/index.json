@@ -20,8 +20,18 @@
       "url" : "/coding/html/head/link/"
     },
     {
-      "date" : "CSSの基本",
-      "name" : "Cascading Style Sheets",
+      "date" : "Attributes",
+      "name" : "属性",
+      "url" : "/coding/html/attributes/"
+    },
+    {
+      "date" : "A & ID",
+      "name" : "アンカー要素とID属性",
+      "url" : "/coding/html/href/"
+    },
+    {
+      "date" : "Cascading Style Sheets",
+      "name" : "CSSの基本",
       "url" : "/coding/css/"
     }
   ],
