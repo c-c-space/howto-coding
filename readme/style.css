@@ -281,7 +281,7 @@ nav a,
   }
 
   pre {
-    width: 100%;
+    overflow: hidden;
     word-break:break-all;
   }
 
