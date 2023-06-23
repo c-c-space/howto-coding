@@ -49,6 +49,7 @@
   }
 
   #hello {
+    break-after: page;
     font-size: 4.5vw;
   }
 
