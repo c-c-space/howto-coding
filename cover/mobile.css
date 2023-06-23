@@ -46,8 +46,7 @@ h1#title {
     font-size: 4.5vw;
   }
 
-  #left,
-  #right {
+  #left {
     break-after: page;
   }
 }
