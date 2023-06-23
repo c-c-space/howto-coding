@@ -276,6 +276,7 @@ nav a,
     margin: 0.5vw 0;
   }
 
+  .noprint,
   #contents,
   #links,
   #lastModified {

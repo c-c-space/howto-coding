@@ -18,95 +18,106 @@
   から始まります。
 </p>
 <hr/>
-<h3>
-  <<u data-id="Opening">html</u>
-  <u data-id="Attribute">lang="ja"</u>>
-</h3>
+<section>
+  <h3>
+    <<u data-id="Opening">html</u>
+    <u data-id="Attribute">lang="ja"</u>>
+  </h3>
 
-<p id="Opening" class="hide">
-  これは、
-  <b>HTML要素</b>
-  の始まりを宣言する
-  <b>開始タグ</b>
-  です。
-  <br/>
-  <i>
-    HTMLにおいて、タグは要素の作成に使われます。<br/>
-    開始タグ (Opening tag):
-    <font color="red"><</font>
-    <b>html</b>
-    <font color="red">></font>
-    のように山括弧の中に要素名を記述し、要素の始まりを宣言します。
-  </i>
-</p>
-<p id="Attribute" class="hide">
-  属性 (Attribute) <br/>
-  要素を拡張して追加情報を与えるため、開始タグには
-  <b>属性名="属性値"</b>
-  を追加できます。<br/>
-  <i>
-    HTML要素には、文書の言語を与える LANG属性
-    <b>lang="言語タグ"</b>
-    を設定することが推奨されています。
-  </i>
-</p>
-<h3 class="HTMLcomments">
-  <u data-id="HTMLcomments">
-    HTML要素は、
-    <b>HEAD要素</b>
+  <p id="Opening" class="hide">
+    これは、
+    <b>HTML要素</b>
+    の始まりを宣言する
+    <b>開始タグ</b>
+    です。
+    <br/>
+    <i>
+      HTMLにおいて、タグは要素の作成に使われます。<br/>
+      開始タグ (Opening tag):
+      <font color="red"><</font>
+      <b>html</b>
+      <font color="red">></font>
+      のように山括弧の中に要素名を記述し、要素の始まりを宣言します。
+    </i>
+  </p>
+</section>
+
+<section>
+  <p id="Attribute" class="hide">
+    属性 (Attribute) <br/>
+    要素を拡張して追加情報を与えるため、開始タグには
+    <b>属性名="属性値"</b>
+    を追加できます。<br/>
+    <i>
+      HTML要素には、文書の言語を与える LANG属性
+      <b>lang="言語タグ"</b>
+      を設定することが推奨されています。
+    </i>
+  </p>
+  <h3 class="HTMLcomments">
+    <u data-id="HTMLcomments">
+      HTML要素は、
+      <b>HEAD要素</b>
+      と
+      <b>BODY要素</b>
+      で構成されます。
+    </u>
+  </h3>
+  <p id="HTMLcomments" class="hide">
+    HTML の中で
+    <font color="red"><</font><font color="red">!--</font>
     と
-    <b>BODY要素</b>
-    で構成されます。
-  </u>
-</h3>
-<p id="HTMLcomments" class="hide">
-  HTML の中で
-  <font color="red"><</font><font color="red">!--</font>
-  と
-  <font color="red">--></font>
-  の間にある
-  <a class="red" href="https://developer.mozilla.org/ja/docs/Web/API/Comment">コメント</a>
-  は ページ上では表示されず、コードの中にのみ表示されます。
-</p>
+    <font color="red">--></font>
+    の間にある
+    <a class="red" href="https://developer.mozilla.org/ja/docs/Web/API/Comment">コメント</a>
+    は ページ上では表示されず、コードの中にのみ表示されます。
+  </p>
+</section>
 
-<div class="head">
-  <p>
-    <u data-id="head">HEAD要素</u>
-    は、ページが読み込まれてもウェブブラウザーには表示されない部分です。
-  </p>
-  <p id="head" class="hide">
-    <i>HTMLについてよい基礎を与える情報を記述し、HTMLを正しく表示する設定を行います。</i>
-  </p>
-</div>
-<br/>
-<div class="body">
-  <p>
-    <u data-id="body">BODY要素</u>
-    は、ウェブサイトとしてブラウザに表示される部分です。
-  </p>
-  <p id="body" class="hide">
-    <i>BODY要素 の中に、テキスト・画像・ビデオ・ゲーム・音声ファイルなど、ブラウザーに表示するすべてのコンテンツを記述します。</i>
-  </p>
-</div>
-
-<h3>
-  <<u data-id="Closing">/html</u>>
-</h3>
-<p id="Closing" class="hide">
-  これは、
-  <b>HTML要素</b>
-  の終わりを宣言する
-  <b>終了タグ</b>
-  です。
+<section>
+  <div class="head">
+    <p>
+      <u data-id="head">HEAD要素</u>
+      は、ページが読み込まれてもウェブブラウザーには表示されない部分です。
+    </p>
+    <p id="head" class="hide">
+      <i>HTMLについてよい基礎を与える情報を記述し、HTMLを正しく表示する設定を行います。</i>
+    </p>
+  </div>
   <br/>
-  <i>
-    終了タグ (Closing tag):
-    <<font color="red">/html</font>> のように、
-    要素名の前にスラッシュを記載した終了タグで要素の終わりを宣言し、
-    開始タグと終了タグの中に、コンテンツ (内容)を記述します。
-  </i>
-</p>
-<hr/>
+  <div class="body">
+    <p>
+      <u data-id="body">BODY要素</u>
+      は、ウェブサイトとしてブラウザに表示される部分です。
+    </p>
+    <p id="body" class="hide">
+      <i>BODY要素 の中に、テキスト・画像・ビデオ・ゲーム・音声ファイルなど、ブラウザーに表示するすべてのコンテンツを記述します。</i>
+    </p>
+  </div>
+</section>
+
+<section>
+  <h3>
+    <<u data-id="Closing">/html</u>>
+  </h3>
+  <p id="Closing" class="hide">
+    これは、
+    <b>HTML要素</b>
+    の終わりを宣言する
+    <b>終了タグ</b>
+    です。
+    <br/>
+    <i>
+      終了タグ (Closing tag):
+      <<font color="red">/html</font>> のように、
+      要素名の前にスラッシュを記載した終了タグで要素の終わりを宣言し、
+      開始タグと終了タグの中に、コンテンツ (内容)を記述します。
+    </i>
+  </p>
+  <hr/>
+</section>
+
+<section class="noprint pc">
 <h3>
   <a href="download.html" download="index.html" download>download</a>
 </h3>
@@ -115,3 +126,4 @@
   <i>上記の download をクリックすると、基本となるHTML要素を記述したHTML文書ファイルがダウンロードできます。</i>
 </p>
 <br/>
+</section>
