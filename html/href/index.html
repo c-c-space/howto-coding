@@ -75,6 +75,12 @@
       font-size: 4.5vw;
     }
   }
+
+  @media print {
+    section {
+      break-after: page;
+    }
+  }
   </style>
 </head>
 <body>
@@ -105,9 +111,9 @@
   </header>
 
   <article>
-    <section id="one" class="readme"></section>
-    <section id="two" class="readme"></section>
-    <section id="three" class="readme"></section>
+    <section id="one"></section>
+    <section id="two"></section>
+    <section id="three"></section>
     <section id="four">
       <article id="lvha" class="readme"></article>
       <hr/>
