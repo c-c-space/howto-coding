@@ -76,7 +76,8 @@
 </head>
 <body>
   <nav id="nav">
-    <a href="#one">The Open Graph protocol</a>
+    <a href="#one" class="meta"></a>
+    <a href="#two">The Open Graph protocol</a>
     <a href="#etc">関連記事</a>
   </nav>
 
@@ -87,12 +88,7 @@
     </h1>
   </article>
 
-  <article>
-    <section id="one" class="readme">
-      <div></div>
-      <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
-    </section>
-  </article>
+  <article id="howto" class="readme"></article>
 
   <aside class="lightbox" id="etc">
     <a href="#" class="close" onclick="window.history.back(); return false;"></a>
@@ -102,7 +98,7 @@
 
   <p id="lastModified"></p>
   <script type="text/javascript">
-  fetchHTML('ogp.html', '#one div');
+  fetchHTML('howto.html', '#howto');
 
   let lastModified = document.querySelector('#lastModified');
   lastModified.innerHTML =
