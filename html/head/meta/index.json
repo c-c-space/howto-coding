@@ -32,6 +32,41 @@
       "status" : "guide"
     },
     {
+      "date" : "meta",
+      "name" : "theme-color",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/meta/name/theme-color",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "color-scheme",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/color-scheme",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "prefers-color-scheme",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/@media/prefers-color-scheme",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "meta",
+      "name" : "Robots.txt",
+      "url" : "https://developer.mozilla.org/ja/docs/Glossary/Robots.txt",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "Web Robots",
+      "name" : "The Web Robots Pages",
+      "url" : "https://www.robotstxt.org/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
       "date" : "OGP",
       "name" : "The Open Graph protocol",
       "url" : "https://ogp.me/",

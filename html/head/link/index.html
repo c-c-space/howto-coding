@@ -76,36 +76,20 @@
 </head>
 <body>
   <nav id="nav">
-    <a href="#one">アイコン</a>
+    <a href="#one">カスタムアイコン</a>
     <a href="#two">他文書との関連</a>
-    <a href="#three">マニフェスト</a>
     <a href="#etc">関連記事</a>
   </nav>
 
   <article>
     <h1 class="translate_center head"><br>
-      <span class="link">rel="icon" href="favicon.png"</span><br>
+      <span class="link">rel="icon" href="favicon.ico"</span><br>
       <br>
       <span class="link">rel="icon" href="android.png" sizes="192x192" type="image/png"</span><br>
       <span class="link">rel="apple-touch-icon-precomposed" href="iOS.png" sizes="180x180" type="image/png"</span><br/>
     </h1>
   </article>
-
-  <article>
-    <section id="one" class="readme">
-      <div></div>
-      <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
-    </section>
-    <section id="two" class="readme">
-      <div></div>
-      <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
-    </section>
-    <section id="three" class="readme">
-      <div></div>
-      <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
-    </section>
-  </article>
-
+  <article id="howto" class="readme"></article>
   <aside class="lightbox" id="etc">
     <a href="#" class="close" onclick="window.history.back(); return false;"></a>
     <section id="contents" class="translate_center"></section>
@@ -114,9 +98,7 @@
 
   <p id="lastModified"></p>
   <script type="text/javascript">
-  fetchHTML('icon.html', '#one div');
-  fetchHTML('document.html', '#two div');
-  fetchHTML('manifest.html', '#three div');
+  fetchHTML('howto.html', '#howto');
 
   let lastModified = document.querySelector('#lastModified');
   lastModified.innerHTML =

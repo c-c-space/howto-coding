@@ -1,12 +1,129 @@
 <section id="one" class="readme">
-  <h3>メタデータの他の種類</h3>
+  <span class="meta">name="___" content="___"</span>
+  <h3>
+    META要素は HTML 2.0 から使われている要素で、
+    他のメタ関連要素（base・link・script・style・title）では表すことができない
+    メタデータを表します。
+  </h3>
+  <hr>
+  <p>
+    name 属性でメタデータ名・content 属性で値を指定し、
+    ブックマーク・検索エンジンなどに提供する情報などのメタデータを
+    名前と値 のペアで提供します。
+  </p>
+  <h2>
+    <i class="meta">
+      name="<b>description</b>"
+      content="<b>ページのディスクリプション（説明書き）</b>"
+    </i><br/>
+    <i class="meta">
+      name="<b>author</b>"
+      content="<b>著者</b>"
+    </i><br/>
+    <i class="meta">
+      name="<b>reply-to</b>"
+      content="<b>Eメールアドレス（連絡先）</b>"
+    </i><br/>
+  </h2>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <p><u>テーマカラー・カラースキーム</u></p>
+  <h2>
+    <i class="meta">
+      name="<b>theme-color</b>"
+      content="<b>テーマカラーの値</b>"
+    </i><br/>
+    <i class="meta">
+      name="<b>color-scheme</b>"
+      content="<b>dark light</b>"
+    </i>
+  </h2>
+  <p>
+    theme-color は、ユーザーエージェントがページの表示や周辺のユーザーインターフェースをカスタマイズするために使用すべき推奨色を示します。<br/>
+    content 属性に 色を表す値を設定し、media 属性で メディア種別やクエリーを指定することができます。
+  </p>
+  <p>
+    color-scheme の主な用途は、ライトモードとダークモードの互換性と優先順位を示すことです。<br/>
+    ブラウザ・端末の設定と合わせて使用し、背景や前景・フォームコントロールやスクロールバーなど、あらゆるものに使用する色（カラースキーム）を決定します。
+  </p>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <p>
+    <u>まだ正式に受け入れられていない標準外のメタデータ</u>
+  </p>
+  <h2>
+    <i class="meta">
+      name="<b>creator</b>"
+      content="<b>作成者の名前（組織や機関など）</b>"
+    </i><br/>
+    <i class="meta">
+      name="<b>publisher</b>"
+      content="<b>発行者</b>"
+    </i>
+  </h2>
+  <hr>
+  <p>「ロボット」がページに対して使用すべき動作</p>
+  <h2>
+    <i class="meta">
+      name="<b>robots</b>"
+      content="<b>値</b>"
+    </i>
+  </h2>
+  <dl>
+    <dt>index</dt>
+    <dd>ページをインデックスすることを許可します (既定値)。</dd>
+  </dl>
+  <dl>
+    <dt>noindex</dt>
+    <dd>ページをインデックスしないよう要求します。</dd>
+  </dl>
+  <dl>
+    <dt>follow</dt>
+    <dd>ページ上のリンクをたどることを許可します (既定値)。</dd>
+  </dl>
+  <dl>
+    <dt>nofollow</dt>
+    <dd>ページ上のリンクをたどらないよう要求します。</dd>
+  </dl>
+  <dl>
+    <dt>noarchive</dt>
+    <dd>検索エンジンにページの内容をキャッシュしないよう要求します。</dd>
+  </dl>
+  <dl>
+    <dt>nosnippet</dt>
+    <dd>検索エンジンの結果でページの説明の表示を抑制します。</dd>
+  </dl>
+  <dl>
+    <dt>noimageindex</dt>
+    <dd>ページをインデックスされた画像の参照ページとして表示しないよう要求します。</dd>
+  </dl>
   <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
 </section>
 <section id="two" class="readme">
-  <h3>OGP (オープン・グラフ・プロトコル)</h3>
-  <p>
-    その他、OGP(Open Graph Protocol)と呼ばれる 特定のサイト（SNS サイトなど）が独占的に作成したメタデータ を設定すると、
+  <u>The Open Graph protocol (オープン・グラフ・プロトコル)</u>
+  <h3>
+    特定のサイト（SNS サイトなど）が独占的に作成したメタデータ を設定すると、
     SNS でリンクやシェアした際のリンク先情報を設定できます。
+  </h3>
+  <hr/>
+  <p><i>Facebook が開発した、ウェブサイトにより豊富なメタデータを与えるプロトコル</i></p>
+  <p>
+    <span class="meta">property="og:type" content="ページの種類 (<b class="red">website | blog | article | product</b>)"</span><br/>
+    <span class="meta">property="og:site_name" content="サイト名"</span><br/>
+    <span class="meta">property="og:url" content="ページのURL"</span><br/>
+    <span class="meta">property="og:title" content="ページタイトル"</span><br/>
+    <span class="meta">property="og:description" content="ページのディスクリプション（説明書き）"</span><br/>
+    <span class="meta">property="og:image" content="ページを代表する画像のURL"</span><br/>
+  </p>
+  <hr>
+  <p><i>ページのURL が Twitter に投稿されたときにサムネイル（Twitter Cards）を作成するメタデータ</i></p>
+  <p>
+    <span class="meta">name="twitter:card" content="Twitterカードの種類 (<b class="red">summary | summary_large_image | app | player</b>)"</span><br/>
+    <span class="meta">name="twitter:title" content="ページタイトル"</span><br/>
+    <span class="meta">name="twitter:description" content="ページのディスクリプション（説明書き）"</span><br/>
+    <span class="meta">name="twitter:image" content="ページを代表する画像のURL"</span><br/>
   </p>
   <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
 </section>

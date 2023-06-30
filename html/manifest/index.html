@@ -21,69 +21,32 @@
     content: '</head>';
   }
 
-  .meta::before {
-    content: '<meta ';
+  .link::before {
+    content: '<link ';
   }
 
-  .meta::after {
+  .link::after {
     content: '>';
   }
 
-  h1 {
-    font-family: "Arial Narrow", Arial, sans-serif;
-    font-size: 175%;
-    font-weight: 500;
-  }
-
-  h1 span {
-    font-size: 125%;
-  }
-
-  #one:target,
-  #two:target,
-  #three:target,
-  #four:target {
-    color: #fff;
-    background: blue;
-  }
-
-  #contents::before {
-    content:'関連記事';
-    font-size: 90%;
-  }
-
-  #links::before {
-    content:'参考資料';
-    font-size: 75%;
-  }
-
-  #contents::before,
-  #links::before {
-    display: block;
-    text-decoration: underline;
-    margin: 0.5rem 0.25rem;
-  }
-
-  #lastModified {
-    position: fixed;
-    bottom:0;
-    right: 0;
-    padding: 0.5rem;
-    margin: 0;
-    word-break: break-word;
-  }
+    #lastModified {
+      position: fixed;
+      bottom:0;
+      right: 0;
+      padding: 0.5rem;
+      margin: 0;
+      word-break: break-word;
+    }
   </style>
 </head>
 <body>
   <nav id="nav">
-    <a href="#one">標準メタデータ名</a>
-    <a href="#two">The Open Graph protocol</a>
+    <a href="#one">Web Application Manifest</a>
     <a href="#etc">関連記事</a>
   </nav>
   <article>
     <h1 class="translate_center head"><br>
-      <span class="meta">name="___" content="___"</span><br>
-      <span class="meta">property="___" content="___"</span><br>
+      <u class="link">rel="manifest" href="manifest.json"</u><br>
     </h1>
   </article>
   <article id="howto" class="readme"></article>

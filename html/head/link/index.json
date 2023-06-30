@@ -23,6 +23,27 @@
       "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/link",
       "language" : "html",
       "status" : "guide"
+    },
+    {
+      "date" : "属性",
+      "name" : "別ページとの関係を示す",
+      "url" : "https://www.tagindex.com/html_tag/page/link.html",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "属性",
+      "name" : "別文書との関係を表す",
+      "url" : "https://www.tagindex.com/html/page/link_rel.html",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "属性",
+      "name" : "リンクタイプ",
+      "url" : "https://www.tagindex.com/html_tag/basic/linktype.html",
+      "language" : "html",
+      "status" : "guide"
     }
   ]
 }
