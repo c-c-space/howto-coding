@@ -57,6 +57,10 @@
     font-size: 75%;
   }
 
+  details {
+    margin-top: 1rem;
+  }
+
   #contents::before,
   #links::before {
     display: block;
@@ -147,9 +151,38 @@
     $("#three").load("object.html");
   })
 
-  let lastModified = document.querySelector('#lastModified');
-  lastModified.innerHTML =
-  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  document.addEventListener('readystatechange', (event) => {
+    if (event.target.readyState === 'interactive') {
+    let lastModified = document.querySelector('#lastModified');
+    lastModified.innerHTML =
+    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  } else if (event.target.readyState === 'complete') {
+      function random(min, max) {
+        const num = Math.floor(Math.random() * (max - min + 1)) + min;
+        return num;
+      }
+
+      function randomRGB() {
+        let getRGB = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+        return getRGB;
+      }
+
+      const bgAll = document.querySelectorAll('body, .active');
+      for (const bgItem of bgAll) {
+        bgItem.style.background = randomRGB();
+      }
+
+      const randomRGBbgAll = document.querySelectorAll('#nav a');
+      for (const randomRGBbg of randomRGBbgAll) {
+        randomRGBbg.addEventListener('click', function(event) {
+          const bgSectionAll = document.querySelectorAll('body, .active');
+          for (const bgSection of bgSectionAll) {
+            bgSection.style.background = randomRGB();
+          }
+        });
+      }
+    }
+  });
   </script>
 </body>
 </html>
