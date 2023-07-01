@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../readme/index.js" async></script>
-  <link rel="stylesheet" href="../style.css" />
+  <script src="../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
   <link rel="stylesheet" href="../elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../readme/active.css" />
   <style>
   a[href*="one"]::before  {
     content: '<iframe>';
@@ -16,6 +19,7 @@
 
   a[href*="two"]::before  {
     content: '<embed>';
+    text-decoration: line-through;
     text-transform: uppercase;
   }
 
@@ -46,61 +50,29 @@
     margin: 0.5rem 0.25rem;
   }
 
-  section:target,
-  section:target font,
-  section:target .blue {
-    color: #fff;
-    border-color: #fff;
-    background: #FF0000;
+  #nav a,
+  #contents::before,
+  #links::before,
+  #lastModified {
+    margin: 0.5rem 0.25rem;
   }
 
-  section:target a,
-  section:target #contents a,
-  section:target #links a {
-    color: #fff;
+  #contents a,
+  #contents a:hover,
+  #links a,
+  #links a:hover {
+    border: none;
   }
 
-  iframe,
-  object {
-    box-sizing: border-box;
-    max-width: 100%;
-  }
-
-  #template {
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    padding: 7.5rem 2.5rem 2.5rem;
-    min-height: 100vh;
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
   }
 
   #lastModified {
-    font-family: "ipag", monospace;
-    text-align: right;
-    line-height: 125%;
     word-break: break-word;
-  }
-
-  footer {
-    position: relative;
-    min-height: 95vh;
-  }
-
-  footer aside {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  footer aside {
-    max-width: 1000px;
-  }
-
-  @media screen and (max-width: 820px) {
-    #template {
-      font-size: 3.21vw;
-      padding: 20% 2.5% 5%;
-    }
+    margin: 0.25rem;
+    line-height: 125%;
   }
   </style>
 </head>
@@ -112,55 +84,46 @@
     <a href="#four"></a>
   </nav>
 
-  <header id="template">
-    <iframe class="iframe" srcdoc="<<font>iframe</font>><<font>/iframe</font>>"></iframe>
-    <object class="object">
-      <embed class="embed"></embed>
-    </object>
-  </header>
-
   <article class="readme">
-    <h2>埋め込み要素（エンベディッド・コンテンツ）</h2>
-    <p>
-      様々な種類のコンテンツをウェブページに埋め込むことができる要素
-    </p>
-    <p><u>iframe は他のウェブページを埋め込むためのもので、他の 2 つの要素は PDF ファイルのような外部リソースを埋め込むことができます。</u></p>
-    <br/>
-    <p id="lastModified"></p>
-  </article>
-  <hr/>
-  <article>
-    <section id="one"></section>
-    <hr/>
-    <section id="two"></section>
-    <hr/>
-    <section id="three"></section>
-    <hr/>
-    <section id="four">
-      <article class="readme">
-        <h3>
-          <font>CSS でのスタイル付け</font>
-        </h3>
-        <p>
-          <font color="blue"><a href="/coding/css/boxmodel/">padding・margin</a></font>
-          ボックスモデルを指定
-        </p>
-        <p>
-          <font color="blue"><a href="/coding/css/sizing/">width・height</a></font>
-          画像・要素の幅と高さを指定
-        </p>
-        <p>
-          <font color="blue"><a href="/coding/css/borders/">border・border-radius</a></font>
-          境界を指定
-        </p>
-      </article>
-      <footer>
-        <aside id="contents"></aside>
-      </footer>
+    <section id="cover" class="active cover">
+      <h2>埋め込み要素（エンベディッド・コンテンツ）</h2>
+      <p>
+        様々な種類のコンテンツをウェブページに埋め込むことができる要素
+      </p>
+      <p><u>iframe は他のウェブページを埋め込むためのもので、他の 2 つの要素は PDF ファイルのような外部リソースを埋め込むことができます。</u></p>
+      <br/>
+      <p id="lastModified"></p>
+    </section>
+    <section id="one" class="is-hide"></section>
+    <section id="two" class="is-hide"></section>
+    <section id="three" class="is-hide"></section>
+    <section id="four" class="is-hide">
+      <h3>
+        <font>CSS</font>
+      </h3>
+      <p>
+        <font color="blue"><a href="/coding/css/boxmodel/">padding・margin</a></font>
+        ボックスモデルを指定
+      </p>
+      <p>
+        <font color="blue"><a href="/coding/css/sizing/">width・height</a></font>
+        画像・要素の幅と高さを指定
+      </p>
+      <p>
+        <font color="blue"><a href="/coding/css/borders/">border・border-radius</a></font>
+        境界を指定
+      </p>
+      <hr/>
+      <br>
       <aside id="links"></aside>
     </section>
   </article>
 
+  <footer>
+    <aside id="contents"></aside>
+  </footer>
+
+  <script src="../../readme/script.js" async></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
   $(function() {
