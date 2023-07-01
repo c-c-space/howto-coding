@@ -1,49 +1,66 @@
 <table>
-  <caption>表の基本</caption>
+  <caption id="title">HTML tables | Hypertext Markup Language</caption>
+  <colgroup>
+    <col></col>
+    <col span="1" class="headers"></col>
+    <col span="2" class="datas"></col>
+  </colgroup>
   <thead>
     <tr>
-      <th>table</th>
-      <td>table</td>
-      <td>表要素</td>
+      <td></td>
+      <th scope="col">tag</th>
+      <th scope="col" colspan="2">name <small>説明</small></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>td</th>
-      <td>table data</td>
-      <td>表データセル要素</td>
+      <td rowspan="5"><strong>basics</strong></td>
+      <th scope="row">table</th>
+      <td>table</td>
+      <td><small>表要素</small></td>
     </tr>
     <tr>
-      <th>tr</th>
+      <th scope="row">tr</th>
       <td>table row</td>
-      <td>表の行要素</td>
+      <td><small>表の行要素</small></td>
     </tr>
     <tr>
-      <th>th</th>
+      <th scope="row">td</th>
+      <td>table data</td>
+      <td><small>表データセル要素</small></td>
+    </tr>
+    <tr>
+      <th scope="row">th</th>
       <td>table headers</td>
-      <td>表見出し要素</td>
+      <td><small>表見出し要素</small></td>
+    </tr>
+    <tr>
+      <th scope="row">caption</th>
+      <td>caption</td>
+      <td><small>表キャプション要素</small></td>
+    </tr>
+    <tr>
+      <td rowspan="3"><strong>groups</strong></td>
+      <th scope="row">thead</th>
+      <td>table head</td>
+      <td><small>表ヘッダー要素</small></td>
+    </tr>
+    <tr>
+      <th scope="row">tbody</th>
+      <td>table body</td>
+      <td><small>テーブル本体要素</small></td>
+    </tr>
+    <tr>
+      <th scope="row">tfoot</th>
+      <td>table foot</td>
+      <td><small>表フッター要素</small></td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
-      <th>caption</th>
-      <td>caption</td>
-      <td>表キャプション要素</td>
-    </tr>
-    <tr>
-      <th>thead</th>
-      <td>table head</td>
-      <td>表ヘッダー要素</td>
-    </tr>
-    <tr>
-      <th>tbody</th>
-      <td>table body</td>
-      <td>テーブル本体要素</td>
-    </tr>
-    <tr>
-      <th>tfoot</th>
-      <td>table foot</td>
-      <td>表フッター要素</td>
+      <th colspan="2">colgroup</th>
+      <th>col</th>
+      <td><small>表の列グループ</small></td>
     </tr>
   </tfoot>
 </table>

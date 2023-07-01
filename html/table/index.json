@@ -15,6 +15,20 @@
       "url" : "/coding/css/boxmodel/",
       "language" : "css",
       "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "色",
+      "url" : "/coding/css/colors/",
+      "language" : "css",
+      "status" : "guide"
+    },
+    {
+      "date" : "CSS",
+      "name" : "背景",
+      "url" : "/coding/css/backgrounds/",
+      "language" : "css",
+      "status" : "guide"
     }
   ],
 
@@ -100,6 +114,13 @@
       "date" : "col",
       "name" : "表の列要素",
       "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/col",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "CSS",
+      "name" : "caption-side",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/CSS/caption-side",
       "language" : "guide",
       "status" : "basic"
     }

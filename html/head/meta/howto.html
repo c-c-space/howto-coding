@@ -101,6 +101,7 @@
   </dl>
   <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
 </section>
+
 <section id="two" class="readme">
   <u>The Open Graph protocol (オープン・グラフ・プロトコル)</u>
   <h3>
@@ -125,5 +126,31 @@
     <span class="meta">name="twitter:description" content="ページのディスクリプション（説明書き）"</span><br/>
     <span class="meta">name="twitter:image" content="ページを代表する画像のURL"</span><br/>
   </p>
+  <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
+</section>
+
+<section id="three" class="readme">
+  <u>http-equiv="___" content="___"</u>
+  <h3>
+    http-equiv属性は、HTTPヘッダとして解釈させたい内容を記述し指定する。
+  </h3>
+  <hr/>
+  <p><i>content-security-policy</i></p>
+  <p>
+    <span class="meta">http-equiv="content-security-policy" content="script-src 'self'; object-src 'none'"</span><br/>
+  </p>
+  <p>クロスサイトスクリプティング(XSS:Cross Site Scripting)攻撃を回避するための、コンテンツセキュリティポリシー(CPS:Content Security Policy)を指定</p>
+  <hr>
+  <p><i>default-style</i></p>
+  <p>
+    <span class="meta">http-equiv="default-style" content="default"</span><br/>
+  </p>
+  <p>代替スタイルシートを使用している場合のデフォルトのスタイルシートを指定</p>
+  <hr>
+  <p><i>refresh</i></p>
+  <p>
+    <span class="meta">http-equiv="refresh" content="3; url=http://www.google.com/"</span><br/>
+  </p>
+  <p>ページを再読み込みする（または、別のページにリダイレクトする）までの秒数を指定</p>
   <a href="#" class="close" onclick="window.history.back(); return false;">×</a>
 </section>

@@ -1,3 +1,106 @@
 <section id="one" class="readme">
+  <code>table</code>
+  <code>tr</code>
+  <code>td</code>
+  <code>th</code>
+  <br/>
+  <h2>テーブルとは、行と列からなる構造化されたデータの集合 (表形式データ)です。</h2>
+  <h3>HTML の よくある仕事はテーブルデータの構造化で、数々の要素と属性がこの目的のためにあります。</h3>
+  <p>テーブルの特徴は、厳密だということです。行と列とその見出し部分を組み合わせることによって情報を簡単に解釈できるため、正しく行われれば 視覚障害者でも晴眼者と同様に HTML テーブルの情報を解釈できるはずです。</p>
+  <hr/>
+  <h3>
+    HTMLテーブルは、<code>table</code> 要素を使用して作成します。<br/>
+    table 要素の中に <code>tr</code> 要素を記述して横並びの行（row）を 追加し、
+    tr 要素の中に <code>td</code> 要素を記述して縦並びの列（column）を 追加します。
+  </h3>
+  <h3>
+    テーブルのセル（マス目）が 表グループの見出しである場合は、
+    td 要素に代わって <code>th</code> 要素を使用します。
+  </h3>
+  <p>
+    th要素 が 行または列 どちらの見出しなのかは、scope 属性で定義します。<br/>
+    scope="row" <small>横並びの行（row）の見出しである (セルが列の一番上にある) 場合</small><br/>
+    scope="col" <small>縦並びの列（column）の見出しである (セルが行の最初の列である) 場合</small><br/>
+  </p>
+  <p>
+    また、th (table headers) は td (table data) より目立つように、太字で中央に配置されます。
+  </p>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <code>caption</code>
+  <h3>
+    HTMLテーブルに キャプション（またはタイトル）を指定する場合、
+    table 要素の中に <code>caption</code> 要素を記述します。
+  </h3>
+  <p>
+    <code>caption</code> 要素 は、親である <code>table</code> 要素の最初の子とする必要があります。
+  </p>
+  <p>
+    caption 要素の位置指定には、CSS プロパティ
+    <a href="https://developer.mozilla.org/ja/docs/Web/CSS/text-align">caption-side</a>
+    を使用します。<br/>
+    caption-side: top; <small>キャプションを表の上方に配置</small><br/>
+    caption-side: bottom; <small>キャプションを表の下方に配置</small><br/>
+  </p>
+  <hr/>
+  <a href="#" onclick="window.history.back(); return false;">↩︎</a>
+</section>
+
+<section id="two" class="readme">
+  <code>td colspan="数値"</code>
+  <code>td rowspan="数値"</code>
+  <h3>
+    td （またはtl）要素に colspan・rowspan 属性を設定すると、複数のセル（マス目）を一つに結合できます。
+  </h3>
+  <p>
+    colspan="数値" <small>横に結合するセルの数を数値で設定</small><br/>
+    <small>1000 を超える値は正しくないとみなされ、既定値 (1) が設定されます。</small>
+  </p>
+  <p>
+    rowspan="数値" <small>縦に結合するセルの数を数値で設定</small><br/>
+    <small>0 を設定した場合は、最後の行まで縦にセルが結合されます。</small>
+  </p>
+  <p>
+    読み上げソフトのような支援技術は、colspan・rowspan属性を持つ表を解析するのが困難な場合があります。<br/>
+    支援技術を使用している人にも内容が理解しやすい表を作りたい場合は、colspan・rowspan属性に依存しないことを考慮してください。
+  </p>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <u>id 属性と headers 属性</u>
+  <h3>
+    th要素に id 属性を設定し、関連するtd要素の headers 属性に同じ値を指定すると、セル間の関連付けを作成できます。
+  </h3>
+  <p>これをうまく機能させるためには、最初の列と最初の行の両方に表ヘッダー（th）要素が必要です。</p>
+  <hr/>
+  <u>テーブルに構造を追加する</u>
+  <h3>
+    表の構造が複雑になった場合、
+    <code>thead</code>
+    <code>tbody</code>
+    <code>tfoot</code>
+    要素を使って構造的な定義を与えることは有用です。
+  </h3>
+  <h2>
+    <code>thead</code> <small>列見出しを含む最初の行</small><br/>
+    <code>tbody</code> <small>表コンテンツの全ての行</small><br/>
+    <code>tfoot</code> <small>表を総括する最後の行</small><br/>
+  </h2>
+  <p>これらの要素によって、表が視覚障害者にとって理解しやすくなることはありませんが、視覚的な表のスタイリング・レイアウトに非常に役立ちます。</p>
+  <hr/>
+  <p style="text-align: center;">/* ~~~ */</p>
+  <hr/>
+  <code>colgroup</code>
+  <code>col</code>
+  <h3>
+    HTMLテーブルの最初の小要素
+    (最初の行 tr要素の 前) に
+    colgroup・col 要素を記述し、
+    列全体のスタイル情報を 1 か所にまとめて定義することができます。
+  </h3>
+  <p>これらの要素によって、列ごとの背景色・幅などを簡単にスタイリングできます。</p>
+  <hr/>
+  <hr/>
   <a href="#" onclick="window.history.back(); return false;">↩︎</a>
 </section>

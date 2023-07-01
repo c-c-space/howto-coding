@@ -1,3 +1,62 @@
+#one:target,
+#two:target,
+#three:target,
+#four:target {
+  color: #fff;
+  background: #000;
+}
+
+#howto code,
+#table th {
+  font-family: "ipag", monospace;
+}
+
+#howto code::before,
+tbody th::before,
+tfoot th::before {
+  content: '<';
+}
+
+#howto code::after,
+tbody th::after,
+tfoot th::after {
+  content: '>';
+}
+
+.readme .close {
+  color: #fff;
+  filter: invert();
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: url("https://creative-community.space/ver/font/NewYork.otf");
+}
+
+#title {
+  font-size: 150%;
+  font-family: "NewYork", serif;
+}
+
+#table table {
+  border: 1px solid;
+  width: 450px;
+}
+
+th {
+  background: #eee;
+  font-size: 125%;
+}
+
+td {
+  font-family: "NewYork", serif;
+  font-size: 100%;
+}
+
+td strong {
+  writing-mode: vertical-lr;
+}
+
 #readme {
   margin: 3rem auto 2.5rem;
 }
@@ -15,5 +74,12 @@
 @media screen and (max-width: 820px) {
   #readme {
     margin: 10vw auto 7.5vw;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  #table table {
+    font-size: 3.21vw;
   }
 }
