@@ -33,6 +33,20 @@
     text-transform: uppercase;
   }
 
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/ver/font/NewYork.otf");
+  }
+
+  h1 {
+    font-family: "NewYork", serif;
+  }
+
+  #cover code {
+    font-family: "ipag", monospace;
+    font-size: 125%;
+  }
+
   #contents::before {
     content:'関連記事';
     font-size: 90%;
@@ -86,13 +100,12 @@
 
   <article class="readme">
     <section id="cover" class="active cover">
-      <h2>埋め込み要素（エンベディッド・コンテンツ）</h2>
+      <h1><small>Hypertext Markup Language</small><br/>Embedded Content</h1>
       <p>
-        様々な種類のコンテンツをウェブページに埋め込むことができる要素
+        <code class="iframe_tag">src="URL"></code><br/>
+        <code class="embed_tag">src="URL"></code><br/>
+        <code class="object_tag">data="URL"></code><br/>
       </p>
-      <p><u>iframe は他のウェブページを埋め込むためのもので、他の 2 つの要素は PDF ファイルのような外部リソースを埋め込むことができます。</u></p>
-      <br/>
-      <p id="lastModified"></p>
     </section>
     <section id="one" class="is-hide"></section>
     <section id="two" class="is-hide"></section>
@@ -116,6 +129,8 @@
       <hr/>
       <br>
       <aside id="links"></aside>
+      <br/>
+      <p id="lastModified"></p>
     </section>
   </article>
 
