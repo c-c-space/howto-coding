@@ -10,13 +10,6 @@
 
   "contents" : [
     {
-      "date" : "CSS",
-      "name" : "背景",
-      "url" : "/coding/css/backgrounds/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
       "date" : "HTML",
       "name" : "メディア要素",
       "url" : "/coding/html/media/",
