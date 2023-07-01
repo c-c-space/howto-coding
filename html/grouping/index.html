@@ -154,11 +154,6 @@
       従来のHTML (HTML 4.01) では、<<font>div</font>> と <<font>span</font>>
       を使いすぎる傾向があったため、用途ごとに要素をグループ化するこれらの意味的要素が追加されました。
     </p>
-    <p>
-      HTML Living Standard では、
-      <<font>div</font>> と <<font>span</font>>
-      は意味のないコンテンツでのみ使用し、意味を持つコンテンツには適切な意味的要素を使うことが推奨されています。
-    </p>
     <hr/>
     <p><i>文章をベースとした記事ページには、<a href="../sectioning">区分要素（セクショニング・コンテンツ）</a> が適切です。</i></p>
     <hr/>
@@ -221,6 +216,11 @@
           は、インラインレベルの行内コンテナーを表します。<br/>
           <i>スタイル付けのため (class または id 属性を使用して) 要素をグループ化する用途で使用します。</i>
         </p>
+        <p>
+          HTML Living Standard では、
+          <<font>div</font>> と <<font>span</font>>
+          は意味のないコンテンツでのみ使用し、意味を持つコンテンツには適切な意味的要素を使うことが推奨されています。
+        </p>
       </article>
       <footer>
         <aside id="contents"></aside>
@@ -253,7 +253,7 @@
         colorItem.style.textShadow = "2px 2px 1px #fff";
       }
 
-      const bgAll = document.querySelectorAll('body, #nav a, #template *, section:not(#four)');
+      const bgAll = document.querySelectorAll('body, #nav a, #template *, section:not(#five)');
       for (const bgItem of bgAll) {
         bgItem.style.background = randomRGB();
       }
