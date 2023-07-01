@@ -792,6 +792,19 @@
   content: '</footer>';
 }
 
+.menu_element::before {
+  content: '<menu>';
+}
+
+.menu::before {
+  content: '<menu ';
+}
+
+.menu_element::after,
+.menu::after {
+  content: '</menu>';
+}
+
 .div_element::before {
   content: '<div>';
   display: block;
