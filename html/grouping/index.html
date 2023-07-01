@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../readme/index.js" async></script>
+  <script src="../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
@@ -41,6 +44,11 @@
   }
 
   a[href*="four"]::before  {
+    content: '<menu>';
+    text-transform: uppercase;
+  }
+
+  a[href*="five"]::before  {
     content: 'Etc';
     text-transform: uppercase;
   }
@@ -120,6 +128,7 @@
     <a href="#two"></a>
     <a href="#three"></a>
     <a href="#four"></a>
+    <a href="#five"></a>
   </nav>
 
   <header id="template">
@@ -137,10 +146,20 @@
   <article class="readme">
     <h2>グループ化要素（グルーピング・コンテンツ）</h2>
     <p>
-      HTML Living Standard (HTML5以降) から新たに追加された
+      HTML5 から新たに追加された
       メイン・ヘッダー・フッター要素
       は、ページの基本となる構造を表します。
     </p>
+    <p>
+      従来のHTML (HTML 4.01) では、<<font>div</font>> と <<font>span</font>>
+      を使いすぎる傾向があったため、用途ごとに要素をグループ化するこれらの意味的要素が追加されました。
+    </p>
+    <p>
+      HTML Living Standard では、
+      <<font>div</font>> と <<font>span</font>>
+      は意味のないコンテンツでのみ使用し、意味を持つコンテンツには適切な意味的要素を使うことが推奨されています。
+    </p>
+    <hr/>
     <p><i>文章をベースとした記事ページには、<a href="../sectioning">区分要素（セクショニング・コンテンツ）</a> が適切です。</i></p>
     <hr/>
     <p id="lastModified"></p>
@@ -178,16 +197,17 @@
         <i>セクションに対してフッターを使用し、コンテンツの公開日やライセンス情報など記述することにも使用されます。</i>
       </p>
     </section>
-    <section id="four">
+    <section id="four" class="readme">
+      <h3><<font>menu</font>><font>メニュー要素</font><<font>/menu</font>></h3>
+      <p>
+        <<font>menu</font>> 要素
+        は、順序なしリストの項目を
+        を表します。<br/>
+        <i>ul 要素と機能はほぼ同じで、menu 要素の中に li 要素を記述してメニューを作成します。</i>
+      </p>
+    </section>
+    <section id="five">
       <article id="etc" class="readme">
-        <h2>従来のHTML要素 (HTML 4.01)</h2>
-        <p>
-          HTML Living Standard 以前の
-          HTML では、<<font>div</font>> と <<font>span</font>>
-          を使いすぎる傾向があったため、
-          メイン・ヘッダー・フッター要素やセクション要素などの意味的要素が追加されました。
-        </p>
-        <hr/>
         <h3><<font>div</font>><font>コンテンツ区分要素</font><<font>/div</font>></h3>
         <p>
           <<font>div</font>> 要素
@@ -200,11 +220,6 @@
           <<font>span</font>> 要素
           は、インラインレベルの行内コンテナーを表します。<br/>
           <i>スタイル付けのため (class または id 属性を使用して) 要素をグループ化する用途で使用します。</i>
-        </p>
-        <p>
-          HTML Living Standard では、
-          <<font>div</font>> と <<font>span</font>>
-          は意味のないコンテンツでのみ使用し、意味を持つコンテンツには適切な意味的要素を使うことが推奨されています。
         </p>
       </article>
       <footer>

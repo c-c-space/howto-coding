@@ -77,6 +77,11 @@
       "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/footer"
     },
     {
+      "date" : "menu",
+      "name" : "メニュー要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/menu"
+    },
+    {
       "date" : "div",
       "name" : "コンテンツ区分要素",
       "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/div"
