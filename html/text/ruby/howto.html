@@ -2,7 +2,24 @@
   <h1 id="title">
     The Ruby element | Hypertext Markup Language
   </h1>
-  <h2>Ruby 要素 はベーステキストの上、下、隣に描画される小さな注釈で、漢字にふりがなを付ける際や、文字の発音を表すためなどに使われます。</h2>
+  <h2>Ruby 要素 は ベーステキストに描画される小さな注釈で、漢字にふりがなを付けたり、文字の発音を表すためなどに使われます。</h2>
   <hr/>
-  <a href="#" onclick="window.history.back(); return false;">×</a>
+  <h3>
+    ルビをつける文字を
+    <ruby class="ruby">
+      ルビ
+      <rt class="rt">ruby要素の中に rt要素 を記述して、ルビを付ける</rt>
+    </ruby>
+    要素 の中に記述
+  </h3>
+  <h3>
+    ルビの表示に対応していないブラウザー向けの代替表示用括弧を提供する場合は、
+    <ruby class="ruby">
+      rp 要素
+      <rt class="rt">ルビのフォールバック用括弧要素</rt>
+    </ruby>
+    を記述します。
+  </h3>
+  <hr/>
+  <a class="close" href="#" onclick="window.history.back(); return false;">×</a>
 </section>
