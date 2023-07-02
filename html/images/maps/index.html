@@ -4,24 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../../readme/index.js" async></script>
-  <link rel="stylesheet" href="../../style.css" />
+  <script src="../../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
   <link rel="stylesheet" href="../../elements.css" />
   <link rel="stylesheet" href="../../../readme/style.css" />
+  <link rel="stylesheet" href="../../../readme/active.css" />
   <style>
   a[href*="one"]::before  {
-    content: 'map';
+    content: '<map>';
     text-transform: uppercase;
   }
 
   a[href*="two"]::before  {
-    content: 'area';
+    content: '<area>';
     text-transform: uppercase;
   }
 
   a[href*="three"]::before  {
-    content: '';
+    content: 'イメージマップ';
     text-transform: uppercase;
+  }
+
+  code,
+  pre {
+    font-family: "ipag", monospace;
+    font-size: 125%;
   }
 
   #contents::before {
@@ -41,78 +50,121 @@
     margin: 0.5rem 0.25rem;
   }
 
-  section:target,
-  section:target font,
-  section:target .blue,
-  section:target a {
-    color: #fff;
-    border-color: #fff;
-    background: #FF0000;
+  details {
+    margin-top: 1rem;
   }
 
-  #template {
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    padding: 7.5rem 2.5rem 2.5rem;
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
+  #contents::before,
+  #links::before {
+    display: block;
+    text-decoration: underline;
+    margin: 0.5rem 0.25rem;
+  }
+
+  #nav a,
+  #contents::before,
+  #links::before,
+  #lastModified {
+    margin: 0.5rem 0.25rem;
+  }
+
+  #contents a,
+  #contents a:hover,
+  #links a,
+  #links a:hover {
+    border: none;
+  }
+
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
   }
 
   #lastModified {
-    font-family: "ipag", monospace;
     text-align: right;
+    margin: 0.25rem;
     line-height: 125%;
     word-break: break-word;
-  }
-
-  @media screen and (max-width: 820px) {
-    #template {
-      font-size: 3.21vw;
-      padding: 20% 2.5% 5%;
-    }
   }
   </style>
 </head>
 <body>
   <nav id="nav">
-    <span>イメージマップ</span>
+    <a href="#three"></a>
     <a href="#one"></a>
     <a href="#two"></a>
-    <a href="#three"></a>
   </nav>
 
-  <header id="template">
-    <map class="map_element">
-      <area class="area_element">
-      <area class="area_element">
-      <area class="area_element">
-    </map>
-  </header>
-
-  <article>
-    <section id="one"></section>
-    <section id="two"></section>
-    <section id="three"></section>
-    <hr/>
-    <p id="lastModified" class="readme"></p>
-    <br/>
-    <section id="four">
-      <aside id="contents"></aside>
+  <article class="readme">
+    <section id="cover" class="active cover">
+      <h1><small>Hypertext Markup Language</small><br/>Image Map</h1>
+    </section>
+    <section id="one" class="is-hide"></section>
+    <section id="two" class="is-hide"></section>
+    <section id="three" class="is-hide">
+      <p>
+        <u>
+          イメージマップとは、画像の一部分にあるクリック可能な領域のことで、
+          <code>img</code> 要素で表示した画像に対して
+          <code>map</code> と <code>area</code> 要素を使って
+          リンクを設定します。
+        </u>
+      </p>
+      <h2 class="map_element">
+        name="イメージマップ名"><br/>
+        <span class="area_element">
+          shape="ホットスポットの形状" coords="shape 属性の座標"
+          href="URL" alt="代替テキスト"
+        </span>
+      </h2>
+      <h3 class="img_element"> usemap="#イメージマップ名" src="画像URL" alt="代替テキスト"</h3>
+      <br/>
+      <hr>
+      <aside id="links"></aside>
+      <br/>
+      <p id="lastModified"></p>
     </section>
   </article>
-  <aside id="links"></aside>
+
+  <footer>
+    <aside id="contents"></aside>
+  </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="../../../readme/script.js" async></script>
   <script type="text/javascript">
-  $(function() {
-    $("#").load("");
-  })
+  document.addEventListener('readystatechange', (event) => {
+    if (event.target.readyState === 'interactive') {
+    let lastModified = document.querySelector('#lastModified');
+    lastModified.innerHTML =
+    'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+  } else if (event.target.readyState === 'complete') {
+      function random(min, max) {
+        const num = Math.floor(Math.random() * (max - min + 1)) + min;
+        return num;
+      }
 
-  let lastModified = document.querySelector('#lastModified');
+      function randomRGB() {
+        let getRGB = `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
+        return getRGB;
+      }
 
-  lastModified.innerHTML =
-  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
+      const bgAll = document.querySelectorAll('body, .active');
+      for (const bgItem of bgAll) {
+        bgItem.style.background = randomRGB();
+      }
+
+      const randomRGBbgAll = document.querySelectorAll('#nav a');
+      for (const randomRGBbg of randomRGBbgAll) {
+        randomRGBbg.addEventListener('click', function(event) {
+          const bgSectionAll = document.querySelectorAll('body, .active');
+          for (const bgSection of bgSectionAll) {
+            bgSection.style.background = randomRGB();
+          }
+        });
+      }
+    }
+  });
   </script>
 </body>
 </html>

@@ -356,11 +356,16 @@
   content: '>';
 }
 
-.map_element::before {
+.map::before {
   content: '<map>';
   display: block;
 }
 
+.map_element::before {
+  content: '<map ';
+}
+
+.map::after,
 .map_element::after {
   content: '</map>';
   display: block;

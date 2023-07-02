@@ -11,6 +11,13 @@
   "contents" : [
     {
       "date" : "HTML",
+      "name" : "イメージマップ",
+      "url" : "/coding/html/images/maps/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
       "name" : "メディア要素",
       "url" : "/coding/html/media/",
       "language" : "html",
