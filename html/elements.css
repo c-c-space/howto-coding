@@ -753,6 +753,30 @@
   content: '</bdi>';
 }
 
+.ruby::before {
+  content: '<ruby>';
+}
+
+.ruby::after {
+  content: '</ruby>';
+}
+
+.rp::before {
+  content: '<rp>';
+}
+
+.rp::after {
+  content: '</rp>';
+}
+
+.rt::before {
+  content: '<rt>';
+}
+
+.rt::after {
+  content: '</rt>';
+}
+
 .main_element::before {
   content: '<main>';
 }

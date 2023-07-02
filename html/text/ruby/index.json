@@ -1,0 +1,58 @@
+{
+  "title" : "Advanced Text",
+  "description" : "高度なテキスト整形",
+  "author" : "Hypertext Markup Language",
+  "email" : "pehu@creative-community.space",
+  "type" : "article",
+  "twitter" : "@pe_hu_",
+  "card" : "summary",
+  "src" : "card.png",
+
+  "contents" : [
+    {
+      "date" : "HTML",
+      "name" : "テキストの基礎",
+      "url" : "/coding/html/text/",
+      "language" : "html",
+      "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "高度なテキスト整形",
+      "url" : "/coding/html/text/advanced/",
+      "language" : "html",
+      "status" : "guide"
+    }
+  ],
+
+  "links" : [
+    {
+      "date" : "The Ruby element",
+      "name" : "ruby要素",
+      "url" : "https://momdo.github.io/html/text-level-semantics.html#the-ruby-element",
+      "language" : "html",
+      "status" : "basic"
+    },
+    {
+      "date" : "ruby",
+      "name" : "ルビ要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/ruby",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "rt",
+      "name" : "ルビ文字列要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/rt",
+      "language" : "guide",
+      "status" : "basic"
+    },
+    {
+      "date" : "rp",
+      "name" : "ルビのフォールバック用括弧要素",
+      "url" : "https://developer.mozilla.org/ja/docs/Web/HTML/Element/rp",
+      "language" : "guide",
+      "status" : "basic"
+    }
+  ]
+}
