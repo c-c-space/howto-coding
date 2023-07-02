@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
+  <script src="../../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
   <script src="script.js"></script>
-  <script src="../../../readme/index.js" async></script>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../../event/style.css" />
   <link rel="stylesheet" href="../../event/hidden.css" />
@@ -50,8 +53,6 @@
     <aside id="contents" class="hide_offline"></aside>
     <article id="howto" class="readme">
       <?php require('howto.html'); ?>
-      <hr/>
-      <p id="lastModified"></p>
     </article>
     <hr/>
     <nav id="links" class="hide_offline"></nav>
@@ -64,6 +65,8 @@
 
   <script src="network.js" defer></script>
   <script type="text/javascript">
+  fetchHTML('howto.html', '#howto');
+
   const button = document.querySelector('#js-button');
   const body = document.querySelector('body');
 
@@ -71,10 +74,6 @@
     button.classList.toggle('close');
     body.classList.toggle('open');
   });
-
-  let lastModified = document.querySelector('#lastModified');
-  lastModified.innerHTML =
-  'Last Modified: <time datetime="' + document.lastModified + '">' + document.lastModified + '</time>';
   </script>
 </body>
 </html>
