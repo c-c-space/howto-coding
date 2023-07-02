@@ -38,10 +38,10 @@
       "status" : "guide"
     },
     {
-      "date" : "API",
-      "name" : "Web Storage API",
-      "url" : "/coding/api/web-storage/",
-      "language" : "api",
+      "date" : "JavaScript",
+      "name" : "JavaScriptの基本",
+      "url" : "/coding/js/",
+      "language" : "js",
       "status" : "guide"
     }
   ],
