@@ -8,9 +8,9 @@
   <script type="text/javascript">
   indexJSON('index.json');
   </script>
-  <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
+  <link rel="stylesheet" href="../../readme/active.css" />
   <style>
   a[href*="one"]::before  {
     content: 'img';
@@ -32,6 +32,20 @@
     text-transform: uppercase;
   }
 
+  @font-face {
+    font-family: "NewYork";
+    src: url("https://creative-community.space/ver/font/NewYork.otf");
+  }
+
+  h1 {
+    font-family: "NewYork", serif;
+  }
+
+  #cover code {
+    font-family: "ipag", monospace;
+    font-size: 125%;
+  }
+
   #contents::before {
     content:'関連記事';
     font-size: 90%;
@@ -42,6 +56,10 @@
     font-size: 75%;
   }
 
+  details {
+    margin-top: 1rem;
+  }
+
   #contents::before,
   #links::before {
     display: block;
@@ -49,72 +67,30 @@
     margin: 0.5rem 0.25rem;
   }
 
-  section:target,
-  section:target font,
-  section:target .blue {
-    color: #fff;
-    border-color: #fff;
-    background: #FF0000;
+  #nav a,
+  #contents::before,
+  #links::before,
+  #lastModified {
+    margin: 0.5rem 0.25rem;
   }
 
-  section:target a,
-  section:target #contents a,
-  section:target #links a {
-    color: #fff;
+  #contents a,
+  #contents a:hover,
+  #links a,
+  #links a:hover {
+    border: none;
   }
 
-  #template {
-    box-sizing: border-box;
-    font-size: 1.5rem;
-    padding: 5rem 2.5rem 2.5rem;
-    min-height: 100vh;
-  }
-
-  @font-face {
-    font-family: "NewYork";
-    src: url("https://creative-community.space/ver/font/NewYork.otf");
-  }
-
-  #template {
-    font-family: "NewYork", serif;
-  }
-
-  #lastModified,
-  code {
-    font-family: "ipag", monospace;
-  }
-
-  code {
-    font-size: 125%;
+  #contents::before,
+  #links::before {
+    text-decoration: underline;
   }
 
   #lastModified {
     text-align: right;
+    margin: 0.25rem;
     line-height: 125%;
     word-break: break-word;
-  }
-
-  footer {
-    position: relative;
-    min-height: 95vh;
-  }
-
-  footer aside {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  footer aside {
-    max-width: 1000px;
-  }
-
-  @media screen and (max-width: 820px) {
-    #template {
-      font-size: 3.21vw;
-      padding: 10% 2.5% 5%;
-    }
   }
   </style>
 </head>
@@ -126,98 +102,93 @@
     <a href="#four"></a>
   </nav>
 
-  <header id="template">
-    <img class="img_element" src="#" alt=" src= alt=">
-    <picture class="picture">
-      <source class="source_element"><br>
-      <span class="img_element"></span>
-    </picture>
-    <figure class="figure"><br>
-      <span class="img_element"></span><br>
-      <figcaption class="figcaption"></figcaption>
-    </figure>
-  </header>
-
   <article class="readme">
-    <h2>画像要素（エンベディッド・コンテンツ）</h2>
-    <p>画像をウェブページに埋め込むために使用する IMG要素</p>
-    <p>PICTURE・SOURCE 要素 で、画像コンテンツを変化させる複数の画像を提供する</p>
-    <p>FIGURE・FIGCAPTION 要素 で図表と図表のキャプションで注釈を付ける</p>
-    <br/>
-    <p id="lastModified"></p>
-  </article>
-  <hr/>
-  <article>
-    <section id="one"></section>
-    <section id="two"></section>
-    <section id="three"></section>
-    <section id="four">
-      <article class="readme">
-        <h3>
-          <font>CSS</font>
-        </h3>
-        <p>
-          <font>img</font> 要素は
-          display 既定値が inline
-          ですが、既定の寸法は埋め込まれた画像の内部的な値で定義されます。
-        </p>
-        <p>
-          <font color="blue"><a href="/coding/css/boxmodel/">padding・margin</a></font>
-          ボックスモデルを指定
-        </p>
-        <p>
-          <font color="blue"><a href="/coding/css/sizing/">width・height</a></font>
-          画像・要素の幅と高さを指定
-        </p>
-        <p>
-          <font color="blue"><a href="/coding/css/borders/">border・border-radius</a></font>
-          境界を指定
-        </p>
-        <hr/>
-        <p>
-          <font color="blue">object-fit</font><br/>
-          img や video などの中身を、コンテナーにどのようにはめ込むかを設定
-        </p>
-        <p>
-          <i>/* コンテンツを拡大縮小しない */</i><br/>
-          <code>object-fit: none;</code>
-        </p>
-        <p>
-          <i>/* アスペクト比を維持したまま、要素のコンテンツボックスに収まるように拡大縮小 */</i><br/>
-          <code>object-fit: contain;</code>
-        </p>
-        <p>
-          <i>/* アスペクト比を維持したまま、要素のコンテンツボックス全体を埋めるように拡大縮小 */</i><br/>
-          <code>object-fit: cover;</code>
-        </p>
-        <p>
-          <i>/* アスペクト比を維持せず、コンテンツボックス全体を埋めるサイズに引き伸ばす */</i><br/>
-          <code>object-fit: fill;</code>
-        </p>
-        <p>
-          <i>/* none または contain を指定したかのようにサイズが決められ、オブジェクトの実際のサイズが小さいほうを採用 */</i><br/>
-          <code>object-fit: scale-down;</code>
-        </p>
-        <hr/>
-        <p>
-          <font color="blue">object-position</font><br/>
-          ボックス内における置換要素の中身の配置を指定
-        </p>
-        <pre>
+    <section id="cover" class="active cover">
+      <h1><small>Hypertext Markup Language</small><br/>Images in HTML</h1>
+      <img class="img_element" src="#" alt=" src= alt=">
+      <picture class="picture">
+        <source class="source_element"><br>
+        <span class="img_element"></span>
+      </picture>
+      <figure class="figure"><br>
+        <span class="img_element"></span><br>
+        <figcaption class="figcaption"></figcaption>
+      </figure>
+    </section>
+    <section id="one" class="is-hide"></section>
+    <section id="two" class="is-hide"></section>
+    <section id="three" class="is-hide"></section>
+    <section id="four" class="is-hide">
+      <p>
+        <font>CSS</font>
+      </p>
+      <p>
+        <font>img</font> 要素は
+        display 既定値が inline
+        ですが、既定の寸法は埋め込まれた画像の内部的な値で定義されます。
+      </p>
+      <p>
+        <font color="blue"><a href="/coding/css/boxmodel/">padding・margin</a></font>
+        ボックスモデルを指定
+      </p>
+      <p>
+        <font color="blue"><a href="/coding/css/sizing/">width・height</a></font>
+        画像・要素の幅と高さを指定
+      </p>
+      <p>
+        <font color="blue"><a href="/coding/css/borders/">border・border-radius</a></font>
+        境界を指定
+      </p>
+      <hr/>
+      <p>
+        <font color="blue">object-fit</font><br/>
+        img や video などの中身を、コンテナーにどのようにはめ込むかを設定
+      </p>
+      <p>
+        <i>/* コンテンツを拡大縮小しない */</i><br/>
+        <code>object-fit: none;</code>
+      </p>
+      <p>
+        <i>/* アスペクト比を維持したまま、要素のコンテンツボックスに収まるように拡大縮小 */</i><br/>
+        <code>object-fit: contain;</code>
+      </p>
+      <p>
+        <i>/* アスペクト比を維持したまま、要素のコンテンツボックス全体を埋めるように拡大縮小 */</i><br/>
+        <code>object-fit: cover;</code>
+      </p>
+      <p>
+        <i>/* アスペクト比を維持せず、コンテンツボックス全体を埋めるサイズに引き伸ばす */</i><br/>
+        <code>object-fit: fill;</code>
+      </p>
+      <p>
+        <i>/* none または contain を指定したかのようにサイズが決められ、オブジェクトの実際のサイズが小さいほうを採用 */</i><br/>
+        <code>object-fit: scale-down;</code>
+      </p>
+      <hr/>
+      <p>
+        <font color="blue">object-position</font><br/>
+        ボックス内における置換要素の中身の配置を指定
+      </p>
+      <pre>
 /* position 値 */
 object-position: 50% 50%;
 object-position: center center;
 object-position: top left;
 object-position: bottom right;
-        </pre>
-      </article>
-      <footer>
-        <aside id="contents"></aside>
-      </footer>
+      </pre>
+      <hr/>
+      <br>
       <aside id="links"></aside>
+      <br/>
+      <p id="lastModified"></p>
     </section>
   </article>
 
+  <footer>
+    <aside id="contents"></aside>
+  </footer>
+
+  <script src="../../readme/script.js" async></script>
   <script type="text/javascript">
   fetchHTML('img.html', '#one');
   fetchHTML('picture.html', '#two');
