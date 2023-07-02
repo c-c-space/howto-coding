@@ -5,7 +5,9 @@
   animation: sky 10s ease infinite;
 }
 
-.light a {
+.light a,
+#contents a,
+#links a {
   color: #000;
 }
 
@@ -31,7 +33,9 @@
   background: radial-gradient(circle at bottom, #222, #111, #000) fixed;
 }
 
-.dark a {
+.dark a,
+#contents a,
+#links a {
   color: #fff;
 }
 
@@ -60,7 +64,9 @@
     animation: sky 10s ease infinite;
   }
 
-  a {
+  a,
+  #contents a,
+  #links a {
     color: #000;
   }
 
@@ -86,7 +92,9 @@
     background: radial-gradient(circle at bottom, #222, #111, #000) fixed;
   }
 
-  a {
+  a,
+  #contents a,
+  #links a {
     color: #fff;
   }
 
