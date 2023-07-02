@@ -43,6 +43,13 @@
       "url" : "/coding/html/text/advanced/",
       "language" : "html",
       "status" : "guide"
+    },
+    {
+      "date" : "HTML",
+      "name" : "ルビ要素",
+      "url" : "/coding/html/text/ruby/",
+      "language" : "html",
+      "status" : "guide"
     }
   ],
 
