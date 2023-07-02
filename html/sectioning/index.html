@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <script src="../../readme/index.js" async></script>
+  <script src="../../readme/index.js"></script>
+  <script type="text/javascript">
+  indexJSON('index.json');
+  </script>
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="../elements.css" />
   <link rel="stylesheet" href="../../readme/style.css" />
@@ -157,15 +160,12 @@
     </section>
   </article>
 
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script type="text/javascript">
-  $(function() {
-    $("#template").load("download.html");
-    $("#one").load("article.html");
-    $("#two").load("section.html");
-    $("#three").load("nav.html");
-    $("#aside").load("aside.html");
-  })
+  fetchHTML('download.html', '#template');
+  fetchHTML('article.html', '#one');
+  fetchHTML('section.html', '#two');
+  fetchHTML('nav.html', '#three');
+  fetchHTML('aside.html', '#aside');
 
   let lastModified = document.querySelector('#lastModified');
   lastModified.innerHTML =
