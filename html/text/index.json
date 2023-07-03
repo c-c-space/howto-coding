@@ -31,13 +31,6 @@
       "status" : "guide"
     },
     {
-      "date" : "CSS",
-      "name" : "色",
-      "url" : "/coding/css/colors/",
-      "language" : "css",
-      "status" : "guide"
-    },
-    {
       "date" : "HTML",
       "name" : "高度なテキスト整形",
       "url" : "/coding/html/text/advanced/",
